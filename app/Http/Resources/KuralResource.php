@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class SectionResource extends JsonResource
+class KuralResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -14,10 +14,9 @@ class SectionResource extends JsonResource
      */
     public function toArray($request)
     {
-        // return parent::toArray($request);
         return [
-            'id' => $this->section_no,
-            'tamil' => $this->section_tn,
+            'id' => $this->kural_no,
+            'tn' => $this->kural_tn,
         ];
     }
 }

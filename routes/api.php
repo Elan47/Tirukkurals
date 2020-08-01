@@ -21,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 Route::get('sections', 'SectionController@index')->name('sections');
+Route::get('chapters', 'ChapterController@index')->name('chapters');
+Route::get('kurals', 'KuralController@index')->name('kurals');
+Route::get('chapter-groups', 'ChapterGroupController@index')->name('chapterGroups');
