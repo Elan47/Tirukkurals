@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\SectionResource;
 use App\Section;
 use Illuminate\Http\Request;
 
@@ -15,7 +16,7 @@ class SectionController extends Controller
     public function index()
     {
         $sections = Section::all();
-        return $sections;
+        return SectionResource::collection($sections);
     }
 
     /**
