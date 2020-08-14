@@ -6,7 +6,6 @@
 
 require('./bootstrap');
 window.Vue = require('vue');
-
 import router from './router'
 // import routes from './router';
 // import {
@@ -25,6 +24,7 @@ import router from './router'
 
 Vue.component('App', require('./components/AppComponent.vue').default);
 
+Vue.component('Pagination', require('./components/pages/laravel-vue-pagination.vue'));
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,6 +33,7 @@ Vue.component('App', require('./components/AppComponent.vue').default);
 
 const app = new Vue({
     el: '#app',
+    component: ['Pagination'],
     router,
 
 

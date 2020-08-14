@@ -27,3 +27,4 @@ Route::get('chapter-groups', 'ChapterGroupController@index')->name('chapterGroup
 Route::get('chapter/{id}', 'KuralController@chapter_kurals')->name('chapterKurals');
 Route::get('section/{id}', 'ChapterController@section_chapters')->name('sectionChapters');
 Route::get('chapter-group/{id}', 'ChapterController@chapter_group_chapters')->name('chapterGroupChapters');
+Route::get('paginate', 'KuralController@index')->name('paginatedKurals');

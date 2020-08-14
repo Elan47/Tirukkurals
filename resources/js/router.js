@@ -8,6 +8,7 @@ import ChapterGroup from './components/pages/ChapterGroup'
 import ChapterKurals from './components/pages/ChapterKurals'
 import SectionChapters from './components/pages/SectionChapters'
 import ChapterGroupChapters from './components/pages/ChapterGroupChapters'
+import Pagination from './components/pages/laravel-vue-pagination'
 Vue.use(Router)
 
 
@@ -47,6 +48,10 @@ const routes = new Router({
             path: '/vue-kurals/public/chapter-group-chapters/:id',
             name: 'chapter-group-chapters',
             component: ChapterGroupChapters,
+        }, {
+            path: '/vue-kurals/public/paginate',
+            name: 'pagination',
+            component: Pagination,
         }
     ]
 });

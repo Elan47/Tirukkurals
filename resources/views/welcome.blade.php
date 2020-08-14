@@ -94,6 +94,8 @@
                 {{-- Laravel --}}
     {{-- </div> --}}
     <div id="app">
+
+        {{-- <Pagination></Pagination> --}}
         <App></App>
     </div>
     {{-- </div>
