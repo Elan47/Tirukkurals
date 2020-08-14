@@ -3,11 +3,13 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">Main App</div>
-          <div class="card-body">I'm the App component.</div>
+          <div class="card-header">Thirukkural App</div>
+
           <div class="card-body">
-            <router-link to="home" class="nav-link">Home</router-link>
-            <router-link to="about" class="nav-link">About</router-link>
+            <router-link :to="{name:'sections'}" class="nav-link">Sections</router-link>
+            <router-link :to="{name:'chapter-groups'}" class="nav-link">Chapter Groups</router-link>
+            <router-link :to="{name:'chapters'}" class="nav-link">Chapters</router-link>
+            <router-link :to="{name:'kurals'}" class="nav-link">Kurals</router-link>
             <br />
             <router-view></router-view>
           </div>
