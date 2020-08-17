@@ -2161,6 +2161,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2210,19 +2216,86 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       kurals: [],
-      link: []
+      meta: []
     };
   },
-  mounted: function mounted() {
-    var _this = this;
+  created: function created() {
+    this.getkurals();
+  },
+  methods: {
+    getkurals: function getkurals(page) {
+      var _this = this;
 
-    axios.get("http://localhost/vue-kurals/public/api/kurals").then(function (response) {
-      return _this.kurals = response.data.data, _this.link = response.data.links;
-    });
+      axios.get("http://localhost/vue-kurals/public/api/kurals").then(function (response) {
+        return _this.kurals = response.data.data, _this.meta = response.data.meta;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    prevkural: function prevkural(page) {
+      var _this2 = this;
+
+      axios.get("http://localhost/vue-kurals/public/api/kurals?page=" + page).then(function (response) {
+        return _this2.kurals = response.data.data, _this2.meta = response.data.meta;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    nextkural: function nextkural(page) {
+      var _this3 = this;
+
+      axios.get("http://localhost/vue-kurals/public/api/kurals?page=" + page).then(function (response) {
+        return _this3.kurals = response.data.data, _this3.meta = response.data.meta;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    lastkural: function lastkural(page) {
+      var _this4 = this;
+
+      axios.get("http://localhost/vue-kurals/public/api/kurals?page=" + page).then(function (response) {
+        return _this4.kurals = response.data.data, _this4.meta = response.data.meta;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    firstkural: function firstkural(page) {
+      var _this5 = this;
+
+      axios.get("http://localhost/vue-kurals/public/api/kurals?page=" + page).then(function (response) {
+        return _this5.kurals = response.data.data, _this5.meta = response.data.meta;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
   }
 });
 
@@ -2343,10 +2416,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=script&lang=js&":
-/*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=script&lang=js& ***!
-  \***************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2364,24 +2437,73 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      // Our data object that holds the Laravel paginator data
-      laravelData: {}
+      data: [this.data]
     };
   },
-  mounted: function mounted() {
-    // Fetch initial results
-    this.getResults();
+  created: function created() {
+    this.getkurals(this.$route.params.id);
   },
   methods: {
-    // Our method to GET results from a Laravel endpoint
-    getResults: function getResults(page) {
+    getkurals: function getkurals(page) {
       var _this = this;
 
-      axios.get("http://localhost/vue-kurals/public/api/paginate?page=" + page).then(function (response) {
-        _this.laravelData = response.data;
+      axios.get("http://localhost/vue-kurals/public/api/kural/" + page).then(function (response) {
+        return _this.data = response.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    prevkural: function prevkural(page) {
+      var _this2 = this;
+
+      axios.get("http://localhost/vue-kurals/public/api/kural/" + page).then(function (response) {
+        return _this2.data = response.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    nextkural: function nextkural(page) {
+      var _this3 = this;
+
+      axios.get("http://localhost/vue-kurals/public/api/kural/" + page).then(function (response) {
+        return _this3.data = response.data;
+      })["catch"](function (error) {
+        console.log(error);
       });
     }
   }
@@ -38331,8 +38453,32 @@ var render = function() {
             ]),
             _vm._v(" "),
             _vm._l(_vm.kurals, function(kural) {
-              return _c("p", { key: kural.id }, [
-                _vm._v(_vm._s(kural.id) + " | " + _vm._s(kural.tn))
+              return _c("div", { key: kural.id }, [
+                _c("p", [_vm._v(_vm._s(kural.id) + " | " + _vm._s(kural.tn))]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-info" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: {
+                            name: "kural-details",
+                            params: { id: kural.id }
+                          }
+                        }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "white" } }, [
+                          _vm._v("Details")
+                        ])
+                      ]
+                    )
+                  ],
+                  1
+                )
               ])
             })
           ],
@@ -38382,17 +38528,101 @@ var render = function() {
                     _vm._s(kural.tn) +
                     "\n          "
                 ),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-info" },
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: {
+                            name: "kural-details",
+                            params: { id: kural.id }
+                          }
+                        }
+                      },
+                      [
+                        _c("span", { staticStyle: { color: "white" } }, [
+                          _vm._v("Details")
+                        ])
+                      ]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
                 _c("br")
               ])
             }),
             _vm._v(" "),
-            _c("div", [_vm._v(_vm._s(_vm.link.previous))]),
+            _c("br"),
             _vm._v(" "),
-            _c("div", [_vm._v(_vm._s(_vm.link.length))]),
-            _vm._v(" "),
-            _c("div", [_vm._v(_vm._s(_vm.link.next))])
+            _c("div", { staticClass: "container" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-info",
+                  on: {
+                    click: function($event) {
+                      return _vm.firstkural(_vm.meta.first_page)
+                    }
+                  }
+                },
+                [_vm._v("First")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-info",
+                  on: {
+                    click: function($event) {
+                      return _vm.lastkural(_vm.meta.last_page)
+                    }
+                  }
+                },
+                [_vm._v("Last")]
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _vm.meta.current_page - 1 > 0
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-info",
+                      on: {
+                        click: function($event) {
+                          return _vm.prevkural(_vm.meta.current_page - 1)
+                        }
+                      }
+                    },
+                    [_vm._v("Prev")]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.meta.current_page + 1 < _vm.meta.last_page
+                ? _c(
+                    "button",
+                    {
+                      staticClass: "btn btn-info",
+                      on: {
+                        click: function($event) {
+                          return _vm.nextkural(_vm.meta.current_page + 1)
+                        }
+                      }
+                    },
+                    [_vm._v("Next")]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _c("br")
+            ])
           ],
           2
         )
@@ -38542,10 +38772,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4& ***!
+  \********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -38557,25 +38787,89 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "ul",
-    [
-      _vm._l(_vm.laravelData.data, function(kural) {
-        return _c("li", { key: kural.id }, [_vm._v(_vm._s(kural.tn))])
-      }),
-      _vm._v(" "),
-      _c("pagination", { attrs: { data: _vm.laravelData.data } }, [
-        _c("span", { attrs: { slot: "prev-nav" }, slot: "prev-nav" }, [
-          _vm._v("< Previous")
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row justify-content-center" }, [
+      _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _vm._v("Kural " + _vm._s(_vm.data[0].kural_no))
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [_vm._v("Kural No - " + _vm._s(_vm.data[0].kural_no))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[0].kural_en))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[0].kural_tn))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[0].kural_tr))]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [_vm._v("Chapter No -" + _vm._s(_vm.data[1].chap_no))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[1].chap_en))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[1].chap_tn))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[1].chap_tr))]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("Chapter Group No -" + _vm._s(_vm.data[2].chap_grp_no))
+          ]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_en))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_tn))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_tr))]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("p", [_vm._v("Section No -" + _vm._s(_vm.data[3].section_no))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[3].section_en))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[3].section_tn))]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.data[3].section_tr))])
         ]),
         _vm._v(" "),
-        _c("span", { attrs: { slot: "next-nav" }, slot: "next-nav" }, [
-          _vm._v("Next >")
-        ])
+        _vm.data[0].kural_no - 1 > 0
+          ? _c(
+              "button",
+              {
+                staticClass: "btn btn-info",
+                on: {
+                  click: function($event) {
+                    return _vm.prevkural(_vm.data[0].kural_no - 1)
+                  }
+                }
+              },
+              [_vm._v("Prev")]
+            )
+          : _vm._e(),
+        _vm._v(" "),
+        _vm.data[0].kural_no + 1 < 1330
+          ? _c(
+              "button",
+              {
+                staticClass: "btn btn-info",
+                on: {
+                  click: function($event) {
+                    return _vm.nextkural(_vm.data[0].kural_no + 1)
+                  }
+                }
+              },
+              [_vm._v("Next")]
+            )
+          : _vm._e()
       ])
-    ],
-    2
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -53808,8 +54102,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('App', __webpack_require__(/*! ./components/AppComponent.vue */ "./resources/js/components/AppComponent.vue")["default"]);
-Vue.component('Pagination', __webpack_require__(/*! ./components/pages/laravel-vue-pagination.vue */ "./resources/js/components/pages/laravel-vue-pagination.vue"));
+Vue.component('App', __webpack_require__(/*! ./components/AppComponent.vue */ "./resources/js/components/AppComponent.vue")["default"]); // Vue.component('Pagination', require('./components/pages/Pagination.vue').default);
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -53818,7 +54112,6 @@ Vue.component('Pagination', __webpack_require__(/*! ./components/pages/laravel-v
 
 var app = new Vue({
   el: '#app',
-  component: ['Pagination'],
   router: _router__WEBPACK_IMPORTED_MODULE_0__["default"]
 });
 
@@ -54490,17 +54783,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/laravel-vue-pagination.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/components/pages/laravel-vue-pagination.vue ***!
-  \******************************************************************/
+/***/ "./resources/js/components/pages/kuralDetail.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/pages/kuralDetail.vue ***!
+  \*******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _laravel_vue_pagination_vue_vue_type_template_id_e0ddf76a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a& */ "./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a&");
-/* harmony import */ var _laravel_vue_pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./laravel-vue-pagination.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=script&lang=js&");
+/* harmony import */ var _kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kuralDetail.vue?vue&type=template&id=b751e8c4& */ "./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&");
+/* harmony import */ var _kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./kuralDetail.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -54510,9 +54803,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _laravel_vue_pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _laravel_vue_pagination_vue_vue_type_template_id_e0ddf76a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _laravel_vue_pagination_vue_vue_type_template_id_e0ddf76a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -54522,38 +54815,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/pages/laravel-vue-pagination.vue"
+component.options.__file = "resources/js/components/pages/kuralDetail.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_laravel_vue_pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./laravel-vue-pagination.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_laravel_vue_pagination_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./kuralDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a& ***!
-  \*************************************************************************************************/
+/***/ "./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4& ***!
+  \**************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_laravel_vue_pagination_vue_vue_type_template_id_e0ddf76a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/laravel-vue-pagination.vue?vue&type=template&id=e0ddf76a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_laravel_vue_pagination_vue_vue_type_template_id_e0ddf76a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./kuralDetail.vue?vue&type=template&id=b751e8c4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_laravel_vue_pagination_vue_vue_type_template_id_e0ddf76a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -54579,7 +54872,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_ChapterKurals__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/pages/ChapterKurals */ "./resources/js/components/pages/ChapterKurals.vue");
 /* harmony import */ var _components_pages_SectionChapters__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/pages/SectionChapters */ "./resources/js/components/pages/SectionChapters.vue");
 /* harmony import */ var _components_pages_ChapterGroupChapters__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/pages/ChapterGroupChapters */ "./resources/js/components/pages/ChapterGroupChapters.vue");
-/* harmony import */ var _components_pages_laravel_vue_pagination__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/pages/laravel-vue-pagination */ "./resources/js/components/pages/laravel-vue-pagination.vue");
+/* harmony import */ var _components_pages_kuralDetail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/pages/kuralDetail */ "./resources/js/components/pages/kuralDetail.vue");
 
 
 
@@ -54598,6 +54891,10 @@ var routes = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/vue-kurals/public/kurals',
     name: 'kurals',
     component: _components_pages_Kural__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }, {
+    path: '/vue-kurals/public/kural/:id',
+    name: 'kural-details',
+    component: _components_pages_kuralDetail__WEBPACK_IMPORTED_MODULE_10__["default"]
   }, {
     path: '/vue-kurals/public/about',
     name: 'about',
@@ -54626,10 +54923,6 @@ var routes = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
     path: '/vue-kurals/public/chapter-group-chapters/:id',
     name: 'chapter-group-chapters',
     component: _components_pages_ChapterGroupChapters__WEBPACK_IMPORTED_MODULE_9__["default"]
-  }, {
-    path: '/vue-kurals/public/paginate',
-    name: 'pagination',
-    component: _components_pages_laravel_vue_pagination__WEBPACK_IMPORTED_MODULE_10__["default"]
   }]
 });
 /* harmony default export */ __webpack_exports__["default"] = (routes); // Format didn't work

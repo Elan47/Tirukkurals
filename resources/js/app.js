@@ -23,8 +23,8 @@ import router from './router'
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('App', require('./components/AppComponent.vue').default);
+// Vue.component('Pagination', require('./components/pages/Pagination.vue').default);
 
-Vue.component('Pagination', require('./components/pages/laravel-vue-pagination.vue'));
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,7 +33,6 @@ Vue.component('Pagination', require('./components/pages/laravel-vue-pagination.v
 
 const app = new Vue({
     el: '#app',
-    component: ['Pagination'],
     router,
 
 
