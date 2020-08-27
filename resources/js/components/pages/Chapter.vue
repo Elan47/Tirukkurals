@@ -7,8 +7,11 @@
           <ol>
             <li v-for="chapter in chapters" :key="chapter.id">
               <span class="list-group-item d-flex justify-content-between align-items-center">
-                {{ chapter.tamil }}
-                <button class="btn btn-info" @click="trigger(chapter.id)">Kurals</button>
+                {{ chapter.tn }} / {{ chapter.tr }} / {{ chapter.en }}
+                <button
+                  class="btn btn-info"
+                  @click="trigger(chapter.id)"
+                >Kurals</button>
               </span>
             </li>
           </ol>
@@ -29,13 +32,13 @@ export default {
 
   mounted() {
     axios
-      .get("http://localhost/vue-kurals/public/api/chapters")
+      .get(this.$APPURL + "api/chapters")
       .then((response) => (this.chapters = response.data.data));
   },
   methods: {
     trigger(id) {
       router.push({
-        path: `/vue-kurals/public/chapter-kurals/${id}`,
+        path: this.$APPURL + `chapter-kurals/${id}`,
       });
     },
   },

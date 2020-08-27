@@ -5,12 +5,17 @@
         <div class="card">
           <div class="card-header">Chapter - {{$route.params.id}} | Kurals</div>
           <div v-for="kural in kurals" :key="kural.id">
-            <p>{{ kural.id }} | {{ kural.tn }}</p>
-            <button class="btn btn-info">
-              <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+            <p>
+              {{ kural.id }} |
+              <span style="font-family: 'Hind Madurai', sans-serif;">{{ kural.tn }}</span>
+              /{{ kural.tr }}/{{ kural.en }}/
+            </p>
+
+            <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+              <button class="btn btn-info">
                 <span style="color:white">Details</span>
-              </router-link>
-            </button>
+              </button>
+            </router-link>
           </div>
         </div>
       </div>
@@ -27,11 +32,11 @@ export default {
   },
   mounted() {
     axios
-      .get(
-        "http://localhost/vue-kurals/public/api/chapter/" +
-          this.$route.params.id
-      )
+      .get(this.$APPURL + "api/chapter/" + this.$route.params.id)
       .then((response) => (this.kurals = response.data.data));
   },
 };
 </script>
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&display=swap");
+</style>

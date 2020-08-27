@@ -1,18 +1,56 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-header">Thirukkural App</div>
+  <div class>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <router-link
+            :to="{name:'sections'}"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-item nav-link"
+          >Sections</router-link>
+          <router-link
+            :to="{name:'chapter-groups'}"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-item nav-link"
+          >Chapter Groups</router-link>
+          <router-link
+            :to="{name:'chapters'}"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-item nav-link"
+          >Chapters</router-link>
+          <router-link
+            :to="{name:'kurals'}"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-item nav-link"
+          >Kurals</router-link>
+        </div>
+      </div>
+    </nav>
 
-          <div class="card-body">
-            <router-link :to="{name:'sections'}" class="nav-link">Sections</router-link>
-            <router-link :to="{name:'chapter-groups'}" class="nav-link">Chapter Groups</router-link>
-            <router-link :to="{name:'chapters'}" class="nav-link">Chapters</router-link>
-            <router-link :to="{name:'kurals'}" class="nav-link">Kurals</router-link>
-            <br />
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1>Thirukkurals</h1>
+        </div>
+        <div class="card-body">
+          <transition enter-active-class="animate__animated animate__fadeInRight">
             <router-view></router-view>
-          </div>
+          </transition>
         </div>
       </div>
     </div>

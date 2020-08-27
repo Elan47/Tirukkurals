@@ -17,6 +17,11 @@ class ChapterGroupResource extends JsonResource
         return [
             'id' => $this->chap_grp_no,
             'tn' => $this->chap_grp_tn,
+            'en' => $this->chap_grp_en,
+            'tr' => $this->chap_grp_tr,
+            'fr' => $this->from_chap,
+            'to' => $this->to_chap,
+            'chaps' => $this->to_chap - $this->from_chap + 1
         ];
     }
 }

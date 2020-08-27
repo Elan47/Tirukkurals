@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html style="backgroud-color:black!important" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="{{csrf_token()}} width=device-width, initial-scale=1">
 
     <title>Laravel</title>
-
+    {{-- Animate.css --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
@@ -69,7 +70,7 @@
     </style>
 </head>
 
-<body style="overflow:x-hidden">
+<body style="overflow:x-hidden ">
     {{-- <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
         <div class="top-right links">

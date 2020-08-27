@@ -17,6 +17,9 @@ class KuralResource extends JsonResource
         return [
             'id' => $this->kural_no,
             'tn' => $this->kural_tn,
+            'en' => $this->kural_en,
+            'tr' => $this->kural_tr,
+            'exp' => $this->en_explanation,
         ];
     }
 }

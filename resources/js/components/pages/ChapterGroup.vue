@@ -8,11 +8,22 @@
 
           <p v-for="chaptergroup in chaptergroups" :key="chaptergroup.id">
             <span class="list-group-item d-flex justify-content-between align-items-center">
-              {{ chaptergroup.id }} | {{ chaptergroup.tn }}
+              {{ chaptergroup.id }} | {{ chaptergroup.tn }} / {{ chaptergroup.tr }} / {{ chaptergroup.en }}
+              <br />
+              Chapters - {{chaptergroup.chaps}} ( {{chaptergroup.fr}} - {{chaptergroup.to}} )
               <button
                 class="btn btn-info"
                 @click="trigger(chaptergroup.id)"
-              >Chapters</button>
+              >
+                {{chaptergroup.chaps}}
+                <span v-if="chaptergroup.chaps>1">Chapters</span>
+                <span v-if="chaptergroup.chaps==1">Chapter</span>
+                <br />
+                <span
+                  v-if="chaptergroup.to>chaptergroup.fr"
+                >( {{chaptergroup.fr}} - {{chaptergroup.to}} )</span>
+                <span v-if="chaptergroup.fr==chaptergroup.to">( {{chaptergroup.fr}} )</span>
+              </button>
             </span>
           </p>
         </div>
@@ -31,13 +42,13 @@ export default {
   },
   mounted() {
     axios
-      .get("http://localhost/vue-kurals/public/api/chapter-groups")
+      .get(this.$APPURL + "api/chapter-groups")
       .then((response) => (this.chaptergroups = response.data.data));
   },
   methods: {
     trigger(id) {
       router.push({
-        path: `/vue-kurals/public/chapter-group-chapters/${id}`,
+        path: this.$APPURL + `chapter-group-chapters/${id}`,
       });
     },
   },

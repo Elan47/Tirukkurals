@@ -17,7 +17,15 @@ class SectionResource extends JsonResource
         // return parent::toArray($request);
         return [
             'id' => $this->section_no,
-            'tamil' => $this->section_tn,
+            'tn' => $this->section_tn,
+            'en' => $this->section_en,
+            'tr' => $this->section_tr,
+            'cg' => $this->chap_groups,
+            'c' => $this->chaps,
+            'k' => $this->kurals,
+            'fr' => $this->from_chap,
+            'to' => $this->to_chap,
+            'chaps' => $this->to_chap - $this->from_chap + 1,
         ];
     }
 }

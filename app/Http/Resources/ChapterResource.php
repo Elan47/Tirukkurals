@@ -17,8 +17,9 @@ class ChapterResource extends JsonResource
         // return parent::toArray($request);
         return [
             'id' => $this->chap_no,
-            'tamil' => $this->chap_tn,
-            'english' => $this->chap_en,
+            'tn' => $this->chap_tn,
+            'en' => $this->chap_en,
+            'tr' => $this->chap_tr,
         ];
     }
 }
