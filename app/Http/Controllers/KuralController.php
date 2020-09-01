@@ -50,6 +50,14 @@ class KuralController extends Controller
         $data = Kural::where('kural_en', 'LIKE', '%' . $search . '%')->get();
         return KuralResource::collection($data);
     }
+
+    // Search Kural in Transliteration
+    public function searchInTransliteration($search)
+    {
+        // English
+        $data = Kural::where('kural_tr', 'LIKE', '%' . $search . '%')->get();
+        return KuralResource::collection($data);
+    }
     // Search Kural in tamil
     public function searchInTamil($search)
     {

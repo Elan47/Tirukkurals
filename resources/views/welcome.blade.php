@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="backgroud-color:black!important" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -15,10 +15,10 @@
         window.laravel = {csrfToken : {{'csrf_token()'}}};
     </script> --}}
     <!-- Styles -->
-    <style>
+    {{-- <style>
         html,
         body {
-            background-color: #fff;
+            background-color: black;
             color: #636b6f;
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
@@ -67,7 +67,7 @@
         .m-b-md {
             margin-bottom: 30px;
         }
-    </style>
+    </style> --}}
 </head>
 
 <body style="overflow:x-hidden ">
@@ -95,7 +95,6 @@
                 {{-- Laravel --}}
     {{-- </div> --}}
     <div id="app">
-
         <App></App>
     </div>
     <script src="{{ asset('js/app.js')}}"></script>

@@ -7,6 +7,10 @@
 require('./bootstrap');
 window.Vue = require('vue');
 import router from './router'
+import VueSocialSharing from 'vue-social-sharing'
+
+Vue.use(VueSocialSharing)
+
 // import routes from './router';
 // import {
 //     compact

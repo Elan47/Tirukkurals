@@ -5,7 +5,7 @@
         class="col-md-9"
         v-model="searchid"
         name="search"
-        @keypress="idSearch(searchid)"
+        @keyup.enter="idSearch(searchid)"
         placeholder="Search by number"
       />
       <button @click="idSearch(searchid)" class="btn btn-sm btn-info col-md-2">Number</button>
@@ -16,7 +16,7 @@
         class="col-md-9"
         v-model="searchen"
         name="search"
-        @keypress="enSearch(searchen)"
+        @keyup.enter="enSearch(searchen)"
         placeholder="Search in English"
       />
       <button @click="enSearch(searchen)" class="btn btn-sm btn-info col-md-2">English</button>
@@ -24,9 +24,19 @@
       <br />
       <input
         class="col-md-9"
+        v-model="searchtr"
+        name="search"
+        @keyup.enter="trSearch(searchtr)"
+        placeholder="Search in Transliteration"
+      />
+      <button @click="trSearch(searchtr)" class="btn btn-sm btn-info col-md-2">Transliteration</button>
+      <br />
+      <br />
+      <input
+        class="col-md-9"
         v-model="searchtn"
         name="search"
-        @keypress="tnSearch(searchtn)"
+        @keyup.enter="tnSearch(searchtn)"
         placeholder="Search in Tamil"
       />
       <button @click="tnSearch(searchtn)" class="btn btn-sm btn-info col-md-2">Tamil</button>
@@ -67,16 +77,25 @@ export default {
     return {
       kurals: [],
       searchen: [],
+      searchtr: [],
       searchtn: [],
       searchid: [],
     };
   },
-  computed: {
+  methods: {
+    trSearch(searchtr) {
+      axios
+        .get(this.$APPURL + "api/search/tr/" + this.searchtr)
+
+        .then((response) => (this.kurals = response.data.data))
+        .catch((error) => {
+          console.log(error);
+        });
+    },
     enSearch(searchen) {
       axios
         .get(this.$APPURL + "api/search/en/" + this.searchen)
 
-        // .then((response) => response)
         .then((response) => (this.kurals = response.data.data))
         .catch((error) => {
           console.log(error);
@@ -86,7 +105,6 @@ export default {
       axios
         .get(this.$APPURL + "api/search/tn/" + this.searchtn)
 
-        // .then((response) => response)
         .then((response) => (this.kurals = response.data.data))
         .catch((error) => {
           console.log(error);
@@ -96,14 +114,12 @@ export default {
       axios
         .get(this.$APPURL + "api/search/id/" + this.searchid)
 
-        // .then((response) => response)
         .then((response) => (this.kurals = response.data.data))
         .catch((error) => {
           console.log(error);
         });
     },
   },
-  methods: {},
 };
 </script>
 

@@ -18,8 +18,8 @@
               >Next</button>
             </span>
           </div>
+
           <div class="card-body">
-            <!-- <p>Kural No - {{data[0].kural_no}}</p> -->
             <p>{{data[0].kural_en}}</p>
             <p>{{data[0].kural_tn}}</p>
             <p>{{data[0].kural_tr}}</p>
@@ -41,6 +41,17 @@
             <p>{{data[3].section_tn}}</p>
             <p>{{data[3].section_tr}}</p>
           </div>
+
+          <button>
+            <ShareNetwork
+              network="facebook"
+              url="https://news.vuejs.org/issues/180"
+              title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
+              description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
+              quote="The hot reload is so fast it\'s near instant. - Evan You"
+              hashtags="vuejs,vite"
+            >Share on Facebook</ShareNetwork>
+          </button>
         </div>
         <div class="card-footer float-right">
           <button
@@ -101,3 +112,4 @@ export default {
   },
 };
 </script>
+

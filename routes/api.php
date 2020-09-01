@@ -31,4 +31,5 @@ Route::get('chapter-group/{id}', 'ChapterController@chapter_group_chapters')->na
 Route::get('paginate', 'KuralController@index')->name('paginatedKurals');
 Route::get('search/id/{search}', 'KuralController@searchById')->name('searchById');
 Route::get('search/en/{search}', 'KuralController@searchInEnglish')->name('searchInEnglish');
+Route::get('search/tr/{search}', 'KuralController@searchInTransliteration')->name('searchInTransliteraion');
 Route::get('search/tn/{search}', 'KuralController@searchInTamil')->name('searchInTamil');

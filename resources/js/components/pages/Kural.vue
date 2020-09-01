@@ -64,9 +64,6 @@
               >Next</button>
             </span>
           </div>
-          <!-- This pagination method didn't work -->
-          <!-- Reference https://www.youtube.com/watch?v=CfDvhuSB0rc -->
-          <!-- <Pagination :meta="meta" :links="links" v-on:paginate="getKurals(page)"></Pagination> -->
         </div>
       </div>
     </div>
