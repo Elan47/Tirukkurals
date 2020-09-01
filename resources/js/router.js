@@ -9,6 +9,7 @@ import ChapterKurals from './components/pages/ChapterKurals';
 import SectionChapters from './components/pages/SectionChapters';
 import ChapterGroupChapters from './components/pages/ChapterGroupChapters';
 import KuralDetails from './components/pages/kuralDetail';
+import Search from './components/pages/Search';
 Vue.use(Router);
 const ARL = '/vue-kurals/public/';
 // const ARL = this.$APPURL;
@@ -59,6 +60,11 @@ const routes = new Router({
             path: ARL + 'chapter-group-chapters/:id',
             name: 'chapter-group-chapters',
             component: ChapterGroupChapters
+        },
+        {
+            path: ARL + 'search',
+            name: 'search',
+            component: Search
         }
     ]
 });

@@ -67,10 +67,10 @@ export default {
     };
   },
   created() {
-    this.getkurals(this.$route.params.id);
+    this.getkural(this.$route.params.id);
   },
   methods: {
-    getkurals(page) {
+    getkural(page) {
       axios
         .get(this.$APPURL + "api/kural/" + page)
 

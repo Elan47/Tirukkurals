@@ -38,21 +38,22 @@
             data-target=".navbar-collapse.show"
             class="nav-item nav-link"
           >Kurals</router-link>
+          <router-link
+            :to="{name:'search'}"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            class="nav-item nav-link"
+          >Search</router-link>
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <div class="card">
-        <div class="card-header">
-          <h1>Thirukkurals</h1>
-        </div>
-        <div class="card-body">
-          <transition enter-active-class="animate__animated animate__fadeInRight">
-            <router-view></router-view>
-          </transition>
-        </div>
-      </div>
+      <br />
+      <h1 style="text-align:center">Thirukkurals</h1>
+      <transition enter-active-class="animate__animated animate__fadeInRight">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
@@ -60,7 +61,7 @@
 <script>
 export default {
   mounted() {
-    console.log("Component mounted.");
+    console.log("Welcome Home!");
   },
 };
 </script>

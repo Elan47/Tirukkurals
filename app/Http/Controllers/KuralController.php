@@ -35,4 +35,26 @@ class KuralController extends Controller
         $kurals = Kural::where('chapter_id', $id)->get();
         return KuralResource::collection($kurals);
     }
+
+    // Search Kural by Id
+    public function searchById($search)
+    {
+        $data = Kural::where('kural_no', 'LIKE', '%' . $search . '%')->get();
+        return KuralResource::collection($data);
+    }
+
+    // Search Kural in English
+    public function searchInEnglish($search)
+    {
+        // English
+        $data = Kural::where('kural_en', 'LIKE', '%' . $search . '%')->get();
+        return KuralResource::collection($data);
+    }
+    // Search Kural in tamil
+    public function searchInTamil($search)
+    {
+        // Tamil
+        $data = Kural::where('kural_tn', 'LIKE', '%' . $search . '%')->get();
+        return KuralResource::collection($data);
+    }
 }
