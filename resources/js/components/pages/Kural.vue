@@ -22,8 +22,8 @@
           </span>
         </div>
         <div class="card-body">
-          <span
-            class="list-group-item d-flex justify-content-between align-items-center"
+          <p
+            class="d-flex justify-content-between align-items-center"
             v-for="kural in kurals"
             :key="kural.id"
           >
@@ -32,18 +32,12 @@
             {{ kural.tr }}
             <br />
             {{ kural.en }}
-            <!-- <span class="float-right"> -->
             <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
-              <button class="btn btn-info">
-                <span style=" color:white">Details</span>
+              <button style="float:right!important" class="btn btn-info">
+                <span style="color:white">Details</span>
               </button>
             </router-link>
-            <!-- </span> -->
-
-            <br />
-            <br />
-          </span>
-
+          </p>
           <br />
 
           <div class="card-footer">

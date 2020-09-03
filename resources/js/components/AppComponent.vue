@@ -1,5 +1,5 @@
 <template>
-  <div class>
+  <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button
         class="navbar-toggler"
@@ -43,14 +43,16 @@
             data-toggle="collapse"
             data-target=".navbar-collapse.show"
             class="nav-item nav-link"
-          >Search</router-link>
+          >
+            Search
+            <i class="fa fa-search"></i>
+          </router-link>
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <br />
-      <h1 style="text-align:center;color:red">Thirukkurals</h1>
+      <h1 style="text-align:center">Thirukkurals</h1>
       <transition enter-active-class="animate__animated animate__fadeInRight">
         <router-view></router-view>
       </transition>
@@ -85,6 +87,8 @@ export default {
   },
 };
 </script>
+
+
 <style >
 .darkmode-layer,
 .darkmode-toggle {

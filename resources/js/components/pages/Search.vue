@@ -6,20 +6,25 @@
         v-model="searchid"
         name="search"
         @keyup.enter="idSearch(searchid)"
-        placeholder="Search by number"
+        placeholder="Search by number "
       />
-      <button @click="idSearch(searchid)" class="btn btn-sm btn-info col-md-2">Number</button>
+      <button @click="idSearch(searchid)" class="btn btn-sm btn-info col-md-2">
+        Number
+        <i class="fa fa-search"></i>
+      </button>
       <br />
       <br />
-
       <input
         class="col-md-9"
-        v-model="searchen"
+        v-model="searchtn"
         name="search"
-        @keyup.enter="enSearch(searchen)"
-        placeholder="Search in English"
+        @keyup.enter="tnSearch(searchtn)"
+        placeholder="Search in தமிழ்"
       />
-      <button @click="enSearch(searchen)" class="btn btn-sm btn-info col-md-2">English</button>
+      <button @click="tnSearch(searchtn)" class="btn btn-sm btn-info col-md-2">
+        தமிழ்
+        <i class="fa fa-search"></i>
+      </button>
       <br />
       <br />
       <input
@@ -29,25 +34,31 @@
         @keyup.enter="trSearch(searchtr)"
         placeholder="Search in Transliteration"
       />
-      <button @click="trSearch(searchtr)" class="btn btn-sm btn-info col-md-2">Transliteration</button>
+      <button @click="trSearch(searchtr)" class="btn btn-sm btn-info col-md-2">
+        Transliteration
+        <i class="fa fa-search"></i>
+      </button>
       <br />
       <br />
       <input
         class="col-md-9"
-        v-model="searchtn"
+        v-model="searchen"
         name="search"
-        @keyup.enter="tnSearch(searchtn)"
-        placeholder="Search in Tamil"
+        @keyup.enter="enSearch(searchen)"
+        placeholder="Search in English"
       />
-      <button @click="tnSearch(searchtn)" class="btn btn-sm btn-info col-md-2">Tamil</button>
+      <button @click="enSearch(searchen)" class="btn btn-sm btn-info col-md-2">
+        English
+        <i class="fa fa-search"></i>
+      </button>
+
       <br />
       <br />
       <hr />
       <div class="card">
-        <h2 style="text-align:center">Results</h2>
-        <!-- <div class="card-header"> -->
-
-        <!-- </div> -->
+        <div class="card-header">
+          <h2 style="text-align:center">Top 10 Search Results</h2>
+        </div>
         <div class="card-body">
           <span
             class="list-group-item d-flex justify-content-between align-items-center"

@@ -42,16 +42,15 @@
             <p>{{data[3].section_tr}}</p>
           </div>
 
-          <button>
-            <ShareNetwork
-              network="facebook"
-              url="https://news.vuejs.org/issues/180"
-              title="Say hi to Vite! A brand new, extremely fast development setup for Vue."
-              description="This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You."
-              quote="The hot reload is so fast it\'s near instant. - Evan You"
-              hashtags="vuejs,vite"
-            >Share on Facebook</ShareNetwork>
-          </button>
+          <ShareNetwork
+            network="facebook"
+            url="https://news.vuejs.org/issues/180"
+            :title="this.data[0].kural_no"
+            :description="this.data[0].en_explanation"
+            :quote="this.data[0].kural_en"
+          >
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+          </ShareNetwork>
         </div>
         <div class="card-footer float-right">
           <button
@@ -74,7 +73,10 @@
 export default {
   data() {
     return {
-      data: [this.data],
+      title: [],
+      description: [],
+      quote: [],
+      data: this.data,
     };
   },
   created() {

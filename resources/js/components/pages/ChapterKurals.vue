@@ -4,18 +4,24 @@
       <div class="col-md-12">
         <div class="card">
           <div class="card-header">Chapter - {{$route.params.id}} | Kurals</div>
-          <div v-for="kural in kurals" :key="kural.id">
-            <p>
-              {{ kural.id }} |
-              <span style="font-family: 'Hind Madurai', sans-serif;">{{ kural.tn }}</span>
-              /{{ kural.tr }}/{{ kural.en }}/
-            </p>
-
-            <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
-              <button class="btn btn-info">
-                <span style="color:white">Details</span>
-              </button>
-            </router-link>
+          <br />
+          <div class="card-body">
+            <div v-for="kural in kurals" :key="kural.id">
+              <p>
+                <span
+                  style="font-family: 'Hind Madurai', sans-serif;"
+                >{{ kural.id }} |{{ kural.tn }}</span>
+                <br />
+                {{ kural.tr }}
+                <br />
+                {{ kural.en }}
+                <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+                  <button style="float:right;" class="btn btn-info">
+                    <span style="color:white">Details</span>
+                  </button>
+                </router-link>
+              </p>
+            </div>
           </div>
         </div>
       </div>

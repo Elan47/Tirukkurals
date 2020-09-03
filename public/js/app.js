@@ -1970,6 +1970,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 var options = {
   //   top: "100px",
@@ -2253,6 +2255,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2279,12 +2287,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -2421,6 +2423,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2748,11 +2761,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      data: [this.data]
+      title: [],
+      description: [],
+      quote: [],
+      data: this.data
     };
   },
   created: function created() {
@@ -39381,7 +39396,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", {}, [
+  return _c("div", [
     _c(
       "nav",
       { staticClass: "navbar navbar-expand-lg navbar-light bg-light" },
@@ -39461,7 +39476,10 @@ var render = function() {
                       "data-target": ".navbar-collapse.show"
                     }
                   },
-                  [_vm._v("Search")]
+                  [
+                    _vm._v("\n          Search\n          "),
+                    _c("i", { staticClass: "fa fa-search" })
+                  ]
                 )
               ],
               1
@@ -39475,9 +39493,7 @@ var render = function() {
       "div",
       { staticClass: "container" },
       [
-        _c("br"),
-        _vm._v(" "),
-        _c("h1", { staticStyle: { "text-align": "center", color: "red" } }, [
+        _c("h1", { staticStyle: { "text-align": "center" } }, [
           _vm._v("Thirukkurals")
         ]),
         _vm._v(" "),
@@ -39857,23 +39873,21 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-12" }, [
-        _c(
-          "div",
-          { staticClass: "card" },
-          [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Chapter - " + _vm._s(_vm.$route.params.id) + " | Kurals")
-            ]),
-            _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header" }, [
+            _vm._v("Chapter - " + _vm._s(_vm.$route.params.id) + " | Kurals")
+          ]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "card-body" },
             _vm._l(_vm.kurals, function(kural) {
-              return _c(
-                "div",
-                { key: kural.id },
-                [
-                  _c("p", [
-                    _vm._v(
-                      "\n            " + _vm._s(kural.id) + " |\n            "
-                    ),
+              return _c("div", { key: kural.id }, [
+                _c(
+                  "p",
+                  [
                     _c(
                       "span",
                       {
@@ -39881,39 +39895,50 @@ var render = function() {
                           "font-family": "'Hind Madurai', sans-serif"
                         }
                       },
-                      [_vm._v(_vm._s(kural.tn))]
+                      [_vm._v(_vm._s(kural.id) + " |" + _vm._s(kural.tn))]
                     ),
+                    _vm._v(" "),
+                    _c("br"),
                     _vm._v(
-                      "\n            /" +
-                        _vm._s(kural.tr) +
-                        "/" +
-                        _vm._s(kural.en) +
-                        "/\n          "
+                      "\n              " + _vm._s(kural.tr) + "\n              "
+                    ),
+                    _c("br"),
+                    _vm._v(
+                      "\n              " + _vm._s(kural.en) + "\n              "
+                    ),
+                    _c(
+                      "router-link",
+                      {
+                        attrs: {
+                          to: {
+                            name: "kural-details",
+                            params: { id: kural.id }
+                          }
+                        }
+                      },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-info",
+                            staticStyle: { float: "right" }
+                          },
+                          [
+                            _c("span", { staticStyle: { color: "white" } }, [
+                              _vm._v("Details")
+                            ])
+                          ]
+                        )
+                      ]
                     )
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      attrs: {
-                        to: { name: "kural-details", params: { id: kural.id } }
-                      }
-                    },
-                    [
-                      _c("button", { staticClass: "btn btn-info" }, [
-                        _c("span", { staticStyle: { color: "white" } }, [
-                          _vm._v("Details")
-                        ])
-                      ])
-                    ]
-                  )
-                ],
-                1
-              )
-            })
-          ],
-          2
-        )
+                  ],
+                  1
+                )
+              ])
+            }),
+            0
+          )
+        ])
       ])
     ])
   ])
@@ -40020,11 +40045,11 @@ var render = function() {
           [
             _vm._l(_vm.kurals, function(kural) {
               return _c(
-                "span",
+                "p",
                 {
                   key: kural.id,
                   staticClass:
-                    "list-group-item d-flex justify-content-between align-items-center"
+                    "d-flex justify-content-between align-items-center"
                 },
                 [
                   _vm._v(
@@ -40038,7 +40063,6 @@ var render = function() {
                   _vm._v("\n          " + _vm._s(kural.tr) + "\n          "),
                   _c("br"),
                   _vm._v("\n          " + _vm._s(kural.en) + "\n          "),
-                  _vm._v(" "),
                   _c(
                     "router-link",
                     {
@@ -40047,17 +40071,20 @@ var render = function() {
                       }
                     },
                     [
-                      _c("button", { staticClass: "btn btn-info" }, [
-                        _c("span", { staticStyle: { color: "white" } }, [
-                          _vm._v("Details")
-                        ])
-                      ])
+                      _c(
+                        "button",
+                        {
+                          staticClass: "btn btn-info",
+                          staticStyle: { float: "right!important" }
+                        },
+                        [
+                          _c("span", { staticStyle: { color: "white" } }, [
+                            _vm._v("Details")
+                          ])
+                        ]
+                      )
                     ]
-                  ),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br")
+                  )
                 ],
                 1
               )
@@ -40165,7 +40192,7 @@ var render = function() {
           }
         ],
         staticClass: "col-md-9",
-        attrs: { name: "search", placeholder: "Search by number" },
+        attrs: { name: "search", placeholder: "Search by number " },
         domProps: { value: _vm.searchid },
         on: {
           keyup: function($event) {
@@ -40196,7 +40223,10 @@ var render = function() {
             }
           }
         },
-        [_vm._v("Number")]
+        [
+          _vm._v("\n      Number\n      "),
+          _c("i", { staticClass: "fa fa-search" })
+        ]
       ),
       _vm._v(" "),
       _c("br"),
@@ -40208,13 +40238,13 @@ var render = function() {
           {
             name: "model",
             rawName: "v-model",
-            value: _vm.searchen,
-            expression: "searchen"
+            value: _vm.searchtn,
+            expression: "searchtn"
           }
         ],
         staticClass: "col-md-9",
-        attrs: { name: "search", placeholder: "Search in English" },
-        domProps: { value: _vm.searchen },
+        attrs: { name: "search", placeholder: "Search in தமிழ்" },
+        domProps: { value: _vm.searchtn },
         on: {
           keyup: function($event) {
             if (
@@ -40223,13 +40253,13 @@ var render = function() {
             ) {
               return null
             }
-            return _vm.enSearch(_vm.searchen)
+            return _vm.tnSearch(_vm.searchtn)
           },
           input: function($event) {
             if ($event.target.composing) {
               return
             }
-            _vm.searchen = $event.target.value
+            _vm.searchtn = $event.target.value
           }
         }
       }),
@@ -40240,11 +40270,14 @@ var render = function() {
           staticClass: "btn btn-sm btn-info col-md-2",
           on: {
             click: function($event) {
-              return _vm.enSearch(_vm.searchen)
+              return _vm.tnSearch(_vm.searchtn)
             }
           }
         },
-        [_vm._v("English")]
+        [
+          _vm._v("\n      தமிழ்\n      "),
+          _c("i", { staticClass: "fa fa-search" })
+        ]
       ),
       _vm._v(" "),
       _c("br"),
@@ -40292,7 +40325,10 @@ var render = function() {
             }
           }
         },
-        [_vm._v("Transliteration")]
+        [
+          _vm._v("\n      Transliteration\n      "),
+          _c("i", { staticClass: "fa fa-search" })
+        ]
       ),
       _vm._v(" "),
       _c("br"),
@@ -40304,13 +40340,13 @@ var render = function() {
           {
             name: "model",
             rawName: "v-model",
-            value: _vm.searchtn,
-            expression: "searchtn"
+            value: _vm.searchen,
+            expression: "searchen"
           }
         ],
         staticClass: "col-md-9",
-        attrs: { name: "search", placeholder: "Search in Tamil" },
-        domProps: { value: _vm.searchtn },
+        attrs: { name: "search", placeholder: "Search in English" },
+        domProps: { value: _vm.searchen },
         on: {
           keyup: function($event) {
             if (
@@ -40319,13 +40355,13 @@ var render = function() {
             ) {
               return null
             }
-            return _vm.tnSearch(_vm.searchtn)
+            return _vm.enSearch(_vm.searchen)
           },
           input: function($event) {
             if ($event.target.composing) {
               return
             }
-            _vm.searchtn = $event.target.value
+            _vm.searchen = $event.target.value
           }
         }
       }),
@@ -40336,11 +40372,14 @@ var render = function() {
           staticClass: "btn btn-sm btn-info col-md-2",
           on: {
             click: function($event) {
-              return _vm.tnSearch(_vm.searchtn)
+              return _vm.enSearch(_vm.searchen)
             }
           }
         },
-        [_vm._v("Tamil")]
+        [
+          _vm._v("\n      English\n      "),
+          _c("i", { staticClass: "fa fa-search" })
+        ]
       ),
       _vm._v(" "),
       _c("br"),
@@ -40350,9 +40389,7 @@ var render = function() {
       _c("hr"),
       _vm._v(" "),
       _c("div", { staticClass: "card" }, [
-        _c("h2", { staticStyle: { "text-align": "center" } }, [
-          _vm._v("Results")
-        ]),
+        _vm._m(0),
         _vm._v(" "),
         _c(
           "div",
@@ -40402,7 +40439,18 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "card-header" }, [
+      _c("h2", { staticStyle: { "text-align": "center" } }, [
+        _vm._v("Top 10 Search Results")
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -40600,109 +40648,113 @@ var render = function() {
   return _c("div", { staticClass: "container" }, [
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _c("span", [_vm._v("Kural No - " + _vm._s(_vm.data[0].kural_no))]),
-            _vm._v(" "),
-            _c("span", { staticClass: "float-right" }, [
-              _vm.data[0].kural_no - 1 > 0
-                ? _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info",
-                      on: {
-                        click: function($event) {
-                          return _vm.prevkural(_vm.data[0].kural_no - 1)
-                        }
-                      }
-                    },
-                    [_vm._v("Prev")]
-                  )
-                : _vm._e(),
+        _c(
+          "div",
+          { staticClass: "card" },
+          [
+            _c("div", { staticClass: "card-header" }, [
+              _c("span", [
+                _vm._v("Kural No - " + _vm._s(_vm.data[0].kural_no))
+              ]),
               _vm._v(" "),
-              _vm.data[0].kural_no + 1 <= 1330
-                ? _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info",
-                      on: {
-                        click: function($event) {
-                          return _vm.nextkural(_vm.data[0].kural_no + 1)
+              _c("span", { staticClass: "float-right" }, [
+                _vm.data[0].kural_no - 1 > 0
+                  ? _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info",
+                        on: {
+                          click: function($event) {
+                            return _vm.prevkural(_vm.data[0].kural_no - 1)
+                          }
                         }
-                      }
-                    },
-                    [_vm._v("Next")]
-                  )
-                : _vm._e()
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("p", [_vm._v(_vm._s(_vm.data[0].kural_en))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[0].kural_tn))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[0].kural_tr))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[0].en_explanation))]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", [_vm._v("Chapter No -" + _vm._s(_vm.data[1].chap_no))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[1].chap_en))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[1].chap_tn))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[1].chap_tr))]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v("Chapter Group No -" + _vm._s(_vm.data[2].chap_grp_no))
+                      },
+                      [_vm._v("Prev")]
+                    )
+                  : _vm._e(),
+                _vm._v(" "),
+                _vm.data[0].kural_no + 1 <= 1330
+                  ? _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info",
+                        on: {
+                          click: function($event) {
+                            return _vm.nextkural(_vm.data[0].kural_no + 1)
+                          }
+                        }
+                      },
+                      [_vm._v("Next")]
+                    )
+                  : _vm._e()
+              ])
             ]),
             _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_en))]),
+            _c("div", { staticClass: "card-body" }, [
+              _c("p", [_vm._v(_vm._s(_vm.data[0].kural_en))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[0].kural_tn))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[0].kural_tr))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[0].en_explanation))]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [_vm._v("Chapter No -" + _vm._s(_vm.data[1].chap_no))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[1].chap_en))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[1].chap_tn))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[1].chap_tr))]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("Chapter Group No -" + _vm._s(_vm.data[2].chap_grp_no))
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_en))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_tn))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_tr))]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v("Section No -" + _vm._s(_vm.data[3].section_no))
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[3].section_en))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[3].section_tn))]),
+              _vm._v(" "),
+              _c("p", [_vm._v(_vm._s(_vm.data[3].section_tr))])
+            ]),
             _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_tn))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[2].chap_grp_tr))]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("p", [_vm._v("Section No -" + _vm._s(_vm.data[3].section_no))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[3].section_en))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[3].section_tn))]),
-            _vm._v(" "),
-            _c("p", [_vm._v(_vm._s(_vm.data[3].section_tr))])
-          ]),
-          _vm._v(" "),
-          _c(
-            "button",
-            [
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "facebook",
-                    url: "https://news.vuejs.org/issues/180",
-                    title:
-                      "Say hi to Vite! A brand new, extremely fast development setup for Vue.",
-                    description:
-                      "This week, I’d like to introduce you to 'Vite', which means 'Fast'. It’s a brand new development setup created by Evan You.",
-                    quote:
-                      "The hot reload is so fast it\\'s near instant. - Evan You",
-                    hashtags: "vuejs,vite"
-                  }
-                },
-                [_vm._v("Share on Facebook")]
-              )
-            ],
-            1
-          )
-        ]),
+            _c(
+              "ShareNetwork",
+              {
+                attrs: {
+                  network: "facebook",
+                  url: "https://news.vuejs.org/issues/180",
+                  title: this.data[0].kural_no,
+                  description: this.data[0].en_explanation,
+                  quote: this.data[0].kural_en
+                }
+              },
+              [
+                _c("i", {
+                  staticClass: "fa fa-facebook-official",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]
+            )
+          ],
+          1
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "card-footer float-right" }, [
           _vm.data[0].kural_no - 1 > 0

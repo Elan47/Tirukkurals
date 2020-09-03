@@ -39,7 +39,7 @@ class KuralController extends Controller
     // Search Kural by Id
     public function searchById($search)
     {
-        $data = Kural::where('kural_no', 'LIKE', '%' . $search . '%')->get();
+        $data = Kural::where('kural_no', 'LIKE', '%' . $search . '%')->take(10)->get();
         return KuralResource::collection($data);
     }
 
@@ -47,7 +47,7 @@ class KuralController extends Controller
     public function searchInEnglish($search)
     {
         // English
-        $data = Kural::where('kural_en', 'LIKE', '%' . $search . '%')->get();
+        $data = Kural::where('kural_en', 'LIKE', '%' . $search . '%')->take(10)->get();
         return KuralResource::collection($data);
     }
 
@@ -55,14 +55,14 @@ class KuralController extends Controller
     public function searchInTransliteration($search)
     {
         // English
-        $data = Kural::where('kural_tr', 'LIKE', '%' . $search . '%')->get();
+        $data = Kural::where('kural_tr', 'LIKE', '%' . $search . '%')->take(10)->get();
         return KuralResource::collection($data);
     }
     // Search Kural in tamil
     public function searchInTamil($search)
     {
         // Tamil
-        $data = Kural::where('kural_tn', 'LIKE', '%' . $search . '%')->get();
+        $data = Kural::where('kural_tn', 'LIKE', '%' . $search . '%')->take(10)->get();
         return KuralResource::collection($data);
     }
 }

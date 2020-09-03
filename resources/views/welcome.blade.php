@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="{{csrf_token()}} width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{csrf_token()}}">
 
     <title>Laravel</title>
     {{-- Animate.css --}}
@@ -11,6 +12,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     {{-- <script>
         window.laravel = {csrfToken : {{'csrf_token()'}}};
     </script> --}}
@@ -88,7 +91,6 @@
 
     </div> --}}
 
-
     {{-- <div class="container">
         <div class="content"> --}}
     {{-- <div class="title m-b-md">
@@ -99,6 +101,17 @@
     </div>
     <script src="{{ asset('js/app.js')}}"></script>
 
+    <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+        container: document.getElementById("lottie"), // Required
+        path:"https://maxst.icons8.com/vue-static/landings/animated-icons/icons/searching/searching.json", // Required
+        renderer: "svg/canvas/html", // Required
+        loop: true, // Optional
+        autoplay: true, // Optional
+        name: "search icon", // Name for future reference. Optional.
+        });
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
