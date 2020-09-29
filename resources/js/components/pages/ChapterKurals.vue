@@ -1,30 +1,45 @@
 <template>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">Chapter - {{$route.params.id}} | Kurals</div>
-          <br />
-          <div class="card-body">
-            <div v-for="kural in kurals" :key="kural.id">
-              <p>
-                <span
-                  style="font-family: 'Hind Madurai', sans-serif;"
-                >{{ kural.id }} |{{ kural.tn }}</span>
-                <br />
-                {{ kural.tr }}
-                <br />
-                {{ kural.en }}
-                <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
-                  <button style="float:right;" class="btn btn-info">
-                    <span style="color:white">Details</span>
-                  </button>
-                </router-link>
-              </p>
-            </div>
-          </div>
+  <div class="row justify-content-center">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h3>
+            <b>CHAPTER : {{$route.params.id}} | KURALS</b>
+          </h3>
+        </div>
+
+        <div class="card-body border border-primary" v-for="kural in kurals" :key="kural.id">
+          <h4>
+            <b>KURAL : {{ kural.id }}</b>
+            <br />
+            <br />
+            <span class="badge bg-primary text-white">Tamil</span>
+            <br />
+            <br />
+            {{ kural.tn }}
+            <br />
+            <br />
+            <span class="badge bg-primary text-white">Transliteration</span>
+            <br />
+            <br />
+            {{ kural.tr }}
+            <br />
+            <br />
+            <span class="badge bg-primary text-white">English</span>
+            <br />
+            <br />
+            {{ kural.en }}
+            <br />
+            <br />
+            <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+              <button class="btn btn-info btn-lg">
+                <b>VIEW DETAILS</b>
+              </button>
+            </router-link>
+          </h4>
         </div>
       </div>
+      <br />
     </div>
   </div>
 </template>

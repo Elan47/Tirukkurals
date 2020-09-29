@@ -20,6 +20,9 @@ class KuralResource extends JsonResource
             'en' => $this->kural_en,
             'tr' => $this->kural_tr,
             'exp' => $this->en_explanation,
+            't1' => $this->tamil_poet_1,
+            't2' => $this->tamil_poet_2,
+            't3' => $this->tamil_poet_3,
         ];
     }
 }

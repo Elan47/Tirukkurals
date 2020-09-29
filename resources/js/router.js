@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Kural from './components/pages/Kural';
-import About from './components/pages/About';
+import Home from './components/pages/Home';
 import Section from './components/pages/Section';
 import Chapter from './components/pages/Chapter';
 import ChapterGroup from './components/pages/ChapterGroup';
@@ -10,6 +10,7 @@ import SectionChapters from './components/pages/SectionChapters';
 import ChapterGroupChapters from './components/pages/ChapterGroupChapters';
 import KuralDetails from './components/pages/kuralDetail';
 import Search from './components/pages/Search';
+
 Vue.use(Router);
 const ARL = '/vue-kurals/public/';
 // const ARL = this.$APPURL;
@@ -27,9 +28,9 @@ const routes = new Router({
             component: KuralDetails
         },
         {
-            path: ARL + 'about',
-            name: 'about',
-            component: About
+            path: ARL + 'home',
+            name: 'home',
+            component: Home
         },
         {
             path: ARL + 'sections',

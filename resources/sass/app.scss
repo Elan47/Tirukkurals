@@ -1,8 +1,53 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+.darkmode--activated .ignore {
+    mix-blend-mode: difference;
+    // isolation: isolate;
+}
+
+
+
+.router-link-active {
+    filter: invert(30%);
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.sticky1 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px;
+}
+
+.sticky2 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 80px;
+
+}
+
+.sticky3 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 380px;
+}
+
+.darkmode-layer,
+.darkmode-toggle {
+    z-index: 500;
+}

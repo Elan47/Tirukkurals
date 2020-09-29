@@ -6,10 +6,17 @@
 
 require('./bootstrap');
 window.Vue = require('vue');
-import router from './router'
-import VueSocialSharing from 'vue-social-sharing'
+import router from './router';
+import 'animate.css';
+import 'bootstrap-css-only';
+import "@lottiefiles/lottie-player";
+import VueSocialSharing from 'vue-social-sharing';
 
-Vue.use(VueSocialSharing)
+Vue.use(VueSocialSharing);
+import TextHighlight from "vue-text-highlight";
+
+Vue.component("Highlight", TextHighlight);
+// Vue.use(Bootstrap)
 
 // import routes from './router';
 // import {
@@ -27,6 +34,7 @@ Vue.use(VueSocialSharing)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('App', require('./components/AppComponent.vue').default);
+Vue.component('Header', require('./components/Header.vue').default);
 // Vue.component('Pagination', require('./components/pages/Pagination.vue').default);
 
 /**
@@ -35,11 +43,8 @@ Vue.component('App', require('./components/AppComponent.vue').default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 // Global Variable for routing paths
-Vue.prototype.$APPURL = "/vue-kurals/public/";
+Vue.prototype.$APPURL = '/vue-kurals/public/';
 const app = new Vue({
     el: '#app',
-    router,
-
-
-
+    router
 });

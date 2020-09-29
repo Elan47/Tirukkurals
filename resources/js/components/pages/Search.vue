@@ -1,83 +1,128 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="row">
     <div class="col-md-12">
-      <input
-        class="col-md-9"
-        v-model="searchid"
-        name="search"
-        @keyup.enter="idSearch(searchid)"
-        placeholder="Search by number "
-      />
-      <button @click="idSearch(searchid)" class="btn btn-sm btn-info col-md-2">
-        Number
-        <i class="fa fa-search"></i>
-      </button>
-      <br />
-      <br />
-      <input
-        class="col-md-9"
-        v-model="searchtn"
-        name="search"
-        @keyup.enter="tnSearch(searchtn)"
-        placeholder="Search in தமிழ்"
-      />
-      <button @click="tnSearch(searchtn)" class="btn btn-sm btn-info col-md-2">
-        தமிழ்
-        <i class="fa fa-search"></i>
-      </button>
-      <br />
-      <br />
-      <input
-        class="col-md-9"
-        v-model="searchtr"
-        name="search"
-        @keyup.enter="trSearch(searchtr)"
-        placeholder="Search in Transliteration"
-      />
-      <button @click="trSearch(searchtr)" class="btn btn-sm btn-info col-md-2">
-        Transliteration
-        <i class="fa fa-search"></i>
-      </button>
-      <br />
-      <br />
-      <input
-        class="col-md-9"
-        v-model="searchen"
-        name="search"
-        @keyup.enter="enSearch(searchen)"
-        placeholder="Search in English"
-      />
-      <button @click="enSearch(searchen)" class="btn btn-sm btn-info col-md-2">
-        English
-        <i class="fa fa-search"></i>
+      <button
+        @click="searchMenu"
+        class="btn btn-info"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        <b>
+          <i class="fa fa-search"></i>
+          {{this.options}}
+        </b>
       </button>
 
       <br />
       <br />
+      <div class="collapse" id="collapseExample">
+        <input
+          class="col-md-9"
+          v-model="searchid"
+          name="search"
+          @keyup.enter="idSearch(searchid)"
+          placeholder="Search by number "
+        />
+        <button @click="idSearch(searchid)" class="btn btn-sm btn-info col-md-2">
+          Number
+          <i class="fa fa-search"></i>
+        </button>
+        <br />
+        <br />
+        <input
+          class="col-md-9"
+          v-model="searchtn"
+          name="search"
+          @keyup.enter="tnSearch(searchtn)"
+          placeholder="Search in தமிழ்"
+        />
+        <button @click="tnSearch(searchtn)" class="btn btn-sm btn-info col-md-2">
+          தமிழ்
+          <i class="fa fa-search"></i>
+        </button>
+        <br />
+        <br />
+        <input
+          class="col-md-9"
+          v-model="searchtr"
+          name="search"
+          @keyup.enter="trSearch(searchtr)"
+          placeholder="Search in Transliteration"
+        />
+        <button @click="trSearch(searchtr)" class="btn btn-sm btn-info col-md-2">
+          Transliteration
+          <i class="fa fa-search"></i>
+        </button>
+        <br />
+        <br />
+        <input
+          class="col-md-9"
+          v-model="searchen"
+          name="search"
+          @keyup.enter="enSearch(searchen)"
+          placeholder="Search in English"
+        />
+        <button @click="enSearch(searchen)" class="btn btn-sm btn-info col-md-2">
+          English
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+
+      <br />
       <hr />
-      <div class="card">
-        <div class="card-header">
-          <h2 style="text-align:center">Top 10 Search Results</h2>
+      <div class="card border border-primary">
+        <div class="card-header border border-primary">
+          <h2 style="text-align:center">
+            Search Results for
+            <span class="badge" v-if="queries.length==0">...</span>
+            <Highlight :queries="queries">{{this.queries}}</Highlight>
+          </h2>
         </div>
-        <div class="card-body">
-          <span
-            class="list-group-item d-flex justify-content-between align-items-center"
-            v-for="kural in kurals"
-            :key="kural.id"
-          >
-            {{ kural.id }} | {{ kural.tn }}
-            <br />
-            {{ kural.tr }}
-            <br />
-            {{ kural.en }}
-            <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
-              <button class="btn btn-info">
-                <span style=" color:white">Details</span>
-              </button>
-            </router-link>
-          </span>
+        <div class="card-body border border-primary" v-for="kural in kurals" :key="kural.id">
+          <h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <b>
+                  <Highlight :queries="queries">KURAL : {{ kural.id }}</Highlight>
+                </b>
+                <br />
+                <br />
+                <span class="badge bg-primary text-white">Tamil</span>
+                <br />
+                <br />
+
+                <Highlight :queries="queries">{{ kural.tn }}</Highlight>
+                <br />
+                <br />
+                <span class="badge bg-primary text-white">Transliteration</span>
+                <br />
+                <br />
+
+                <Highlight :queries="queries">{{ kural.tr }}</Highlight>
+                <br />
+                <br />
+                <span class="badge bg-primary text-white">Couplet</span>
+                <br />
+                <br />
+
+                <Highlight :queries="queries">{{ kural.en }}</Highlight>
+
+                <br />
+                <br />
+                <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+                  <button class="btn btn-info">
+                    <b>VIEW DETAILS</b>
+                  </button>
+                </router-link>
+              </li>
+            </ul>
+          </h5>
         </div>
       </div>
+      <br />
     </div>
   </div>
 </template>
@@ -91,10 +136,20 @@ export default {
       searchtr: [],
       searchtn: [],
       searchid: [],
+      queries: "",
+      options: "Search Menu",
     };
   },
   methods: {
+    searchMenu() {
+      if (this.options === "Search Menu") {
+        this.options = "Hide Menu";
+      } else {
+        this.options = "Search Menu";
+      }
+    },
     trSearch(searchtr) {
+      this.queries = this.searchtr;
       axios
         .get(this.$APPURL + "api/search/tr/" + this.searchtr)
 
@@ -104,6 +159,7 @@ export default {
         });
     },
     enSearch(searchen) {
+      this.queries = this.searchen;
       axios
         .get(this.$APPURL + "api/search/en/" + this.searchen)
 
@@ -113,6 +169,7 @@ export default {
         });
     },
     tnSearch(searchtn) {
+      this.queries = this.searchtn;
       axios
         .get(this.$APPURL + "api/search/tn/" + this.searchtn)
 
@@ -122,6 +179,7 @@ export default {
         });
     },
     idSearch(searchid) {
+      this.queries = this.searchid;
       axios
         .get(this.$APPURL + "api/search/id/" + this.searchid)
 

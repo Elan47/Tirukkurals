@@ -1,65 +1,99 @@
 <template>
-  <div class="row justify-content-center">
+  <div class="row">
     <div class="col-md-12">
+      <!-- <h3>
+        <b>CHAPTER : {{meta.current_page}}</b>
+      </h3>-->
       <div class="card">
-        <div class="card-header">
-          <span>Kurals ({{meta.from}} - {{meta.to}}) Chapter - {{meta.current_page}}</span>
-          <span class="float-right">
-            <button class="btn btn-info" @click="firstkural(meta.first_page)">First</button>
+        <div class="card-header border border-primary">
+          <h3>
+            <b>KURALS ({{meta.from}} - {{meta.to}})</b>
+          </h3>
+          <br />
 
-            <button class="btn btn-info" @click="lastkural(meta.last_page)">Last</button>
+          <button class="btn btn-info" @click="firstkural(meta.first_page)">First</button>
 
-            <button
-              v-if="meta.current_page-1>0"
-              class="btn btn-info"
-              @click="prevkural(meta.current_page-1)"
-            >Prev</button>
-            <button
-              v-if="meta.current_page+1<=meta.last_page"
-              class="btn btn-info"
-              @click="nextkural(meta.current_page+1)"
-            >Next</button>
-          </span>
+          <button class="btn btn-info" @click="lastkural(meta.last_page)">Last</button>
+
+          <button v-if="meta.current_page<=1" class="btn btn-info disabled">Prev</button>
+          <button
+            v-if="meta.current_page-1>0"
+            class="btn btn-info"
+            @click="prevkural(meta.current_page-1)"
+          >Prev</button>
+          <button
+            v-if="meta.current_page+1<=meta.last_page"
+            class="btn btn-info"
+            @click="nextkural(meta.current_page+1)"
+          >Next</button>
+          <button v-if="meta.current_page==meta.last_page" class="btn btn-info disabled">Next</button>
         </div>
-        <div class="card-body">
-          <p
-            class="d-flex justify-content-between align-items-center"
-            v-for="kural in kurals"
-            :key="kural.id"
-          >
-            {{ kural.id }} | {{ kural.tn }}
+        <div class="card-body border border-primary" v-for="kural in kurals" :key="kural.id">
+          <h4>
+            <!-- <ul class="list-group">
+            <li class="list-group-item">-->
+            <b>KURAL : {{ kural.id }}</b>
+            <!-- </li> -->
+            <br />
+            <br />
+            <!-- <li class="list-group-item"> -->
+            <span class="badge bg-primary text-white">Tamil</span>
+            <br />
+            <br />
+            {{ kural.tn }}
+            <br />
+            <br />
+            <!-- </li> -->
+            <!-- <li class="list-group-item"> -->
+            <span class="badge bg-primary text-white">Transliteration</span>
+            <br />
             <br />
             {{ kural.tr }}
             <br />
+            <br />
+            <!-- </li> -->
+            <!-- <li class="list-group-item"> -->
+            <span class="badge bg-primary text-white">English</span>
+            <br />
+            <br />
             {{ kural.en }}
+            <br />
+            <br />
+            <!-- </li> -->
+
+            <!-- <li class="list-group-item"> -->
             <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
-              <button style="float:right!important" class="btn btn-info">
-                <span style="color:white">Details</span>
+              <button class="btn btn-info btn-lg">
+                <b>VIEW DETAILS</b>
               </button>
             </router-link>
-          </p>
-          <br />
+            <!-- </li> -->
 
-          <div class="card-footer">
-            <span class="float-right">
-              <button class="btn btn-info" @click="firstkural(meta.first_page)">First</button>
+            <!-- <li class="list-group-item"></li> -->
+            <!-- </ul> -->
+          </h4>
+        </div>
 
-              <button class="btn btn-info" @click="lastkural(meta.last_page)">Last</button>
+        <div class="card-footer border border-primary">
+          <button class="btn btn-info" @click="firstkural(meta.first_page)">First</button>
 
-              <button
-                v-if="meta.current_page-1>0"
-                class="btn btn-info"
-                @click="prevkural(meta.current_page-1)"
-              >Prev</button>
-              <button
-                v-if="meta.current_page+1<=meta.last_page"
-                class="btn btn-info"
-                @click="nextkural(meta.current_page+1)"
-              >Next</button>
-            </span>
-          </div>
+          <button class="btn btn-info" @click="lastkural(meta.last_page)">Last</button>
+
+          <button v-if="meta.current_page<=1" class="btn btn-info disabled">Prev</button>
+          <button
+            v-if="meta.current_page-1>0"
+            class="btn btn-info"
+            @click="prevkural(meta.current_page-1)"
+          >Prev</button>
+          <button
+            v-if="meta.current_page+1<=meta.last_page"
+            class="btn btn-info"
+            @click="nextkural(meta.current_page+1)"
+          >Next</button>
+          <button v-if="meta.current_page==meta.last_page" class="btn btn-info disabled">Next</button>
         </div>
       </div>
+      <br />
     </div>
   </div>
 </template>

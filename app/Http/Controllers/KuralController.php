@@ -18,7 +18,7 @@ class KuralController extends Controller
         $kurals = Kural::paginate(10);
         return KuralResource::collection($kurals);
     }
-    // Gets Kural
+    // Gets Kural Details
     public function kuralById($id)
     {
         $kural = Kural::where('kural_no', $id)->first();

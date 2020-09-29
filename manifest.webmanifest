@@ -1,0 +1,20 @@
+{
+    "name": "Thirukkural",
+    "short_name": "1330K",
+    "theme_color": "#f35a21",
+    "background_color": "#f35a21",
+    "display": "standalone",
+    "start_url": "http://localhost/vue-kurals/public/search/",
+    "scope": "http://localhost/vue-kurals/public/search/",
+    "icons": [{
+            "src": "http://localhost/vue-kurals/public/assets/icons/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "http://localhost/vue-kurals/public/assets/icons/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
