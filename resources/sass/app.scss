@@ -14,11 +14,15 @@
     // isolation: isolate;
 }
 
-
-
-.router-link-active {
-    filter: invert(30%);
+.e-border {
+    border-style: solid;
+    border-color: red;
 }
+
+
+// .router-link-active {
+//     filter: invert(30%);
+// }
 
 .sticky {
     position: -webkit-sticky;
@@ -50,4 +54,28 @@
 .darkmode-layer,
 .darkmode-toggle {
     z-index: 500;
+}
+
+.dashed-border {
+    border: dashed white 5px;
+}
+
+.bg-grad {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 214, 139, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.bd-grad {
+    border-color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 214, 139, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.grad {
+    color: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(6, 214, 139, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.lime {
+    color: #06d68b;
+}
+
+.blue {
+    color: #00d4ff;
 }

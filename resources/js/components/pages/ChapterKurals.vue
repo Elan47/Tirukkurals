@@ -4,34 +4,40 @@
       <div class="card">
         <div class="card-header">
           <h3>
-            <b>CHAPTER : {{$route.params.id}} | KURALS</b>
+            <b>CHAPTER : {{ $route.params.id }} | KURALS</b>
           </h3>
         </div>
 
-        <div class="card-body border border-primary" v-for="kural in kurals" :key="kural.id">
+        <div
+          class="card-body border border-dark"
+          v-for="kural in kurals"
+          :key="kural.id"
+        >
           <h4>
             <b>KURAL : {{ kural.id }}</b>
             <br />
             <br />
-            <span class="badge bg-primary text-white">Tamil</span>
+            <span class="badge bg-primary text-white">குறள்</span>
             <br />
             <br />
             {{ kural.tn }}
             <br />
             <br />
-            <span class="badge bg-primary text-white">Transliteration</span>
+            <span class="badge bg-primary text-white">Kural</span>
             <br />
             <br />
             {{ kural.tr }}
             <br />
             <br />
-            <span class="badge bg-primary text-white">English</span>
+            <span class="badge bg-primary text-white">Couplet</span>
             <br />
             <br />
             {{ kural.en }}
             <br />
             <br />
-            <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+            <router-link
+              :to="{ name: 'kural-details', params: { id: kural.id } }"
+            >
               <button class="btn btn-info btn-lg">
                 <b>VIEW DETAILS</b>
               </button>

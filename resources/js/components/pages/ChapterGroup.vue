@@ -6,47 +6,59 @@
       </h2>
       <br />
       <div
-        class="card border border-primary"
+        class="card"
         v-for="chaptergroup in chaptergroups"
         :key="chaptergroup.id"
       >
-        <div class="card-header">
+        <div
+          class="card-header bg-grad text-white"
+          data-toggle="collapse"
+          :data-target="'#accordian' + chaptergroup.id"
+          aria-expanded="false"
+          :aria-controls="'accordian' + chaptergroup.id"
+        >
           <h3>
             <b>CHAPTER GROUP : {{ chaptergroup.id }}</b>
           </h3>
         </div>
-        <div class="card-body">
-          <h4>
-            <span class="badge bg-primary text-white">Tamil</span>
-            <br />
-            <br />
-            {{ chaptergroup.tn }}
-            <br />
-            <br />
-            <span class="badge bg-primary text-white">Transliteration</span>
-            <br />
-            <br />
-            {{ chaptergroup.tr }}
-            <br />
-            <br />
-            <span class="badge bg-primary text-white">English</span>
-            <br />
-            <br />
-            {{ chaptergroup.en }}
-            <br />
-            <br />
-            <li
-              class="list-group-item border border-primary"
-            >Chapters : {{chaptergroup.chaps}} ({{chaptergroup.fr}} - {{chaptergroup.to}})</li>
-            <br />
-            <br />
-            <button class="btn btn-lg btn-info" @click="trigger(chaptergroup.id)">
-              <b>
-                <span v-if="chaptergroup.chaps>1">VIEW CHAPTERS</span>
-                <span v-if="chaptergroup.chaps==1">VIEW CHAPTER</span>
-              </b>
-            </button>
-          </h4>
+        <div class="collapse" :id="'accordian' + chaptergroup.id">
+          <div class="card-body">
+            <h4>
+              <span class="badge bg-grad text-white">இயல்</span>
+              <br />
+              <br />
+              {{ chaptergroup.tn }}
+              <br />
+              <br />
+              <span class="badge bg-grad text-white">Iyal</span>
+              <br />
+              <br />
+              {{ chaptergroup.tr }}
+              <br />
+              <br />
+              <span class="badge bg-grad text-white">Chapter Group</span>
+              <br />
+              <br />
+              {{ chaptergroup.en }}
+              <br />
+              <br />
+              <li class="list-group-item border border-dark">
+                Chapters : {{ chaptergroup.chaps }} ({{ chaptergroup.fr }} -
+                {{ chaptergroup.to }})
+              </li>
+              <br />
+              <br />
+              <button
+                class="btn btn-lg btn-info"
+                @click="trigger(chaptergroup.id)"
+              >
+                <b>
+                  <span v-if="chaptergroup.chaps > 1">VIEW CHAPTERS</span>
+                  <span v-if="chaptergroup.chaps == 1">VIEW CHAPTER</span>
+                </b>
+              </button>
+            </h4>
+          </div>
         </div>
       </div>
       <br />

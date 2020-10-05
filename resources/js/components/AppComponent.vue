@@ -9,13 +9,13 @@
           <h2>
             <b>THIRUKKURALS</b>
           </h2>
-          <router-link :to="{name:'home'}">
+          <router-link :to="{ name: 'home' }">
             <lottie-player
               class="ignore"
               src="http://localhost/vue-kurals/public/assets/lottie/data.json"
               background="transparent"
               speed="1"
-              style=" height: 200px;"
+              style="height: 200px"
               loop
               autoplay
             ></lottie-player>
@@ -29,48 +29,52 @@
           <h2 class="sticky1">
             <b>THIRUKKURALS</b>
           </h2>
-          <router-link :to="{name:'home'}">
+          <router-link :to="{ name: 'home' }">
             <lottie-player
               class="ignore sticky2"
               src="http://localhost/vue-kurals/public/assets/lottie/data.json"
               background="transparent"
               speed="1"
-              style=" height: 300px;"
+              style="height: 300px"
               loop
               autoplay
             ></lottie-player>
           </router-link>
           <h3 class="sticky3">
             <router-link
-              :to="{name:'sections'}"
+              :to="{ name: 'sections' }"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              class="nav-item nav-link"
-            >Sections : 3</router-link>
+              class="nav-item nav-link lime"
+              >Sections : 3</router-link
+            >
             <router-link
-              :to="{name:'chapter-groups'}"
+              :to="{ name: 'chapter-groups' }"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              class="nav-item nav-link"
-            >Chapter Groups : 13</router-link>
+              class="nav-item nav-link lime"
+              >Chapter Groups : 13</router-link
+            >
             <router-link
-              :to="{name:'chapters'}"
+              :to="{ name: 'chapters' }"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              class="nav-item nav-link"
-            >Chapters : 133</router-link>
+              class="nav-item nav-link lime"
+              >Chapters : 133</router-link
+            >
             <router-link
-              :to="{name:'kurals'}"
+              :to="{ name: 'kurals' }"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              class="nav-item nav-link"
-            >Kurals : 1330</router-link>
+              class="nav-item nav-link lime"
+              >Kurals : 1330</router-link
+            >
 
             <router-link
-              :to="{name:'search'}"
+              :to="{ name: 'search' }"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              class="nav-item nav-link"
+              class="nav-item nav-link lime"
             >
               Search
               <i class="fa fa-search"></i>
@@ -80,7 +84,9 @@
 
         <div class="col-12 col-md-7">
           <br />
-          <transition enter-active-class="animate__animated animate__fadeInRight">
+          <transition
+            enter-active-class="animate__animated animate__fadeInRight"
+          >
             <router-view></router-view>
           </transition>
         </div>

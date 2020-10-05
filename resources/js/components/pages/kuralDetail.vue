@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-md-12">
       <div class="card">
-        <div class="card-header border border-primary">
+        <div class="card-header border border-dark">
           <h3>Share</h3>
 
           <div class="collapse" id="collapseshare">
@@ -17,7 +17,7 @@
                 src="http://localhost/vue-kurals/public/assets/lottie/facebook.json"
                 background="transparent"
                 speed="1"
-                style=" height: 20px;"
+                style="height: 20px"
                 autoplay
                 loop
               ></lottie-player>
@@ -34,7 +34,7 @@
                 src="http://localhost/vue-kurals/public/assets/lottie/twitter.json"
                 background="transparent"
                 speed="1"
-                style=" height: 20px;"
+                style="height: 20px"
                 autoplay
                 loop
               ></lottie-player>
@@ -50,7 +50,7 @@
                 src="http://localhost/vue-kurals/public/assets/lottie/whatsapp.json"
                 background="transparent"
                 speed="1"
-                style=" height: 20px;"
+                style="height: 20px"
                 autoplay
                 loop
               ></lottie-player>
@@ -65,7 +65,7 @@
                 src="http://localhost/vue-kurals/public/assets/lottie/linkedin.json"
                 background="transparent"
                 speed="1"
-                style=" height: 20px;"
+                style="height: 20px"
                 autoplay
                 loop
               ></lottie-player>
@@ -86,30 +86,38 @@
               src="http://localhost/vue-kurals/public/assets/lottie/share.json"
               background="transparent"
               speed="3"
-              style=" height: 20px;width:20px"
+              style="height: 20px; width: 20px"
               autoplay
               loop
             ></lottie-player>
           </button>
           <br />
           <br />
-          <button v-if="data[0].kural_no <= 1" class="btn btn-info disabled">Prev</button>
+          <button v-if="data[0].kural_no <= 1" class="btn btn-info disabled">
+            Prev
+          </button>
           <button
-            v-if="data[0].kural_no-1 > 0"
+            v-if="data[0].kural_no - 1 > 0"
             class="btn btn-info"
-            @click="prevkural(data[0].kural_no-1); "
-          >Prev</button>
+            @click="prevkural(data[0].kural_no - 1)"
+          >
+            Prev
+          </button>
           <button
-            v-if="data[0].kural_no+1 <= 1330"
+            v-if="data[0].kural_no + 1 <= 1330"
             class="btn btn-info"
-            @click="nextkural(data[0].kural_no+1)"
-          >Next</button>
-          <button v-if="data[0].kural_no == 1330" class="btn btn-info disabled">Next</button>
+            @click="nextkural(data[0].kural_no + 1)"
+          >
+            Next
+          </button>
+          <button v-if="data[0].kural_no == 1330" class="btn btn-info disabled">
+            Next
+          </button>
         </div>
 
-        <div class="card-body border border-primary">
+        <div class="card-body border border-dark">
           <h3>
-            <b>KURAL : {{data[0].kural_no}}</b>
+            <b>KURAL : {{ data[0].kural_no }}</b>
           </h3>
           <audio id="aud" controls controlslist="nodownload">
             <source :src="audiofile" type="audio/mpeg" />
@@ -117,18 +125,18 @@
           <h4>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <span class="badge bg-primary text-white">Tamil</span>
+                <span class="badge bg-primary text-white">குறள்</span>
                 <br />
                 <br />
-                {{data[0].kural_tn}}
+                {{ data[0].kural_tn }}
                 <br />
                 <br />
               </li>
               <li class="list-group-item">
-                <span class="badge bg-primary text-white">Transliteration</span>
+                <span class="badge bg-primary text-white">Kural</span>
                 <br />
                 <br />
-                {{data[0].kural_tr}}
+                {{ data[0].kural_tr }}
                 <br />
                 <br />
               </li>
@@ -136,7 +144,7 @@
                 <span class="badge bg-primary text-white">Couplet</span>
                 <br />
                 <br />
-                {{data[0].kural_en}}
+                {{ data[0].kural_en }}
                 <br />
                 <br />
               </li>
@@ -145,7 +153,7 @@
 
                 <br />
                 <br />
-                {{data[0].en_explanation}}
+                {{ data[0].en_explanation }}
               </li>
               <br />
               <div class="collapse" id="collapseExample">
@@ -155,39 +163,43 @@
                 <br />
 
                 <img
-                  class="img-fluid rounded ignore"
+                  class="img-fluid rounded ignore dashed-border"
                   src="http://localhost/vue-kurals/public/assets/12.jpg"
                 />
                 <br />
 
-                <span class="badge bg-primary text-white">Kalaignar</span>
+                <span class="badge bg-dark text-white">Kalaignar</span>
                 <br />
                 <br />
 
-                <p>{{data[0].tamil_poet_3}}</p>
+                <p>{{ data[0].tamil_poet_3 }}</p>
                 <br />
                 <br />
                 <img
-                  class="img-fluid rounded ignore"
+                  class="img-fluid rounded ignore dashed-border"
                   src="http://localhost/vue-kurals/public/assets/13.jpg"
                 />
                 <br />
-                <span class="badge bg-primary text-white">Mu.Varadharasanar</span>
+                <span class="badge bg-primary text-white"
+                  >Mu.Varadharasanar</span
+                >
                 <br />
                 <br />
-                <p>{{data[0].tamil_poet_1}}</p>
+                <p>{{ data[0].tamil_poet_1 }}</p>
                 <br />
                 <br />
                 <img
-                  class="img-fluid rounded ignore"
+                  class="img-fluid rounded ignore dashed-border"
                   src="http://localhost/vue-kurals/public/assets/11.jpg"
                 />
                 <br />
 
-                <span class="badge bg-primary text-white">Solomon Paapaiya</span>
+                <span class="badge bg-primary text-white"
+                  >Solomon Paapaiya</span
+                >
                 <br />
                 <br />
-                <p>{{data[0].tamil_poet_2}}</p>
+                <p>{{ data[0].tamil_poet_2 }}</p>
                 <br />
               </div>
 
@@ -200,39 +212,39 @@
                 aria-expanded="false"
                 aria-controls="collapseExample"
               >
-                <b>{{this.show}}</b>
+                <b>{{ this.show }}</b>
               </button>
               <li class="list-group-item"></li>
               <br />
 
               <li class="list-group-item">
                 <h3>
-                  <b>CHAPTER : {{data[1].chap_no}}</b>
+                  <b>CHAPTER : {{ data[1].chap_no }}</b>
                 </h3>
 
                 <br />
                 <span class="badge bg-primary text-white">Tamil</span>
                 <br />
                 <br />
-                {{data[1].chap_tn}}
+                {{ data[1].chap_tn }}
                 <br />
                 <br />
                 <span class="badge bg-primary text-white">Transliteration</span>
                 <br />
                 <br />
-                {{data[1].chap_tr}}
+                {{ data[1].chap_tr }}
                 <br />
                 <br />
                 <span class="badge bg-primary text-white">English</span>
                 <br />
                 <br />
-                {{data[1].chap_en}}
+                {{ data[1].chap_en }}
                 <br />
               </li>
               <br />
               <li class="list-group-item">
                 <h3>
-                  <b>CHAPTER GROUP : {{data[2].chap_grp_no}}</b>
+                  <b>CHAPTER GROUP : {{ data[2].chap_grp_no }}</b>
                 </h3>
 
                 <br />
@@ -240,141 +252,142 @@
                 <span class="badge bg-primary text-white">Tamil</span>
                 <br />
                 <br />
-                {{data[2].chap_grp_tn}}
+                {{ data[2].chap_grp_tn }}
                 <br />
                 <br />
 
                 <span class="badge bg-primary text-white">Transliteration</span>
                 <br />
                 <br />
-                {{data[2].chap_grp_tr}}
+                {{ data[2].chap_grp_tr }}
                 <br />
                 <br />
 
                 <span class="badge bg-primary text-white">English</span>
                 <br />
                 <br />
-                {{data[2].chap_grp_en}}
+                {{ data[2].chap_grp_en }}
                 <br />
               </li>
               <br />
               <li class="list-group-item">
                 <h3>
-                  <b>SECTION : {{data[3].section_no}}</b>
+                  <b>SECTION : {{ data[3].section_no }}</b>
                 </h3>
                 <br />
                 <span class="badge bg-primary text-white">Tamil</span>
                 <br />
                 <br />
-                {{data[3].section_tn}}
+                {{ data[3].section_tn }}
                 <br />
                 <br />
                 <span class="badge bg-primary text-white">Transliteration</span>
                 <br />
                 <br />
-                {{data[3].section_tr}}
+                {{ data[3].section_tr }}
                 <br />
                 <br />
                 <span class="badge bg-primary text-white">English</span>
                 <br />
                 <br />
-                {{data[3].section_en}}
+                {{ data[3].section_en }}
                 <br />
               </li>
             </ul>
           </h4>
         </div>
 
-        <br />
-      </div>
-      <div class="card-footer border border-primary">
-        <h3>Share</h3>
-        <div class="collapse" id="collapseshare">
-          <!-- <div class="card card-body border border-primary"> -->
-          <ShareNetwork
-            network="facebook"
-            url="https://news.vuejs.org/issues/180"
-            :title="this.data[0].kural_en"
-            :description="this.data[0].en_explanation"
-            :quote="this.data[0].kural_tn"
+        <!-- <br /> -->
+
+        <div class="card-footer border border-dark">
+          <h3>Share</h3>
+          <div class="collapse" id="collapseshare">
+            <!-- <div class="card card-body border border-primary"> -->
+            <ShareNetwork
+              network="facebook"
+              url="https://news.vuejs.org/issues/180"
+              :title="this.data[0].kural_en"
+              :description="this.data[0].en_explanation"
+              :quote="this.data[0].kural_tn"
+            >
+              <lottie-player
+                src="http://localhost/vue-kurals/public/assets/lottie/facebook.json"
+                background="transparent"
+                speed="1"
+                style="height: 20px"
+                autoplay
+                loop
+              ></lottie-player>
+            </ShareNetwork>
+            <br />
+            <ShareNetwork
+              network="twitter"
+              url="https://www.npmjs.com/package/vue-social-sharing"
+              :title="this.data[0].kural_en"
+              :description="this.data[0].en_explanation"
+              :quote="this.data[0].kural_tn"
+            >
+              <lottie-player
+                src="http://localhost/vue-kurals/public/assets/lottie/twitter.json"
+                background="transparent"
+                speed="1"
+                style="height: 20px"
+                autoplay
+                loop
+              ></lottie-player>
+            </ShareNetwork>
+            <br />
+            <ShareNetwork
+              network="whatsapp"
+              url="https://www.npmjs.com/package/vue-social-sharing"
+              :title="this.data[0].kural_en"
+              :description="this.data[0].en_explanation"
+            >
+              <lottie-player
+                src="http://localhost/vue-kurals/public/assets/lottie/whatsapp.json"
+                background="transparent"
+                speed="1"
+                style="height: 20px"
+                autoplay
+                loop
+              ></lottie-player>
+            </ShareNetwork>
+            <br />
+            <ShareNetwork
+              network="linkedin"
+              url="https://www.npmjs.com/package/vue-social-sharing"
+              :title="this.data[0].kural_en"
+            >
+              <lottie-player
+                src="http://localhost/vue-kurals/public/assets/lottie/linkedin.json"
+                background="transparent"
+                speed="1"
+                style="height: 20px"
+                autoplay
+                loop
+              ></lottie-player>
+            </ShareNetwork>
+            <br />
+            <!-- </div> -->
+          </div>
+          <button
+            class="btn btn-info"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseshare"
+            aria-expanded="false"
+            aria-controls="collapseshare"
           >
             <lottie-player
-              src="http://localhost/vue-kurals/public/assets/lottie/facebook.json"
+              src="http://localhost/vue-kurals/public/assets/lottie/share.json"
               background="transparent"
               speed="1"
-              style=" height: 20px;"
+              style="height: 20px; width: 20px"
               autoplay
               loop
             ></lottie-player>
-          </ShareNetwork>
-          <br />
-          <ShareNetwork
-            network="twitter"
-            url="https://www.npmjs.com/package/vue-social-sharing"
-            :title="this.data[0].kural_en"
-            :description="this.data[0].en_explanation"
-            :quote="this.data[0].kural_tn"
-          >
-            <lottie-player
-              src="http://localhost/vue-kurals/public/assets/lottie/twitter.json"
-              background="transparent"
-              speed="1"
-              style=" height: 20px;"
-              autoplay
-              loop
-            ></lottie-player>
-          </ShareNetwork>
-          <br />
-          <ShareNetwork
-            network="whatsapp"
-            url="https://www.npmjs.com/package/vue-social-sharing"
-            :title="this.data[0].kural_en"
-            :description="this.data[0].en_explanation"
-          >
-            <lottie-player
-              src="http://localhost/vue-kurals/public/assets/lottie/whatsapp.json"
-              background="transparent"
-              speed="1"
-              style=" height: 20px;"
-              autoplay
-              loop
-            ></lottie-player>
-          </ShareNetwork>
-          <br />
-          <ShareNetwork
-            network="linkedin"
-            url="https://www.npmjs.com/package/vue-social-sharing"
-            :title="this.data[0].kural_en"
-          >
-            <lottie-player
-              src="http://localhost/vue-kurals/public/assets/lottie/linkedin.json"
-              background="transparent"
-              speed="1"
-              style=" height: 20px;"
-              autoplay
-              loop
-            ></lottie-player>
-          </ShareNetwork>
-          <br />
-          <!-- </div> -->
+          </button>
         </div>
-        <button
-          class="btn btn-info"
-          type="button"
-          data-toggle="collapse"
-          data-target="#collapseshare"
-          aria-expanded="false"
-          aria-controls="collapseshare"
-        >
-          <lottie-player
-            src="http://localhost/vue-kurals/public/assets/lottie/share.json"
-            background="transparent"
-            speed="1"
-            style=" height: 20px;width:20px"
-            autoplay
-            loop
-          ></lottie-player>
-        </button>
       </div>
       <br />
     </div>

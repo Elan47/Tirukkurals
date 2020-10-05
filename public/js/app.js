@@ -2104,6 +2104,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 var options = {
   top: "100px",
@@ -2143,6 +2149,13 @@ darkmode.showWidget();
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2278,6 +2291,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2313,6 +2334,18 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2449,6 +2482,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2483,6 +2524,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2611,6 +2658,42 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2910,6 +2993,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2985,6 +3088,16 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3117,6 +3230,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -3151,6 +3272,19 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8093,7 +8227,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .darkmode-layer,\n.darkmode-toggle {\n  z-index: 500;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .darkmode-layer,\n.darkmode-toggle {\n  z-index: 500;\n} */\n", ""]);
 
 // exports
 
@@ -40314,7 +40448,7 @@ var render = function() {
                   _c(
                     "router-link",
                     {
-                      staticClass: "nav-item nav-link",
+                      staticClass: "nav-item nav-link lime",
                       attrs: {
                         to: { name: "sections" },
                         "data-toggle": "collapse",
@@ -40327,7 +40461,7 @@ var render = function() {
                   _c(
                     "router-link",
                     {
-                      staticClass: "nav-item nav-link",
+                      staticClass: "nav-item nav-link lime",
                       attrs: {
                         to: { name: "chapter-groups" },
                         "data-toggle": "collapse",
@@ -40340,7 +40474,7 @@ var render = function() {
                   _c(
                     "router-link",
                     {
-                      staticClass: "nav-item nav-link",
+                      staticClass: "nav-item nav-link lime",
                       attrs: {
                         to: { name: "chapters" },
                         "data-toggle": "collapse",
@@ -40353,7 +40487,7 @@ var render = function() {
                   _c(
                     "router-link",
                     {
-                      staticClass: "nav-item nav-link",
+                      staticClass: "nav-item nav-link lime",
                       attrs: {
                         to: { name: "kurals" },
                         "data-toggle": "collapse",
@@ -40366,7 +40500,7 @@ var render = function() {
                   _c(
                     "router-link",
                     {
-                      staticClass: "nav-item nav-link",
+                      staticClass: "nav-item nav-link lime",
                       attrs: {
                         to: { name: "search" },
                         "data-toggle": "collapse",
@@ -40452,8 +40586,7 @@ var render = function() {
     _c(
       "nav",
       {
-        staticClass:
-          "navbar d-block d-md-none text-center navbar-expand-lg navbar-dark bg-dark"
+        staticClass: "navbar text-center navbar-expand-lg navbar-dark bg-grad"
       },
       [
         _c(
@@ -40505,7 +40638,8 @@ var render = function() {
                     }
                   },
                   [
-                    _vm._v("\n          Search\n          "),
+                    _c("b", [_vm._v("Search")]),
+                    _vm._v(" "),
                     _c("i", { staticClass: "fa fa-search" })
                   ]
                 ),
@@ -40520,7 +40654,7 @@ var render = function() {
                       "data-target": ".navbar-collapse.show"
                     }
                   },
-                  [_vm._v("Sections")]
+                  [_c("b", [_vm._v("Sections")])]
                 ),
                 _vm._v(" "),
                 _c(
@@ -40533,7 +40667,7 @@ var render = function() {
                       "data-target": ".navbar-collapse.show"
                     }
                   },
-                  [_vm._v("Chapter Groups")]
+                  [_c("b", [_vm._v("Chapter Groups")])]
                 ),
                 _vm._v(" "),
                 _c(
@@ -40546,7 +40680,7 @@ var render = function() {
                       "data-target": ".navbar-collapse.show"
                     }
                   },
-                  [_vm._v("Chapters")]
+                  [_c("b", [_vm._v("Chapters")])]
                 ),
                 _vm._v(" "),
                 _c(
@@ -40559,7 +40693,7 @@ var render = function() {
                       "data-target": ".navbar-collapse.show"
                     }
                   },
-                  [_vm._v("Kurals")]
+                  [_c("b", [_vm._v("Kurals")])]
                 )
               ],
               1
@@ -40602,68 +40736,89 @@ var render = function() {
         _c("br"),
         _vm._v(" "),
         _vm._l(_vm.chapters, function(chapter) {
-          return _c(
-            "div",
-            { key: chapter.id, staticClass: "card border border-primary" },
-            [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", [_c("b", [_vm._v("CHAPTER : " + _vm._s(chapter.id))])])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("h4", [
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Tamil")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.tn) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Transliteration")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.tr) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("English")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.en) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-lg",
-                      on: {
-                        click: function($event) {
-                          return _vm.trigger(chapter.id)
+          return _c("div", { key: chapter.id, staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header bg-dark text-white",
+                attrs: {
+                  "data-toggle": "collapse",
+                  "data-target": "#accordian" + chapter.id,
+                  "aria-expanded": "false",
+                  "aria-controls": "accordian" + chapter.id
+                }
+              },
+              [_c("h3", [_c("b", [_vm._v("CHAPTER : " + _vm._s(chapter.id))])])]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: { id: "accordian" + chapter.id }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h4", [
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("அதிகாரம்")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.tn) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("Adhigaaram")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.tr) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("Chapter")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.en) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info btn-lg",
+                        on: {
+                          click: function($event) {
+                            return _vm.trigger(chapter.id)
+                          }
                         }
-                      }
-                    },
-                    [_c("b", [_vm._v("VIEW KURALS")])]
-                  )
+                      },
+                      [_c("b", [_vm._v("VIEW KURALS")])]
+                    )
+                  ])
                 ])
-              ])
-            ]
-          )
+              ]
+            )
+          ])
         }),
         _vm._v(" "),
         _c("br")
@@ -40711,108 +40866,131 @@ var render = function() {
         _c("br"),
         _vm._v(" "),
         _vm._l(_vm.chaptergroups, function(chaptergroup) {
-          return _c(
-            "div",
-            { key: chaptergroup.id, staticClass: "card border border-primary" },
-            [
-              _c("div", { staticClass: "card-header" }, [
+          return _c("div", { key: chaptergroup.id, staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header bg-grad text-white",
+                attrs: {
+                  "data-toggle": "collapse",
+                  "data-target": "#accordian" + chaptergroup.id,
+                  "aria-expanded": "false",
+                  "aria-controls": "accordian" + chaptergroup.id
+                }
+              },
+              [
                 _c("h3", [
                   _c("b", [
                     _vm._v("CHAPTER GROUP : " + _vm._s(chaptergroup.id))
                   ])
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("h4", [
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Tamil")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n          " + _vm._s(chaptergroup.tn) + "\n          "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Transliteration")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n          " + _vm._s(chaptergroup.tr) + "\n          "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("English")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(
-                    "\n          " + _vm._s(chaptergroup.en) + "\n          "
-                  ),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    { staticClass: "list-group-item border border-primary" },
-                    [
-                      _vm._v(
-                        "Chapters : " +
-                          _vm._s(chaptergroup.chaps) +
-                          " (" +
-                          _vm._s(chaptergroup.fr) +
-                          " - " +
-                          _vm._s(chaptergroup.to) +
-                          ")"
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-lg btn-info",
-                      on: {
-                        click: function($event) {
-                          return _vm.trigger(chaptergroup.id)
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: { id: "accordian" + chaptergroup.id }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h4", [
+                    _c("span", { staticClass: "badge bg-grad text-white" }, [
+                      _vm._v("இயல்")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(chaptergroup.tn) +
+                        "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-grad text-white" }, [
+                      _vm._v("Iyal")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(chaptergroup.tr) +
+                        "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-grad text-white" }, [
+                      _vm._v("Chapter Group")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " +
+                        _vm._s(chaptergroup.en) +
+                        "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      { staticClass: "list-group-item border border-dark" },
+                      [
+                        _vm._v(
+                          "\n              Chapters : " +
+                            _vm._s(chaptergroup.chaps) +
+                            " (" +
+                            _vm._s(chaptergroup.fr) +
+                            " -\n              " +
+                            _vm._s(chaptergroup.to) +
+                            ")\n            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-lg btn-info",
+                        on: {
+                          click: function($event) {
+                            return _vm.trigger(chaptergroup.id)
+                          }
                         }
-                      }
-                    },
-                    [
-                      _c("b", [
-                        chaptergroup.chaps > 1
-                          ? _c("span", [_vm._v("VIEW CHAPTERS")])
-                          : _vm._e(),
-                        _vm._v(" "),
-                        chaptergroup.chaps == 1
-                          ? _c("span", [_vm._v("VIEW CHAPTER")])
-                          : _vm._e()
-                      ])
-                    ]
-                  )
+                      },
+                      [
+                        _c("b", [
+                          chaptergroup.chaps > 1
+                            ? _c("span", [_vm._v("VIEW CHAPTERS")])
+                            : _vm._e(),
+                          _vm._v(" "),
+                          chaptergroup.chaps == 1
+                            ? _c("span", [_vm._v("VIEW CHAPTER")])
+                            : _vm._e()
+                        ])
+                      ]
+                    )
+                  ])
                 ])
-              ])
-            ]
-          )
+              ]
+            )
+          ])
         }),
         _vm._v(" "),
         _c("br")
@@ -40862,70 +41040,91 @@ var render = function() {
         _c("br"),
         _vm._v(" "),
         _vm._l(_vm.chapters, function(chapter) {
-          return _c(
-            "div",
-            { key: chapter.id, staticClass: "card border border-primary" },
-            [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", [_c("b", [_vm._v("CHAPTER : " + _vm._s(chapter.id))])])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("h4", [
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Tamil")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.tn) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Transliteration")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.tr) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("English")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.en) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-lg",
-                      on: {
-                        click: function($event) {
-                          return _vm.trigger(chapter.id)
+          return _c("div", { key: chapter.id, staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header bg-dark text-white",
+                attrs: {
+                  "data-toggle": "collapse",
+                  "data-target": "#accordian" + chapter.id,
+                  "aria-expanded": "false",
+                  "aria-controls": "accordian" + chapter.id
+                }
+              },
+              [_c("h3", [_c("b", [_vm._v("CHAPTER : " + _vm._s(chapter.id))])])]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: { id: "accordian" + chapter.id }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h4", [
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("அதிகாரம்")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.tn) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("Adhigaaram")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.tr) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("Chapter")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.en) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info btn-lg",
+                        on: {
+                          click: function($event) {
+                            return _vm.trigger(chapter.id)
+                          }
                         }
-                      }
-                    },
-                    [_c("b", [_vm._v("VIEW KURALS")])]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br")
-              ])
-            ]
-          )
+                      },
+                      [_c("b", [_vm._v("VIEW KURALS")])]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("br")
+                ])
+              ]
+            )
+          ])
         }),
         _vm._v(" "),
         _c("br")
@@ -40975,7 +41174,7 @@ var render = function() {
           _vm._l(_vm.kurals, function(kural) {
             return _c(
               "div",
-              { key: kural.id, staticClass: "card-body border border-primary" },
+              { key: kural.id, staticClass: "card-body border border-dark" },
               [
                 _c(
                   "h4",
@@ -40987,7 +41186,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Tamil")
+                      _vm._v("குறள்")
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -40999,7 +41198,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Transliteration")
+                      _vm._v("Kural")
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -41011,7 +41210,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("English")
+                      _vm._v("Couplet")
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -41085,7 +41284,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header" }, [
-            _c("h2", [_vm._v("FACTS")])
+            _c("h2", [_vm._v("Fascinating Facts")])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body text-left" }, [
@@ -41211,7 +41410,7 @@ var render = function() {
         "div",
         { staticClass: "card" },
         [
-          _c("div", { staticClass: "card-header border border-primary" }, [
+          _c("div", { staticClass: "card-header" }, [
             _c("h3", [
               _c("b", [
                 _vm._v(
@@ -41236,7 +41435,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("First")]
+              [_vm._v("\n          First\n        ")]
             ),
             _vm._v(" "),
             _c(
@@ -41249,12 +41448,12 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("Last")]
+              [_vm._v("\n          Last\n        ")]
             ),
             _vm._v(" "),
             _vm.meta.current_page <= 1
               ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("Prev")
+                  _vm._v("\n          Prev\n        ")
                 ])
               : _vm._e(),
             _vm._v(" "),
@@ -41269,7 +41468,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Prev")]
+                  [_vm._v("\n          Prev\n        ")]
                 )
               : _vm._e(),
             _vm._v(" "),
@@ -41284,13 +41483,13 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Next")]
+                  [_vm._v("\n          Next\n        ")]
                 )
               : _vm._e(),
             _vm._v(" "),
             _vm.meta.current_page == _vm.meta.last_page
               ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("Next")
+                  _vm._v("\n          Next\n        ")
                 ])
               : _vm._e()
           ]),
@@ -41298,7 +41497,7 @@ var render = function() {
           _vm._l(_vm.kurals, function(kural) {
             return _c(
               "div",
-              { key: kural.id, staticClass: "card-body border border-primary" },
+              { key: kural.id, staticClass: "card-body border border-dark" },
               [
                 _c(
                   "h4",
@@ -41310,7 +41509,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Tamil")
+                      _vm._v("குறள்")
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -41322,7 +41521,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Transliteration")
+                      _vm._v("Kural")
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -41334,7 +41533,7 @@ var render = function() {
                     _c("br"),
                     _vm._v(" "),
                     _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("English")
+                      _vm._v("Couplet")
                     ]),
                     _vm._v(" "),
                     _c("br"),
@@ -41379,7 +41578,7 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("First")]
+              [_vm._v("\n          First\n        ")]
             ),
             _vm._v(" "),
             _c(
@@ -41392,12 +41591,12 @@ var render = function() {
                   }
                 }
               },
-              [_vm._v("Last")]
+              [_vm._v("\n          Last\n        ")]
             ),
             _vm._v(" "),
             _vm.meta.current_page <= 1
               ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("Prev")
+                  _vm._v("\n          Prev\n        ")
                 ])
               : _vm._e(),
             _vm._v(" "),
@@ -41412,7 +41611,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Prev")]
+                  [_vm._v("\n          Prev\n        ")]
                 )
               : _vm._e(),
             _vm._v(" "),
@@ -41427,13 +41626,13 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("Next")]
+                  [_vm._v("\n          Next\n        ")]
                 )
               : _vm._e(),
             _vm._v(" "),
             _vm.meta.current_page == _vm.meta.last_page
               ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("Next")
+                  _vm._v("\n          Next\n        ")
                 ])
               : _vm._e()
           ])
@@ -41588,7 +41787,7 @@ var render = function() {
             }
           },
           [
-            _vm._v("\n        தமிழ்\n        "),
+            _vm._v("\n        குறள்\n        "),
             _c("i", { staticClass: "fa fa-search" })
           ]
         ),
@@ -41639,7 +41838,7 @@ var render = function() {
             }
           },
           [
-            _vm._v("\n        Transliteration\n        "),
+            _vm._v("\n        Kural\n        "),
             _c("i", { staticClass: "fa fa-search" })
           ]
         ),
@@ -41690,7 +41889,7 @@ var render = function() {
             }
           },
           [
-            _vm._v("\n        English\n        "),
+            _vm._v("\n        Couplet\n        "),
             _c("i", { staticClass: "fa fa-search" })
           ]
         )
@@ -41702,30 +41901,30 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "card border border-primary" },
+        { staticClass: "card" },
         [
-          _c("div", { staticClass: "card-header border border-primary" }, [
-            _c(
-              "h2",
-              { staticStyle: { "text-align": "center" } },
-              [
-                _vm._v("\n          Search Results for\n          "),
+          _c(
+            "div",
+            { staticClass: "card-header bg-dark text-white" },
+            [
+              _c("h2", { staticStyle: { "text-align": "center" } }, [
+                _vm._v("\n          Search for\n          "),
                 _vm.queries.length == 0
                   ? _c("span", { staticClass: "badge" }, [_vm._v("...")])
-                  : _vm._e(),
-                _vm._v(" "),
-                _c("Highlight", { attrs: { queries: _vm.queries } }, [
-                  _vm._v(_vm._s(this.queries))
-                ])
-              ],
-              1
-            )
-          ]),
+                  : _vm._e()
+              ]),
+              _vm._v(" "),
+              _c("Highlight", { attrs: { queries: _vm.queries } }, [
+                _vm._v(_vm._s(this.queries))
+              ])
+            ],
+            1
+          ),
           _vm._v(" "),
           _vm._l(_vm.kurals, function(kural) {
             return _c(
               "div",
-              { key: kural.id, staticClass: "card-body border border-primary" },
+              { key: kural.id, staticClass: "card-body border border-dark" },
               [
                 _c("h5", [
                   _c("ul", { staticClass: "list-group list-group-flush" }, [
@@ -41739,7 +41938,7 @@ var render = function() {
                             _c(
                               "Highlight",
                               { attrs: { queries: _vm.queries } },
-                              [_vm._v("KURAL : " + _vm._s(kural.id))]
+                              [_vm._v("Kural : " + _vm._s(kural.id))]
                             )
                           ],
                           1
@@ -41752,7 +41951,7 @@ var render = function() {
                         _c(
                           "span",
                           { staticClass: "badge bg-primary text-white" },
-                          [_vm._v("Tamil")]
+                          [_vm._v("குறள்")]
                         ),
                         _vm._v(" "),
                         _c("br"),
@@ -41770,7 +41969,7 @@ var render = function() {
                         _c(
                           "span",
                           { staticClass: "badge bg-primary text-white" },
-                          [_vm._v("Transliteration")]
+                          [_vm._v("Kural")]
                         ),
                         _vm._v(" "),
                         _c("br"),
@@ -41867,113 +42066,143 @@ var render = function() {
         _c("br"),
         _vm._v(" "),
         _vm._l(_vm.sections, function(section) {
-          return _c(
-            "div",
-            {
-              key: section.id,
-              staticClass: "card border border-primary rounded"
-            },
-            [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h3", [_c("b", [_vm._v("SECTION : " + _vm._s(section.id))])])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("h4", [
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Tamil")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(section.tn) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Transliteration")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(section.tr) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("English")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(section.en) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "list-group-item border border-primary rounded"
-                    },
-                    [_vm._v("Chapter Groups : " + _vm._s(section.cg))]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "list-group-item border border-primary rounded"
-                    },
-                    [
-                      _vm._v(
-                        "Chapters : " +
-                          _vm._s(section.c) +
-                          " (" +
-                          _vm._s(section.fr) +
-                          " - " +
-                          _vm._s(section.to) +
-                          ")"
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "li",
-                    {
-                      staticClass:
-                        "list-group-item border border-primary rounded"
-                    },
-                    [_vm._v("Kurals : " + _vm._s(section.k))]
-                  ),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-lg btn-info",
-                      on: {
-                        click: function($event) {
-                          return _vm.trigger(section.id)
+          return _c("div", { key: section.id, staticClass: "card rounded" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header bg-grad text-white",
+                attrs: {
+                  "data-toggle": "collapse",
+                  "data-target": "#accordian" + section.id,
+                  "aria-expanded": "false",
+                  "aria-controls": "accordian" + section.id
+                }
+              },
+              [_c("h3", [_c("b", [_vm._v("SECTION : " + _vm._s(section.id))])])]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: { id: "accordian" + section.id }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h4", [
+                    _c("span", { staticClass: "badge bg-grad text-white" }, [
+                      _vm._v("பால்")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(section.tn) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-grad text-white" }, [
+                      _vm._v("Paal")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(section.tr) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-grad text-white" }, [
+                      _vm._v("Section")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(section.en) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      {
+                        staticClass:
+                          "list-group-item border border-dark rounded"
+                      },
+                      [
+                        _vm._v(
+                          "\n              Chapter Groups : " +
+                            _vm._s(section.cg) +
+                            "\n            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      {
+                        staticClass:
+                          "list-group-item border border-dark rounded"
+                      },
+                      [
+                        _vm._v(
+                          "\n              Chapters : " +
+                            _vm._s(section.c) +
+                            " (" +
+                            _vm._s(section.fr) +
+                            " - " +
+                            _vm._s(section.to) +
+                            ")\n            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "li",
+                      {
+                        staticClass:
+                          "list-group-item border border-dark rounded"
+                      },
+                      [
+                        _vm._v(
+                          "\n              Kurals : " +
+                            _vm._s(section.k) +
+                            "\n            "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-lg btn-info",
+                        on: {
+                          click: function($event) {
+                            return _vm.trigger(section.id)
+                          }
                         }
-                      }
-                    },
-                    [_c("b", [_vm._v("VIEW CHAPTERS")])]
-                  )
+                      },
+                      [_c("b", [_vm._v("VIEW CHAPTERS")])]
+                    )
+                  ])
                 ])
-              ]),
-              _vm._v(" "),
-              _c("br")
-            ]
-          )
+              ]
+            )
+          ])
         }),
+        _vm._v(" "),
+        _c("br"),
         _vm._v(" "),
         _c("br")
       ],
@@ -42022,68 +42251,89 @@ var render = function() {
         ]),
         _vm._v(" "),
         _vm._l(_vm.chapters, function(chapter) {
-          return _c(
-            "div",
-            { key: chapter.id, staticClass: "card border border-primary" },
-            [
-              _c("div", { staticClass: "card-header" }, [
-                _c("h4", [_c("b", [_vm._v("CHAPTER : " + _vm._s(chapter.id))])])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-body" }, [
-                _c("h4", [
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Tamil")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.tn) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Transliteration")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.tr) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("English")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v("\n          " + _vm._s(chapter.en) + "\n          "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-lg",
-                      on: {
-                        click: function($event) {
-                          return _vm.trigger(chapter.id)
+          return _c("div", { key: chapter.id, staticClass: "card" }, [
+            _c(
+              "div",
+              {
+                staticClass: "card-header bg-dark text-white",
+                attrs: {
+                  "data-toggle": "collapse",
+                  "data-target": "#accordian" + chapter.id,
+                  "aria-expanded": "false",
+                  "aria-controls": "accordian" + chapter.id
+                }
+              },
+              [_c("h4", [_c("b", [_vm._v("CHAPTER : " + _vm._s(chapter.id))])])]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse",
+                attrs: { id: "accordian" + chapter.id }
+              },
+              [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("h4", [
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("அதிகாரம்")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.tn) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("Adhigaaram")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.tr) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "badge bg-primary text-white" }, [
+                      _vm._v("Chapter")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(
+                      "\n            " + _vm._s(chapter.en) + "\n            "
+                    ),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-info btn-lg",
+                        on: {
+                          click: function($event) {
+                            return _vm.trigger(chapter.id)
+                          }
                         }
-                      }
-                    },
-                    [_c("b", [_vm._v("VIEW KURALS")])]
-                  )
+                      },
+                      [_c("b", [_vm._v("VIEW KURALS")])]
+                    )
+                  ])
                 ])
-              ])
-            ]
-          )
+              ]
+            )
+          ])
         }),
         _vm._v(" "),
         _c("br")
@@ -42117,7 +42367,7 @@ var render = function() {
   return _c("div", { staticClass: "row" }, [
     _c("div", { staticClass: "col-md-12" }, [
       _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header border border-primary" }, [
+        _c("div", { staticClass: "card-header border border-dark" }, [
           _c("h3", [_vm._v("Share")]),
           _vm._v(" "),
           _c(
@@ -42274,7 +42524,7 @@ var render = function() {
           _vm._v(" "),
           _vm.data[0].kural_no <= 1
             ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                _vm._v("Prev")
+                _vm._v("\n          Prev\n        ")
               ])
             : _vm._e(),
           _vm._v(" "),
@@ -42289,7 +42539,7 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Prev")]
+                [_vm._v("\n          Prev\n        ")]
               )
             : _vm._e(),
           _vm._v(" "),
@@ -42304,18 +42554,18 @@ var render = function() {
                     }
                   }
                 },
-                [_vm._v("Next")]
+                [_vm._v("\n          Next\n        ")]
               )
             : _vm._e(),
           _vm._v(" "),
           _vm.data[0].kural_no == 1330
             ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                _vm._v("Next")
+                _vm._v("\n          Next\n        ")
               ])
             : _vm._e()
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body border border-primary" }, [
+        _c("div", { staticClass: "card-body border border-dark" }, [
           _c("h3", [
             _c("b", [_vm._v("KURAL : " + _vm._s(_vm.data[0].kural_no))])
           ]),
@@ -42334,7 +42584,7 @@ var render = function() {
             _c("ul", { staticClass: "list-group list-group-flush" }, [
               _c("li", { staticClass: "list-group-item" }, [
                 _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Tamil")
+                  _vm._v("குறள்")
                 ]),
                 _vm._v(" "),
                 _c("br"),
@@ -42352,7 +42602,7 @@ var render = function() {
               _vm._v(" "),
               _c("li", { staticClass: "list-group-item" }, [
                 _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Transliteration")
+                  _vm._v("Kural")
                 ]),
                 _vm._v(" "),
                 _c("br"),
@@ -42412,7 +42662,7 @@ var render = function() {
                   _c("br"),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "img-fluid rounded ignore",
+                    staticClass: "img-fluid rounded ignore dashed-border",
                     attrs: {
                       src: "http://localhost/vue-kurals/public/assets/12.jpg"
                     }
@@ -42420,7 +42670,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("br"),
                   _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
+                  _c("span", { staticClass: "badge bg-dark text-white" }, [
                     _vm._v("Kalaignar")
                   ]),
                   _vm._v(" "),
@@ -42435,7 +42685,7 @@ var render = function() {
                   _c("br"),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "img-fluid rounded ignore",
+                    staticClass: "img-fluid rounded ignore dashed-border",
                     attrs: {
                       src: "http://localhost/vue-kurals/public/assets/13.jpg"
                     }
@@ -42458,7 +42708,7 @@ var render = function() {
                   _c("br"),
                   _vm._v(" "),
                   _c("img", {
-                    staticClass: "img-fluid rounded ignore",
+                    staticClass: "img-fluid rounded ignore dashed-border",
                     attrs: {
                       src: "http://localhost/vue-kurals/public/assets/11.jpg"
                     }
@@ -42673,159 +42923,157 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("br")
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-footer border border-primary" }, [
-        _c("h3", [_vm._v("Share")]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "collapse", attrs: { id: "collapseshare" } },
-          [
-            _c(
-              "ShareNetwork",
-              {
-                attrs: {
-                  network: "facebook",
-                  url: "https://news.vuejs.org/issues/180",
-                  title: this.data[0].kural_en,
-                  description: this.data[0].en_explanation,
-                  quote: this.data[0].kural_tn
-                }
-              },
-              [
-                _c("lottie-player", {
-                  staticStyle: { height: "20px" },
+        _c("div", { staticClass: "card-footer border border-dark" }, [
+          _c("h3", [_vm._v("Share")]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "collapse", attrs: { id: "collapseshare" } },
+            [
+              _c(
+                "ShareNetwork",
+                {
                   attrs: {
-                    src:
-                      "http://localhost/vue-kurals/public/assets/lottie/facebook.json",
-                    background: "transparent",
-                    speed: "1",
-                    autoplay: "",
-                    loop: ""
+                    network: "facebook",
+                    url: "https://news.vuejs.org/issues/180",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
                   }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "ShareNetwork",
-              {
-                attrs: {
-                  network: "twitter",
-                  url: "https://www.npmjs.com/package/vue-social-sharing",
-                  title: this.data[0].kural_en,
-                  description: this.data[0].en_explanation,
-                  quote: this.data[0].kural_tn
-                }
-              },
-              [
-                _c("lottie-player", {
-                  staticStyle: { height: "20px" },
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/facebook.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
                   attrs: {
-                    src:
-                      "http://localhost/vue-kurals/public/assets/lottie/twitter.json",
-                    background: "transparent",
-                    speed: "1",
-                    autoplay: "",
-                    loop: ""
+                    network: "twitter",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
                   }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "ShareNetwork",
-              {
-                attrs: {
-                  network: "whatsapp",
-                  url: "https://www.npmjs.com/package/vue-social-sharing",
-                  title: this.data[0].kural_en,
-                  description: this.data[0].en_explanation
-                }
-              },
-              [
-                _c("lottie-player", {
-                  staticStyle: { height: "20px" },
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/twitter.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
                   attrs: {
-                    src:
-                      "http://localhost/vue-kurals/public/assets/lottie/whatsapp.json",
-                    background: "transparent",
-                    speed: "1",
-                    autoplay: "",
-                    loop: ""
+                    network: "whatsapp",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation
                   }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "ShareNetwork",
-              {
-                attrs: {
-                  network: "linkedin",
-                  url: "https://www.npmjs.com/package/vue-social-sharing",
-                  title: this.data[0].kural_en
-                }
-              },
-              [
-                _c("lottie-player", {
-                  staticStyle: { height: "20px" },
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/whatsapp.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
                   attrs: {
-                    src:
-                      "http://localhost/vue-kurals/public/assets/lottie/linkedin.json",
-                    background: "transparent",
-                    speed: "1",
-                    autoplay: "",
-                    loop: ""
+                    network: "linkedin",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en
                   }
-                })
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c("br")
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-info",
-            attrs: {
-              type: "button",
-              "data-toggle": "collapse",
-              "data-target": "#collapseshare",
-              "aria-expanded": "false",
-              "aria-controls": "collapseshare"
-            }
-          },
-          [
-            _c("lottie-player", {
-              staticStyle: { height: "20px", width: "20px" },
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/linkedin.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br")
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-info",
               attrs: {
-                src:
-                  "http://localhost/vue-kurals/public/assets/lottie/share.json",
-                background: "transparent",
-                speed: "1",
-                autoplay: "",
-                loop: ""
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapseshare",
+                "aria-expanded": "false",
+                "aria-controls": "collapseshare"
               }
-            })
-          ],
-          1
-        )
+            },
+            [
+              _c("lottie-player", {
+                staticStyle: { height: "20px", width: "20px" },
+                attrs: {
+                  src:
+                    "http://localhost/vue-kurals/public/assets/lottie/share.json",
+                  background: "transparent",
+                  speed: "1",
+                  autoplay: "",
+                  loop: ""
+                }
+              })
+            ],
+            1
+          )
+        ])
       ]),
       _vm._v(" "),
       _c("br")

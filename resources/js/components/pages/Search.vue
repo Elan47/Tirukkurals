@@ -12,7 +12,7 @@
       >
         <b>
           <i class="fa fa-search"></i>
-          {{this.options}}
+          {{ this.options }}
         </b>
       </button>
 
@@ -26,7 +26,10 @@
           @keyup.enter="idSearch(searchid)"
           placeholder="Search by number "
         />
-        <button @click="idSearch(searchid)" class="btn btn-sm btn-info col-md-2">
+        <button
+          @click="idSearch(searchid)"
+          class="btn btn-sm btn-info col-md-2"
+        >
           Number
           <i class="fa fa-search"></i>
         </button>
@@ -39,8 +42,11 @@
           @keyup.enter="tnSearch(searchtn)"
           placeholder="Search in தமிழ்"
         />
-        <button @click="tnSearch(searchtn)" class="btn btn-sm btn-info col-md-2">
-          தமிழ்
+        <button
+          @click="tnSearch(searchtn)"
+          class="btn btn-sm btn-info col-md-2"
+        >
+          குறள்
           <i class="fa fa-search"></i>
         </button>
         <br />
@@ -52,8 +58,11 @@
           @keyup.enter="trSearch(searchtr)"
           placeholder="Search in Transliteration"
         />
-        <button @click="trSearch(searchtr)" class="btn btn-sm btn-info col-md-2">
-          Transliteration
+        <button
+          @click="trSearch(searchtr)"
+          class="btn btn-sm btn-info col-md-2"
+        >
+          Kural
           <i class="fa fa-search"></i>
         </button>
         <br />
@@ -65,39 +74,48 @@
           @keyup.enter="enSearch(searchen)"
           placeholder="Search in English"
         />
-        <button @click="enSearch(searchen)" class="btn btn-sm btn-info col-md-2">
-          English
+        <button
+          @click="enSearch(searchen)"
+          class="btn btn-sm btn-info col-md-2"
+        >
+          Couplet
           <i class="fa fa-search"></i>
         </button>
       </div>
 
       <br />
       <hr />
-      <div class="card border border-primary">
-        <div class="card-header border border-primary">
-          <h2 style="text-align:center">
-            Search Results for
-            <span class="badge" v-if="queries.length==0">...</span>
-            <Highlight :queries="queries">{{this.queries}}</Highlight>
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          <h2 style="text-align: center">
+            Search for
+            <span class="badge" v-if="queries.length == 0">...</span>
           </h2>
+          <Highlight :queries="queries">{{ this.queries }}</Highlight>
         </div>
-        <div class="card-body border border-primary" v-for="kural in kurals" :key="kural.id">
+        <div
+          class="card-body border border-dark"
+          v-for="kural in kurals"
+          :key="kural.id"
+        >
           <h5>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
                 <b>
-                  <Highlight :queries="queries">KURAL : {{ kural.id }}</Highlight>
+                  <Highlight :queries="queries"
+                    >Kural : {{ kural.id }}</Highlight
+                  >
                 </b>
                 <br />
                 <br />
-                <span class="badge bg-primary text-white">Tamil</span>
+                <span class="badge bg-primary text-white">குறள்</span>
                 <br />
                 <br />
 
                 <Highlight :queries="queries">{{ kural.tn }}</Highlight>
                 <br />
                 <br />
-                <span class="badge bg-primary text-white">Transliteration</span>
+                <span class="badge bg-primary text-white">Kural</span>
                 <br />
                 <br />
 
@@ -112,7 +130,9 @@
 
                 <br />
                 <br />
-                <router-link :to="{ name: 'kural-details', params: { id: kural.id }}">
+                <router-link
+                  :to="{ name: 'kural-details', params: { id: kural.id } }"
+                >
                   <button class="btn btn-info">
                     <b>VIEW DETAILS</b>
                   </button>

@@ -10908,8 +10908,9 @@ a.text-dark:focus {
   mix-blend-mode: difference;
 }
 
-.router-link-active {
-  filter: invert(30%);
+.e-border {
+  border-style: solid;
+  border-color: red;
 }
 
 .sticky {
@@ -10941,5 +10942,29 @@ a.text-dark:focus {
 .darkmode-layer,
 .darkmode-toggle {
   z-index: 500;
+}
+
+.dashed-border {
+  border: dashed white 5px;
+}
+
+.bg-grad {
+  background: linear-gradient(90deg, #020024 0%, #06d68b 0%, #00d4ff 100%);
+}
+
+.bd-grad {
+  border-color: linear-gradient(90deg, #020024 0%, #06d68b 0%, #00d4ff 100%);
+}
+
+.grad {
+  color: linear-gradient(90deg, #020024 0%, #06d68b 0%, #00d4ff 100%);
+}
+
+.lime {
+  color: #06d68b;
+}
+
+.blue {
+  color: #00d4ff;
 }
 

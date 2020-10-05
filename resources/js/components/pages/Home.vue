@@ -3,7 +3,7 @@
     <div class="row">
       <div class="card">
         <div class="card-header">
-          <h2>FACTS</h2>
+          <h2>Fascinating Facts</h2>
         </div>
         <div class="card-body text-left">
           <h3>
