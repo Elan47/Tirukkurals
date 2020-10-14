@@ -8,8 +8,10 @@ import ChapterGroup from './components/pages/ChapterGroup';
 import ChapterKurals from './components/pages/ChapterKurals';
 import SectionChapters from './components/pages/SectionChapters';
 import ChapterGroupChapters from './components/pages/ChapterGroupChapters';
-import KuralDetails from './components/pages/kuralDetail';
+import KuralDetails from './components/pages/KuralDetail';
 import Search from './components/pages/Search';
+import Login from './components/pages/user/Login';
+import Register from './components/pages/user/Register';
 
 Vue.use(Router);
 const ARL = '/vue-kurals/public/';
@@ -65,8 +67,27 @@ const routes = new Router({
         {
             path: ARL + 'search',
             name: 'search',
-            component: Search
-        }
+            component: Search,
+            beforeEnter: (to, form, next) => {
+                axios.get('api/authenticated').then(() => {
+                    next()
+                }).catch(() => {
+                    return next({
+                        name: 'login'
+                    })
+                })
+            }
+        },
+        {
+            path: ARL + 'login',
+            name: 'login',
+            component: Login
+        },
+        {
+            path: ARL + 'register',
+            name: 'register',
+            component: Register
+        },
     ]
 });
 

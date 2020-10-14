@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-md-12">
-      <h2>
+      <h2 class="lime ignore">
         <b>CHAPTER GROUPS - 13</b>
       </h2>
       <br />
@@ -11,7 +11,7 @@
         :key="chaptergroup.id"
       >
         <div
-          class="card-header bg-grad text-white"
+          class="card-header bg-grad text-white ignore"
           data-toggle="collapse"
           :data-target="'#accordian' + chaptergroup.id"
           aria-expanded="false"
@@ -24,32 +24,32 @@
         <div class="collapse" :id="'accordian' + chaptergroup.id">
           <div class="card-body">
             <h4>
-              <span class="badge bg-grad text-white">இயல்</span>
+              <span class="badge bg-grad text-white ignore">இயல்</span>
               <br />
               <br />
               {{ chaptergroup.tn }}
               <br />
               <br />
-              <span class="badge bg-grad text-white">Iyal</span>
+              <span class="badge bg-grad text-white ignore">Iyal</span>
               <br />
               <br />
               {{ chaptergroup.tr }}
               <br />
               <br />
-              <span class="badge bg-grad text-white">Chapter Group</span>
+              <span class="badge bg-grad text-white ignore">Chapter Group</span>
               <br />
               <br />
               {{ chaptergroup.en }}
               <br />
               <br />
-              <li class="list-group-item border border-dark">
+              <li class="list-group-item border-darkg ignore rounded lime">
                 Chapters : {{ chaptergroup.chaps }} ({{ chaptergroup.fr }} -
                 {{ chaptergroup.to }})
               </li>
               <br />
               <br />
               <button
-                class="btn btn-lg btn-info"
+                class="btn text-white bg-lime ignore"
                 @click="trigger(chaptergroup.id)"
               >
                 <b>

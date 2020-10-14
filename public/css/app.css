@@ -10905,7 +10905,7 @@ a.text-dark:focus {
 }
 
 .darkmode--activated .ignore {
-  mix-blend-mode: difference;
+  mix-blend-mode: difference !important;
 }
 
 .e-border {
@@ -10961,10 +10961,27 @@ a.text-dark:focus {
 }
 
 .lime {
-  color: #06d68b;
+  color: #05D69D;
 }
 
 .blue {
-  color: #00d4ff;
+  color: #01D4EC;
+}
+
+.bg-lime {
+  background-color: #05D69D !important;
+}
+
+.bg-blue {
+  background-color: #01D4EC !important;
+}
+
+.border-darkg {
+  border-color: #05D69D !important;
+  background-color: unset !important;
+}
+
+.border-darkng {
+  border: 1px solid #05D69D !important;
 }
 

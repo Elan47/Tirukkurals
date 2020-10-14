@@ -3,33 +3,33 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <h3>
+          <h3 class="lime ignore">
             <b>CHAPTER : {{ $route.params.id }} | KURALS</b>
           </h3>
         </div>
 
         <div
-          class="card-body border border-dark"
+          class="card-body border-darkng rounded"
           v-for="kural in kurals"
           :key="kural.id"
         >
           <h4>
-            <b>KURAL : {{ kural.id }}</b>
+            <b class="lime ignore">KURAL : {{ kural.id }}</b>
             <br />
             <br />
-            <span class="badge bg-primary text-white">குறள்</span>
+            <span class="badge bg-grad text-white ignore">குறள்</span>
             <br />
             <br />
             {{ kural.tn }}
             <br />
             <br />
-            <span class="badge bg-primary text-white">Kural</span>
+            <span class="badge bg-grad text-white ignore">Kural</span>
             <br />
             <br />
             {{ kural.tr }}
             <br />
             <br />
-            <span class="badge bg-primary text-white">Couplet</span>
+            <span class="badge bg-grad text-white ignore">Couplet</span>
             <br />
             <br />
             {{ kural.en }}
@@ -38,7 +38,7 @@
             <router-link
               :to="{ name: 'kural-details', params: { id: kural.id } }"
             >
-              <button class="btn btn-info btn-lg">
+              <button class="btn bg-lime text-white ignore">
                 <b>VIEW DETAILS</b>
               </button>
             </router-link>

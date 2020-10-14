@@ -6,57 +6,66 @@
       </h3>-->
       <div class="card">
         <div class="card-header">
-          <h3>
+          <h3 class="lime ignore">
             <b>KURALS ({{ meta.from }} - {{ meta.to }})</b>
           </h3>
           <br />
 
-          <button class="btn btn-info" @click="firstkural(meta.first_page)">
+          <button
+            class="btn bg-lime text-white ignore"
+            @click="firstkural(meta.first_page)"
+          >
             First
           </button>
 
-          <button class="btn btn-info" @click="lastkural(meta.last_page)">
+          <button
+            class="btn bg-lime text-white ignore"
+            @click="lastkural(meta.last_page)"
+          >
             Last
           </button>
 
-          <button v-if="meta.current_page <= 1" class="btn btn-info disabled">
+          <button
+            v-if="meta.current_page <= 1"
+            class="btn bg-lime text-white disabled ignore"
+          >
             Prev
           </button>
           <button
             v-if="meta.current_page - 1 > 0"
-            class="btn btn-info"
+            class="btn bg-lime text-white ignore"
             @click="prevkural(meta.current_page - 1)"
           >
             Prev
           </button>
           <button
             v-if="meta.current_page + 1 <= meta.last_page"
-            class="btn btn-info"
+            class="btn bg-lime text-white ignore"
             @click="nextkural(meta.current_page + 1)"
           >
             Next
           </button>
           <button
             v-if="meta.current_page == meta.last_page"
-            class="btn btn-info disabled"
+            class="btn bg-lime text-white disabled ignore"
           >
             Next
           </button>
         </div>
         <div
-          class="card-body border border-dark"
+          class="card-body border-darkng rounded"
           v-for="kural in kurals"
           :key="kural.id"
         >
           <h4>
             <!-- <ul class="list-group">
             <li class="list-group-item">-->
-            <b>KURAL : {{ kural.id }}</b>
+            <b class="lime ignore">KURAL : {{ kural.id }}</b>
             <!-- </li> -->
             <br />
             <br />
             <!-- <li class="list-group-item"> -->
-            <span class="badge bg-primary text-white">குறள்</span>
+            <span class="badge bg-grad text-white ignore">குறள்</span>
             <br />
             <br />
             {{ kural.tn }}
@@ -64,7 +73,7 @@
             <br />
             <!-- </li> -->
             <!-- <li class="list-group-item"> -->
-            <span class="badge bg-primary text-white">Kural</span>
+            <span class="badge bg-grad text-white ignore">Kural</span>
             <br />
             <br />
             {{ kural.tr }}
@@ -72,7 +81,7 @@
             <br />
             <!-- </li> -->
             <!-- <li class="list-group-item"> -->
-            <span class="badge bg-primary text-white">Couplet</span>
+            <span class="badge bg-grad text-white ignore">Couplet</span>
             <br />
             <br />
             {{ kural.en }}
@@ -84,7 +93,7 @@
             <router-link
               :to="{ name: 'kural-details', params: { id: kural.id } }"
             >
-              <button class="btn btn-info btn-lg">
+              <button class="btn bg-lime text-white ignore">
                 <b>VIEW DETAILS</b>
               </button>
             </router-link>
@@ -95,35 +104,44 @@
           </h4>
         </div>
 
-        <div class="card-footer border border-primary">
-          <button class="btn btn-info" @click="firstkural(meta.first_page)">
+        <div class="card-footer border border-dark">
+          <button
+            class="btn bg-lime text-white ignore"
+            @click="firstkural(meta.first_page)"
+          >
             First
           </button>
 
-          <button class="btn btn-info" @click="lastkural(meta.last_page)">
+          <button
+            class="btn bg-lime text-white ignore"
+            @click="lastkural(meta.last_page)"
+          >
             Last
           </button>
 
-          <button v-if="meta.current_page <= 1" class="btn btn-info disabled">
+          <button
+            v-if="meta.current_page <= 1"
+            class="btn bg-lime text-white disabled ignore"
+          >
             Prev
           </button>
           <button
             v-if="meta.current_page - 1 > 0"
-            class="btn btn-info"
+            class="btn bg-lime text-white ignore"
             @click="prevkural(meta.current_page - 1)"
           >
             Prev
           </button>
           <button
             v-if="meta.current_page + 1 <= meta.last_page"
-            class="btn btn-info"
+            class="btn bg-lime text-white ignore"
             @click="nextkural(meta.current_page + 1)"
           >
             Next
           </button>
           <button
             v-if="meta.current_page == meta.last_page"
-            class="btn btn-info disabled"
+            class="btn bg-lime text-white disabled ignore"
           >
             Next
           </button>

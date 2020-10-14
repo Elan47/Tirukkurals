@@ -20,6 +20,16 @@ use Illuminate\Support\Facades\Route;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
+});
+Route::middleware('auth:sanctum')->get('/authenticated', function () {
+    return true;
+});
+Route::post('register', 'RegisterController@register')->name('registerusers');
+Route::post('login', 'LoginController@login')->name('loginusers');
+Route::post('logout', 'LoginController@logout')->name('logoutusers');
+
 Route::get('sections', 'SectionController@index')->name('sections');
 Route::get('chapters', 'ChapterController@index')->name('chapters');
 Route::get('kurals', 'KuralController@index')->name('kurals');

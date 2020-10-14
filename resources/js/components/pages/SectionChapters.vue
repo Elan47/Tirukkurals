@@ -1,12 +1,12 @@
 <template>
   <div class="row justify-content-center">
     <div class="col-md-12">
-      <h3>
+      <h3 class="lime ignore">
         <b>SECTION : {{ $route.params.id }} | CHAPTERS</b>
       </h3>
       <div class="card" v-for="chapter in chapters" :key="chapter.id">
         <div
-          class="card-header bg-dark text-white"
+          class="card-header bg-grad text-white ignore"
           data-toggle="collapse"
           :data-target="'#accordian' + chapter.id"
           aria-expanded="false"
@@ -19,25 +19,28 @@
         <div class="collapse" :id="'accordian' + chapter.id">
           <div class="card-body">
             <h4>
-              <span class="badge bg-primary text-white">அதிகாரம்</span>
+              <span class="badge bg-grad text-white ignore">அதிகாரம்</span>
               <br />
               <br />
               {{ chapter.tn }}
               <br />
               <br />
-              <span class="badge bg-primary text-white">Adhigaaram</span>
+              <span class="badge bg-grad text-white ignore">Adhigaaram</span>
               <br />
               <br />
               {{ chapter.tr }}
               <br />
               <br />
-              <span class="badge bg-primary text-white">Chapter</span>
+              <span class="badge bg-grad text-white ignore">Chapter</span>
               <br />
               <br />
               {{ chapter.en }}
               <br />
               <br />
-              <button class="btn btn-info btn-lg" @click="trigger(chapter.id)">
+              <button
+                class="btn bg-lime text-white ignore"
+                @click="trigger(chapter.id)"
+              >
                 <b>VIEW KURALS</b>
               </button>
             </h4>

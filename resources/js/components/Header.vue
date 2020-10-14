@@ -2,9 +2,11 @@
 <template>
   <div>
     <!-- <nav class="navbar d-block d-md-none text-center navbar-expand-lg navbar-dark bg-dark"> -->
-    <nav class="navbar text-center navbar-expand-lg navbar-dark bg-grad">
+    <nav
+      class="navbar darkmode--activated ignore text-center navbar-expand-lg navbar-dark bg-grad"
+    >
       <button
-        @click="lottieplay"
+        @click.prevent="lottieplay"
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -24,6 +26,10 @@
         class="collapse navbar-collapse justify-content-center"
         id="navbarNavAltMarkup"
       >
+        <!-- <span v-if="user" class="badge text-white float-left">{{
+          this.user.name
+        }}</span> -->
+
         <div class="navbar-nav" @click="lottieplay">
           <router-link
             :to="{ name: 'search' }"
@@ -72,8 +78,10 @@ export default {
   data() {
     return {
       direction: 1,
+      user: null,
     };
   },
+
   methods: {
     //   breadcrumb lottie animation
     lottieplay() {
@@ -82,6 +90,11 @@ export default {
       player.play();
       this.direction *= -1;
     },
+  },
+  mounted() {
+    axios.get("api/user").then((res) => {
+      this.user = res.data;
+    });
   },
 };
 </script>

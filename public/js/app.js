@@ -2110,6 +2110,71 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var options = {
   top: "100px",
@@ -2136,7 +2201,38 @@ var options = {
 };
 var darkmode = new darkmode_js__WEBPACK_IMPORTED_MODULE_0___default.a(options);
 darkmode.showWidget();
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {};
+  },
+  created: function created() {
+    this.home();
+  },
+  methods: {
+    buy: function buy() {
+      window.open("https://www.buymeacoffee.com/Elanchez", "_blank", "toolbar=yes,top=500,left=500,width=600,height=1000");
+      document.getElementById("lottie1").style.display = "none";
+      document.getElementById("lottie3").style.display = "none";
+      document.getElementById("lottie2").style.display = "block";
+      document.getElementById("lottie4").style.display = "block";
+      document.getElementById("confetti").style.display = "block";
+      document.getElementById("confetti2").style.display = "block";
+    },
+    afterbuy: function afterbuy() {
+      document.getElementById("lottie2").style.display = "none";
+      document.getElementById("lottie4").style.display = "none";
+      document.getElementById("lottie1").style.display = "block";
+      document.getElementById("lottie3").style.display = "block";
+      document.getElementById("confetti").style.display = "none";
+      document.getElementById("confetti2").style.display = "none";
+    },
+    home: function home() {
+      this.$router.push({
+        name: "home"
+      });
+    }
+  }
+});
 
 /***/ }),
 
@@ -2218,10 +2314,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      direction: 1
+      direction: 1,
+      user: null
     };
   },
   methods: {
@@ -2232,6 +2335,13 @@ __webpack_require__.r(__webpack_exports__);
       player.play();
       this.direction *= -1;
     }
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get("api/user").then(function (res) {
+      _this.user = res.data;
+    });
   }
 });
 
@@ -2247,6 +2357,9 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
+//
+//
+//
 //
 //
 //
@@ -2490,6 +2603,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2641,6 +2757,92 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     console.log("Component mounted.");
@@ -2658,6 +2860,24 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2855,423 +3075,27 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Search.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Search.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      kurals: [],
-      searchen: [],
-      searchtr: [],
-      searchtn: [],
-      searchid: [],
-      queries: "",
-      options: "Search Menu"
-    };
-  },
-  methods: {
-    searchMenu: function searchMenu() {
-      if (this.options === "Search Menu") {
-        this.options = "Hide Menu";
-      } else {
-        this.options = "Search Menu";
-      }
-    },
-    trSearch: function trSearch(searchtr) {
-      var _this = this;
-
-      this.queries = this.searchtr;
-      axios.get(this.$APPURL + "api/search/tr/" + this.searchtr).then(function (response) {
-        return _this.kurals = response.data.data;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    },
-    enSearch: function enSearch(searchen) {
-      var _this2 = this;
-
-      this.queries = this.searchen;
-      axios.get(this.$APPURL + "api/search/en/" + this.searchen).then(function (response) {
-        return _this2.kurals = response.data.data;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    },
-    tnSearch: function tnSearch(searchtn) {
-      var _this3 = this;
-
-      this.queries = this.searchtn;
-      axios.get(this.$APPURL + "api/search/tn/" + this.searchtn).then(function (response) {
-        return _this3.kurals = response.data.data;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    },
-    idSearch: function idSearch(searchid) {
-      var _this4 = this;
-
-      this.queries = this.searchid;
-      axios.get(this.$APPURL + "api/search/id/" + this.searchid).then(function (response) {
-        return _this4.kurals = response.data.data;
-      })["catch"](function (error) {
-        console.log(error);
-      });
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Section.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Section.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      sections: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get(this.$APPURL + "api/sections").then(function (response) {
-      return _this.sections = response.data.data;
-    });
-  },
-  methods: {
-    trigger: function trigger(id) {
-      _router__WEBPACK_IMPORTED_MODULE_0__["default"].push({
-        path: this.$APPURL + "section-chapters/".concat(id)
-      });
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/SectionChapters.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/SectionChapters.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      chapters: []
-    };
-  },
-  mounted: function mounted() {
-    var _this = this;
-
-    axios.get(this.$APPURL + "api/section/" + this.$route.params.id).then(function (response) {
-      return _this.chapters = response.data.data;
-    });
-  },
-  methods: {
-    trigger: function trigger(id) {
-      _router__WEBPACK_IMPORTED_MODULE_0__["default"].push({
-        path: this.$APPURL + "chapter-kurals/".concat(id)
-      });
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/KuralDetail.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/KuralDetail.vue?vue&type=script&lang=js& ***!
   \****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3720,6 +3544,638 @@ __webpack_require__.r(__webpack_exports__);
         return _this3.data = response.data;
       })["catch"](function (error) {
         console.log(error);
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Search.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Search.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      kurals: [],
+      searchen: [],
+      searchtr: [],
+      searchtn: [],
+      searchid: [],
+      queries: "",
+      options: "Search Menu"
+    };
+  },
+  methods: {
+    logout: function logout() {
+      var _this = this;
+
+      axios.post("api/logout").then(function () {
+        _this.$router.push({
+          name: "home"
+        });
+      });
+    },
+    searchMenu: function searchMenu() {
+      if (this.options === "Search Menu") {
+        this.options = "Hide Menu";
+      } else {
+        this.options = "Search Menu";
+      }
+    },
+    trSearch: function trSearch(searchtr) {
+      var _this2 = this;
+
+      this.queries = this.searchtr;
+      axios.get(this.$APPURL + "api/search/tr/" + this.searchtr).then(function (response) {
+        return _this2.kurals = response.data.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    enSearch: function enSearch(searchen) {
+      var _this3 = this;
+
+      this.queries = this.searchen;
+      axios.get(this.$APPURL + "api/search/en/" + this.searchen).then(function (response) {
+        return _this3.kurals = response.data.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    tnSearch: function tnSearch(searchtn) {
+      var _this4 = this;
+
+      this.queries = this.searchtn;
+      axios.get(this.$APPURL + "api/search/tn/" + this.searchtn).then(function (response) {
+        return _this4.kurals = response.data.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    },
+    idSearch: function idSearch(searchid) {
+      var _this5 = this;
+
+      this.queries = this.searchid;
+      axios.get(this.$APPURL + "api/search/id/" + this.searchid).then(function (response) {
+        return _this5.kurals = response.data.data;
+      })["catch"](function (error) {
+        console.log(error);
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/Section.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/Section.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      sections: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get(this.$APPURL + "api/sections").then(function (response) {
+      return _this.sections = response.data.data;
+    });
+  },
+  methods: {
+    trigger: function trigger(id) {
+      _router__WEBPACK_IMPORTED_MODULE_0__["default"].push({
+        path: this.$APPURL + "section-chapters/".concat(id)
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/SectionChapters.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/SectionChapters.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../router */ "./resources/js/router.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      chapters: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get(this.$APPURL + "api/section/" + this.$route.params.id).then(function (response) {
+      return _this.chapters = response.data.data;
+    });
+  },
+  methods: {
+    trigger: function trigger(id) {
+      _router__WEBPACK_IMPORTED_MODULE_0__["default"].push({
+        path: this.$APPURL + "chapter-kurals/".concat(id)
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Login.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/user/Login.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      form: {
+        email: "",
+        password: ""
+      },
+      errors: []
+    };
+  },
+  methods: {
+    loginUser: function loginUser() {
+      var _this = this;
+
+      axios.post("api/login", this.form).then(function () {
+        _this.$router.push({
+          name: "search"
+        });
+      })["catch"](function (error) {
+        _this.errors = error.response.data.errors;
+      });
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Register.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/user/Register.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        password: "",
+        password_confirmation: ""
+      },
+      errors: []
+    };
+  },
+  methods: {
+    saveForm: function saveForm() {
+      var _this = this;
+
+      axios.post("api/register", this.form).then(function () {
+        _this.$router.push({
+          name: "search"
+        });
+
+        console.log("saved");
+      })["catch"](function (error) {
+        _this.errors = error.response.data.errors;
       });
     }
   }
@@ -8227,7 +8683,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .darkmode-layer,\n.darkmode-toggle {\n  z-index: 500;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .darkmode-layer,\n.darkmode-toggle {\n  z-index: 500;\n} */\n", ""]);
 
 // exports
 
@@ -40386,25 +40842,72 @@ var render = function() {
             "div",
             { staticClass: "d-block d-md-none col-md-5" },
             [
+              _c("lottie-player", {
+                staticClass: "ignore ",
+                staticStyle: {
+                  height: "160px",
+                  display: "none",
+                  position: "absolute"
+                },
+                attrs: {
+                  id: "confetti",
+                  src:
+                    "http://localhost/vue-kurals/public/assets/lottie/confetti.json",
+                  background: "transparent",
+                  speed: "1",
+                  loop: "",
+                  autoplay: ""
+                }
+              }),
+              _vm._v(" "),
               _c("br"),
               _vm._v(" "),
-              _vm._m(0),
+              _c("h2", [
+                _c("b", [_vm._v("THIRUKKURAL")]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn bg-lime ignore text-white",
+                    on: { click: _vm.buy }
+                  },
+                  [_c("b", [_vm._v("Buy Me A Coffee!")])]
+                )
+              ]),
               _vm._v(" "),
               _c(
                 "router-link",
                 { attrs: { to: { name: "home" } } },
                 [
                   _c("lottie-player", {
-                    staticClass: "ignore",
-                    staticStyle: { height: "200px" },
+                    staticClass: "ignore sticky2",
+                    staticStyle: { height: "300px" },
                     attrs: {
+                      id: "lottie1",
                       src:
-                        "http://localhost/vue-kurals/public/assets/lottie/data.json",
+                        "http://localhost/vue-kurals/public/assets/lottie/valluvar.json",
+                      background: "transparent",
+                      speed: ".75",
+                      loop: "",
+                      autoplay: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("lottie-player", {
+                    staticClass: "ignore sticky2",
+                    staticStyle: { height: "300px", display: "none" },
+                    attrs: {
+                      id: "lottie2",
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/coffee.json",
                       background: "transparent",
                       speed: "1",
                       loop: "",
                       autoplay: ""
-                    }
+                    },
+                    on: { click: _vm.afterbuy }
                   })
                 ],
                 1
@@ -40419,7 +40922,36 @@ var render = function() {
             [
               _c("br"),
               _vm._v(" "),
-              _vm._m(1),
+              _c("lottie-player", {
+                staticClass: "ignore ",
+                staticStyle: {
+                  height: "160px",
+                  display: "none",
+                  position: "absolute"
+                },
+                attrs: {
+                  id: "confetti2",
+                  src:
+                    "http://localhost/vue-kurals/public/assets/lottie/confetti.json",
+                  background: "transparent",
+                  speed: "1",
+                  loop: "",
+                  autoplay: ""
+                }
+              }),
+              _vm._v(" "),
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn bg-lime ignore text-white",
+                  on: { click: _vm.buy }
+                },
+                [_c("b", [_vm._v("Buy Me A Coffee!")])]
+              ),
+              _vm._v(" "),
+              _c("br"),
               _vm._v(" "),
               _c(
                 "router-link",
@@ -40427,94 +40959,111 @@ var render = function() {
                 [
                   _c("lottie-player", {
                     staticClass: "ignore sticky2",
-                    staticStyle: { height: "300px" },
+                    staticStyle: { height: "280px" },
                     attrs: {
+                      id: "lottie3",
                       src:
-                        "http://localhost/vue-kurals/public/assets/lottie/data.json",
+                        "http://localhost/vue-kurals/public/assets/lottie/valluvar.json",
+                      background: "transparent",
+                      speed: ".75",
+                      loop: "",
+                      autoplay: ""
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("lottie-player", {
+                    staticClass: "ignore sticky2 ",
+                    staticStyle: { height: "280px", display: "none" },
+                    attrs: {
+                      id: "lottie4",
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/coffee.json",
                       background: "transparent",
                       speed: "1",
                       loop: "",
                       autoplay: ""
-                    }
+                    },
+                    on: { click: _vm.afterbuy }
                   })
                 ],
                 1
               ),
               _vm._v(" "),
-              _c(
-                "h3",
-                { staticClass: "sticky3" },
-                [
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-item nav-link lime",
-                      attrs: {
-                        to: { name: "sections" },
-                        "data-toggle": "collapse",
-                        "data-target": ".navbar-collapse.show"
-                      }
-                    },
-                    [_vm._v("Sections : 3")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-item nav-link lime",
-                      attrs: {
-                        to: { name: "chapter-groups" },
-                        "data-toggle": "collapse",
-                        "data-target": ".navbar-collapse.show"
-                      }
-                    },
-                    [_vm._v("Chapter Groups : 13")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-item nav-link lime",
-                      attrs: {
-                        to: { name: "chapters" },
-                        "data-toggle": "collapse",
-                        "data-target": ".navbar-collapse.show"
-                      }
-                    },
-                    [_vm._v("Chapters : 133")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-item nav-link lime",
-                      attrs: {
-                        to: { name: "kurals" },
-                        "data-toggle": "collapse",
-                        "data-target": ".navbar-collapse.show"
-                      }
-                    },
-                    [_vm._v("Kurals : 1330")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "router-link",
-                    {
-                      staticClass: "nav-item nav-link lime",
-                      attrs: {
-                        to: { name: "search" },
-                        "data-toggle": "collapse",
-                        "data-target": ".navbar-collapse.show"
-                      }
-                    },
-                    [
-                      _vm._v("\n            Search\n            "),
-                      _c("i", { staticClass: "fa fa-search" })
-                    ]
-                  )
-                ],
-                1
-              )
+              _c("h4", { staticClass: "sticky3 ignore" }, [
+                _c(
+                  "b",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "sections" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("SECTIONS : 3")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "chapter-groups" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("CHAPTER GROUPS : 13")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "chapters" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("CHAPTERS : 133")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "kurals" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("KURALS : 1330")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "search" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [
+                        _vm._v("\n                SEARCH\n                "),
+                        _c("i", { staticClass: "fa fa-search" })
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ])
             ],
             1
           ),
@@ -40540,7 +41089,9 @@ var render = function() {
             1
           )
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1)
     ],
     1
   )
@@ -40550,15 +41101,28 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h2", [_c("b", [_vm._v("THIRUKKURALS")])])
+    return _c("h2", { staticClass: "sticky1 lime ignore" }, [
+      _c("b", [_vm._v("THIRUKKURAL")])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h2", { staticClass: "sticky1" }, [
-      _c("b", [_vm._v("THIRUKKURALS")])
-    ])
+    return _c(
+      "footer",
+      {
+        staticClass:
+          "page-footer bg-grad d-none d-md-block d-lg-block font-small ignore"
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "footer-copyright text-center text-white py-2" },
+          [_vm._v("\n        © 2020 Thirukkural. All Rights Reserved.\n      ")]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -40586,7 +41150,8 @@ var render = function() {
     _c(
       "nav",
       {
-        staticClass: "navbar text-center navbar-expand-lg navbar-dark bg-grad"
+        staticClass:
+          "navbar darkmode--activated ignore text-center navbar-expand-lg navbar-dark bg-grad"
       },
       [
         _c(
@@ -40601,7 +41166,12 @@ var render = function() {
               "aria-expanded": "false",
               "aria-label": "Toggle navigation"
             },
-            on: { click: _vm.lottieplay }
+            on: {
+              click: function($event) {
+                $event.preventDefault()
+                return _vm.lottieplay($event)
+              }
+            }
           },
           [
             _c("lottie-player", {
@@ -40740,7 +41310,7 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "card-header bg-dark text-white",
+                staticClass: "card-header bg-grad text-white ignore",
                 attrs: {
                   "data-toggle": "collapse",
                   "data-target": "#accordian" + chapter.id,
@@ -40760,9 +41330,11 @@ var render = function() {
               [
                 _c("div", { staticClass: "card-body" }, [
                   _c("h4", [
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("அதிகாரம்")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("அதிகாரம்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -40774,9 +41346,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Adhigaaram")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Adhigaaram")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -40788,9 +41362,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Chapter")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Chapter")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -40805,7 +41381,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-info btn-lg",
+                        staticClass: "btn bg-lime text-white ignore",
                         on: {
                           click: function($event) {
                             return _vm.trigger(chapter.id)
@@ -40832,7 +41408,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h2", [_c("b", [_vm._v("CHAPTERS - 133")])])
+    return _c("h2", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("CHAPTERS - 133")])
+    ])
   }
 ]
 render._withStripped = true
@@ -40870,7 +41448,7 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "card-header bg-grad text-white",
+                staticClass: "card-header bg-grad text-white ignore",
                 attrs: {
                   "data-toggle": "collapse",
                   "data-target": "#accordian" + chaptergroup.id,
@@ -40896,9 +41474,11 @@ var render = function() {
               [
                 _c("div", { staticClass: "card-body" }, [
                   _c("h4", [
-                    _c("span", { staticClass: "badge bg-grad text-white" }, [
-                      _vm._v("இயல்")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("இயல்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -40912,9 +41492,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-grad text-white" }, [
-                      _vm._v("Iyal")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Iyal")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -40928,9 +41510,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-grad text-white" }, [
-                      _vm._v("Chapter Group")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Chapter Group")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -40946,7 +41530,10 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "li",
-                      { staticClass: "list-group-item border border-dark" },
+                      {
+                        staticClass:
+                          "list-group-item border-darkg ignore rounded lime"
+                      },
                       [
                         _vm._v(
                           "\n              Chapters : " +
@@ -40967,7 +41554,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-lg btn-info",
+                        staticClass: "btn text-white bg-lime ignore",
                         on: {
                           click: function($event) {
                             return _vm.trigger(chaptergroup.id)
@@ -41004,7 +41591,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h2", [_c("b", [_vm._v("CHAPTER GROUPS - 13")])])
+    return _c("h2", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("CHAPTER GROUPS - 13")])
+    ])
   }
 ]
 render._withStripped = true
@@ -41033,7 +41622,7 @@ var render = function() {
       "div",
       { staticClass: "col-md-12" },
       [
-        _c("h2", [
+        _c("h2", { staticClass: "lime ignore" }, [
           _c("b", [_vm._v("CHAPTER GROUP : " + _vm._s(_vm.$route.params.id))])
         ]),
         _vm._v(" "),
@@ -41044,7 +41633,7 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "card-header bg-dark text-white",
+                staticClass: "card-header bg-grad text-white ignore",
                 attrs: {
                   "data-toggle": "collapse",
                   "data-target": "#accordian" + chapter.id,
@@ -41064,9 +41653,11 @@ var render = function() {
               [
                 _c("div", { staticClass: "card-body" }, [
                   _c("h4", [
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("அதிகாரம்")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("அதிகாரம்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41078,9 +41669,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Adhigaaram")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Adhigaaram")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41092,9 +41685,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Chapter")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Chapter")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41109,7 +41704,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-info btn-lg",
+                        staticClass: "btn bg-lime text-white ignore",
                         on: {
                           click: function($event) {
                             return _vm.trigger(chapter.id)
@@ -41162,7 +41757,7 @@ var render = function() {
         { staticClass: "card" },
         [
           _c("div", { staticClass: "card-header" }, [
-            _c("h3", [
+            _c("h3", { staticClass: "lime ignore" }, [
               _c("b", [
                 _vm._v(
                   "CHAPTER : " + _vm._s(_vm.$route.params.id) + " | KURALS"
@@ -41174,20 +41769,24 @@ var render = function() {
           _vm._l(_vm.kurals, function(kural) {
             return _c(
               "div",
-              { key: kural.id, staticClass: "card-body border border-dark" },
+              { key: kural.id, staticClass: "card-body border-darkng rounded" },
               [
                 _c(
                   "h4",
                   [
-                    _c("b", [_vm._v("KURAL : " + _vm._s(kural.id))]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("குறள்")
+                    _c("b", { staticClass: "lime ignore" }, [
+                      _vm._v("KURAL : " + _vm._s(kural.id))
                     ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("குறள்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41197,9 +41796,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Kural")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Kural")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41209,9 +41810,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Couplet")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Couplet")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41232,9 +41835,11 @@ var render = function() {
                         }
                       },
                       [
-                        _c("button", { staticClass: "btn btn-info btn-lg" }, [
-                          _c("b", [_vm._v("VIEW DETAILS")])
-                        ])
+                        _c(
+                          "button",
+                          { staticClass: "btn bg-lime text-white ignore" },
+                          [_c("b", [_vm._v("VIEW DETAILS")])]
+                        )
                       ]
                     )
                   ],
@@ -41283,16 +41888,16 @@ var staticRenderFns = [
     return _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "card" }, [
-          _c("div", { staticClass: "card-header" }, [
-            _c("h2", [_vm._v("Fascinating Facts")])
+          _c("div", { staticClass: "card-header bg-grad text-white ignore" }, [
+            _c("h3", [_c("b", [_vm._v("Fascinating Facts")])])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body text-left" }, [
-            _c("h3", [
+            _c("h4", { staticClass: "lime ignore" }, [
               _c("ul", [
                 _c("li", [
                   _vm._v(
-                    "The 1330 couplets are written without a single Couplet (Kural) exceeding or falling shy of 7 words."
+                    "\n              The 1330 couplets are written without a single Couplet (Kural)\n              exceeding or falling shy of 7 words.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41300,7 +41905,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "It is the only book in the world that has the highest number of translations after the King James Bible."
+                    "\n              It is the only book in the world that has the highest number of\n              translations after the King James Bible.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41308,7 +41913,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "It begins in the name of God but still speaks of no particular religion or God."
+                    "\n              It begins in the name of God but still speaks of no particular\n              religion or God.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41316,7 +41921,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "It had no takers or readers during the Pandian Sangam age because the other court poets considered the 2-lined couples out of sync with the syntax and semantics of the prevailing Tamil literature of the period."
+                    "\n              It had no takers or readers during the Pandian Sangam age\n              because the other court poets considered the 2-lined couples out\n              of sync with the syntax and semantics of the prevailing Tamil\n              literature of the period.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41324,7 +41929,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "It was Avvaiyar, one of the important female poets of the Tamil canon and author of Aathichudi, who expounded the greatness of Thirukkural in the Pandian ruler’s court, and the rest, as we see, is history."
+                    "\n              It was Avvaiyar, one of the important female poets of the Tamil\n              canon and author of Aathichudi, who expounded the greatness of\n              Thirukkural in the Pandian ruler’s court, and the rest, as we\n              see, is history.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41332,7 +41937,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "One of the tallest statues in the world, the Thiruvalluvar statue located in the tip of India, Kanyakumari, is 133 feet tall (which is the number of Adigarangal or chapters in the Tirukurral)"
+                    "\n              One of the tallest statues in the world, the Thiruvalluvar\n              statue located in the tip of India, Kanyakumari, is 133 feet\n              tall (which is the number of Adigarangal or chapters in the\n              Tirukurral)\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41340,7 +41945,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "It virtually covers every virtue in human life – character, love, wealth, life, governance, friendship, etc."
+                    "\n              It virtually covers every virtue in human life – character,\n              love, wealth, life, governance, friendship, etc.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41348,7 +41953,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "Tiruvalluva Maalai (literally ‘Garland of Valluvar’) is a special book containing 55 verses each written by different poets belonging to various centuries extolling Tirukkural and its author."
+                    "\n              Tiruvalluva Maalai (literally ‘Garland of Valluvar’) is a\n              special book containing 55 verses each written by different\n              poets belonging to various centuries extolling Tirukkural and\n              its author.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41356,7 +41961,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "Thirukkural is also known as “Ulaga Podhumarai” (world common Veda), Mupaal (book of virtue, wealth and love ) Vayurai Vazhthu (word Veda), and several more."
+                    "\n              Thirukkural is also known as “Ulaga Podhumarai” (world common\n              Veda), Mupaal (book of virtue, wealth and love ) Vayurai Vazhthu\n              (word Veda), and several more.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41364,7 +41969,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "Valluvar Kottam is a popular place in Chennai where you can take delight in reading all 1330 kurals sculptured in stones."
+                    "\n              Valluvar Kottam is a popular place in Chennai where you can take\n              delight in reading all 1330 kurals sculptured in stones.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41372,7 +41977,93 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "The first letter of Thirukkural is அ; the last letter is ன், the first and last alphabets of Tamil language"
+                    "\n              The first letter of Thirukkural is அ; the last letter is ன், the\n              first and last alphabets of Tamil language\n            "
+                  )
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header bg-grad text-white ignore" }, [
+            _c("h3", [_c("b", [_vm._v("History")])])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body text-left" }, [
+            _c("h4", { staticClass: "lime ignore" }, [
+              _c("ul", [
+                _c("li", [
+                  _vm._v(
+                    "\n              Thirukkural literature belongs to the Sanga Tamil period (சங்க காலம்), written in Tamil (தமிழ்) language.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n              This literature is part of the Pathinen Keezhkanaku (பதினென்கீழ்க்கனக்கு) set of books.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n              Thirukkural is not the original/real name of this work, this literature is made of couplets style poems (குறள் வெண்பா).\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n             Based on this, and to give respectful prefix made the name Thirukkural [Thiru (திரு - respectful part in tamil language) + Kural (குறள் - couplet)].\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n              Researchers claim that work those are discovered (until now) are just a part of the much larger one, the discovered/restored work consists of 1330 couplets.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n             Name of the Author of this work is not known either. "
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "Based on the information found so far, its discovered a person who belonged to Valluva (வள்ளுவ மரபு) tradition could be the author.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n              That resulted in the name as Thiruvalluvar [Thiru (திரு) + Valluvar (வள்ளுவர்)].\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n             Thirukkural consist of three groups, Ethics (அறம்-Aram), Wealth (பொருள்-Porul) and Love (காமம்-Kaamam).\n             "
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    " Each group has multiple sections (இயல்), each section has several chapters (அதிகாரம்). "
+                  ),
+                  _c("br"),
+                  _vm._v(
+                    "Every chapter has 10 couplets (குறள்), each couplet has two lines. First line of the couplet has 4 words and second with 3 words.\n            "
                   )
                 ])
               ])
@@ -41411,7 +42102,7 @@ var render = function() {
         { staticClass: "card" },
         [
           _c("div", { staticClass: "card-header" }, [
-            _c("h3", [
+            _c("h3", { staticClass: "lime ignore" }, [
               _c("b", [
                 _vm._v(
                   "KURALS (" +
@@ -41428,7 +42119,7 @@ var render = function() {
             _c(
               "button",
               {
-                staticClass: "btn btn-info",
+                staticClass: "btn bg-lime text-white ignore",
                 on: {
                   click: function($event) {
                     return _vm.firstkural(_vm.meta.first_page)
@@ -41441,7 +42132,7 @@ var render = function() {
             _c(
               "button",
               {
-                staticClass: "btn btn-info",
+                staticClass: "btn bg-lime text-white ignore",
                 on: {
                   click: function($event) {
                     return _vm.lastkural(_vm.meta.last_page)
@@ -41452,16 +42143,18 @@ var render = function() {
             ),
             _vm._v(" "),
             _vm.meta.current_page <= 1
-              ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("\n          Prev\n        ")
-                ])
+              ? _c(
+                  "button",
+                  { staticClass: "btn bg-lime text-white disabled ignore" },
+                  [_vm._v("\n          Prev\n        ")]
+                )
               : _vm._e(),
             _vm._v(" "),
             _vm.meta.current_page - 1 > 0
               ? _c(
                   "button",
                   {
-                    staticClass: "btn btn-info",
+                    staticClass: "btn bg-lime text-white ignore",
                     on: {
                       click: function($event) {
                         return _vm.prevkural(_vm.meta.current_page - 1)
@@ -41476,7 +42169,7 @@ var render = function() {
               ? _c(
                   "button",
                   {
-                    staticClass: "btn btn-info",
+                    staticClass: "btn bg-lime text-white ignore",
                     on: {
                       click: function($event) {
                         return _vm.nextkural(_vm.meta.current_page + 1)
@@ -41488,29 +42181,35 @@ var render = function() {
               : _vm._e(),
             _vm._v(" "),
             _vm.meta.current_page == _vm.meta.last_page
-              ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("\n          Next\n        ")
-                ])
+              ? _c(
+                  "button",
+                  { staticClass: "btn bg-lime text-white disabled ignore" },
+                  [_vm._v("\n          Next\n        ")]
+                )
               : _vm._e()
           ]),
           _vm._v(" "),
           _vm._l(_vm.kurals, function(kural) {
             return _c(
               "div",
-              { key: kural.id, staticClass: "card-body border border-dark" },
+              { key: kural.id, staticClass: "card-body border-darkng rounded" },
               [
                 _c(
                   "h4",
                   [
-                    _c("b", [_vm._v("KURAL : " + _vm._s(kural.id))]),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("குறள்")
+                    _c("b", { staticClass: "lime ignore" }, [
+                      _vm._v("KURAL : " + _vm._s(kural.id))
                     ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("குறள்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41520,9 +42219,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Kural")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Kural")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41532,9 +42233,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Couplet")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Couplet")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -41555,9 +42258,11 @@ var render = function() {
                         }
                       },
                       [
-                        _c("button", { staticClass: "btn btn-info btn-lg" }, [
-                          _c("b", [_vm._v("VIEW DETAILS")])
-                        ])
+                        _c(
+                          "button",
+                          { staticClass: "btn bg-lime text-white ignore" },
+                          [_c("b", [_vm._v("VIEW DETAILS")])]
+                        )
                       ]
                     )
                   ],
@@ -41567,11 +42272,11 @@ var render = function() {
             )
           }),
           _vm._v(" "),
-          _c("div", { staticClass: "card-footer border border-primary" }, [
+          _c("div", { staticClass: "card-footer border border-dark" }, [
             _c(
               "button",
               {
-                staticClass: "btn btn-info",
+                staticClass: "btn bg-lime text-white ignore",
                 on: {
                   click: function($event) {
                     return _vm.firstkural(_vm.meta.first_page)
@@ -41584,7 +42289,7 @@ var render = function() {
             _c(
               "button",
               {
-                staticClass: "btn btn-info",
+                staticClass: "btn bg-lime text-white ignore",
                 on: {
                   click: function($event) {
                     return _vm.lastkural(_vm.meta.last_page)
@@ -41595,16 +42300,18 @@ var render = function() {
             ),
             _vm._v(" "),
             _vm.meta.current_page <= 1
-              ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("\n          Prev\n        ")
-                ])
+              ? _c(
+                  "button",
+                  { staticClass: "btn bg-lime text-white disabled ignore" },
+                  [_vm._v("\n          Prev\n        ")]
+                )
               : _vm._e(),
             _vm._v(" "),
             _vm.meta.current_page - 1 > 0
               ? _c(
                   "button",
                   {
-                    staticClass: "btn btn-info",
+                    staticClass: "btn bg-lime text-white ignore",
                     on: {
                       click: function($event) {
                         return _vm.prevkural(_vm.meta.current_page - 1)
@@ -41619,7 +42326,7 @@ var render = function() {
               ? _c(
                   "button",
                   {
-                    staticClass: "btn btn-info",
+                    staticClass: "btn bg-lime text-white ignore",
                     on: {
                       click: function($event) {
                         return _vm.nextkural(_vm.meta.current_page + 1)
@@ -41631,9 +42338,11 @@ var render = function() {
               : _vm._e(),
             _vm._v(" "),
             _vm.meta.current_page == _vm.meta.last_page
-              ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                  _vm._v("\n          Next\n        ")
-                ])
+              ? _c(
+                  "button",
+                  { staticClass: "btn bg-lime text-white disabled ignore" },
+                  [_vm._v("\n          Next\n        ")]
+                )
               : _vm._e()
           ])
         ],
@@ -41645,6 +42354,785 @@ var render = function() {
   ])
 }
 var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/KuralDetail.vue?vue&type=template&id=68e9c37e&":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/KuralDetail.vue?vue&type=template&id=68e9c37e& ***!
+  \********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "col-md-12" }, [
+      _c("div", { staticClass: "card" }, [
+        _c("div", { staticClass: "card-header border-darkng rounded" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "collapse", attrs: { id: "collapseshare" } },
+            [
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "facebook",
+                    url: "https://news.vuejs.org/issues/180",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/facebook.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "twitter",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/twitter.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "whatsapp",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/whatsapp.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "linkedin",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/linkedin.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br")
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn bg-lime text-white ignore",
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapseshare",
+                "aria-expanded": "false",
+                "aria-controls": "collapseshare"
+              }
+            },
+            [
+              _c("lottie-player", {
+                staticStyle: { height: "20px", width: "20px" },
+                attrs: {
+                  src:
+                    "http://localhost/vue-kurals/public/assets/lottie/share.json",
+                  background: "transparent",
+                  speed: "3",
+                  autoplay: "",
+                  loop: ""
+                }
+              })
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm.data[0].kural_no <= 1
+            ? _c(
+                "button",
+                { staticClass: "btn bg-lime text-white disabled ignore" },
+                [_vm._v("\n          Prev\n        ")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.data[0].kural_no - 1 > 0
+            ? _c(
+                "button",
+                {
+                  staticClass: "btn bg-lime text-white ignore",
+                  on: {
+                    click: function($event) {
+                      return _vm.prevkural(_vm.data[0].kural_no - 1)
+                    }
+                  }
+                },
+                [_vm._v("\n          Prev\n        ")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.data[0].kural_no + 1 <= 1330
+            ? _c(
+                "button",
+                {
+                  staticClass: "btn bg-lime text-white ignore",
+                  on: {
+                    click: function($event) {
+                      return _vm.nextkural(_vm.data[0].kural_no + 1)
+                    }
+                  }
+                },
+                [_vm._v("\n          Next\n        ")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _vm.data[0].kural_no == 1330
+            ? _c(
+                "button",
+                { staticClass: "btn bg-lime text-white disabled ignore" },
+                [_vm._v("\n          Next\n        ")]
+              )
+            : _vm._e()
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-body border-darkng rounded" }, [
+          _c("h3", { staticClass: "lime ignore" }, [
+            _c("b", [_vm._v("KURAL : " + _vm._s(_vm.data[0].kural_no))])
+          ]),
+          _vm._v(" "),
+          _c(
+            "audio",
+            {
+              staticClass: "rounded",
+              attrs: { id: "aud", controls: "", controlslist: "nodownload" }
+            },
+            [
+              _c("source", {
+                attrs: { src: _vm.audiofile, type: "audio/mpeg" }
+              })
+            ]
+          ),
+          _vm._v(" "),
+          _c("h4", [
+            _c("ul", { staticClass: "list-group list-group-flush" }, [
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("குறள்")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[0].kural_tn) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Kural")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[0].kural_tr) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Couplet")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[0].kural_en) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br")
+              ]),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Explanation")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[0].en_explanation) +
+                    "\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "collapse", attrs: { id: "collapseExample" } },
+                [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass:
+                      "img-fluid rounded ignore dashed-border bg-grad",
+                    attrs: {
+                      src: "http://localhost/vue-kurals/public/assets/12.jpg"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "badge bg-grad text-white ignore" },
+                    [_vm._v("Kalaignar")]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.data[0].tamil_poet_3))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass:
+                      "img-fluid rounded ignore dashed-border bg-grad",
+                    attrs: {
+                      src: "http://localhost/vue-kurals/public/assets/13.jpg"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "badge bg-grad text-white ignore" },
+                    [_vm._v("Mu.Varadharasanar")]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.data[0].tamil_poet_1))]),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass:
+                      "img-fluid rounded ignore dashed-border bg-grad",
+                    attrs: {
+                      src: "http://localhost/vue-kurals/public/assets/11.jpg"
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    { staticClass: "badge bg-grad text-white ignore" },
+                    [_vm._v("Solomon Paapaiya")]
+                  ),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("p", [_vm._v(_vm._s(_vm.data[0].tamil_poet_2))]),
+                  _vm._v(" "),
+                  _c("br")
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn bg-lime text-white btn-lg ignore",
+                  attrs: {
+                    type: "button",
+                    "data-toggle": "collapse",
+                    "data-target": "#collapseExample",
+                    "aria-expanded": "false",
+                    "aria-controls": "collapseExample"
+                  },
+                  on: { click: _vm.showMore }
+                },
+                [_c("b", [_vm._v(_vm._s(this.show))])]
+              ),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("h3", { staticClass: "lime ignore" }, [
+                  _c("b", [_vm._v("CHAPTER : " + _vm._s(_vm.data[1].chap_no))])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Tamil")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[1].chap_tn) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Transliteration")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[1].chap_tr) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("English")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[1].chap_en) +
+                    "\n              "
+                ),
+                _c("br")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("h3", { staticClass: "lime ignore" }, [
+                  _c("b", [
+                    _vm._v("CHAPTER GROUP : " + _vm._s(_vm.data[2].chap_grp_no))
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Tamil")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[2].chap_grp_tn) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Transliteration")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[2].chap_grp_tr) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("English")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[2].chap_grp_en) +
+                    "\n              "
+                ),
+                _c("br")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("li", { staticClass: "list-group-item" }, [
+                _c("h3", { staticClass: "lime ignore" }, [
+                  _c("b", [
+                    _vm._v("SECTION : " + _vm._s(_vm.data[3].section_no))
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Tamil")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[3].section_tn) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("Transliteration")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[3].section_tr) +
+                    "\n              "
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("span", { staticClass: "badge bg-grad text-white ignore" }, [
+                  _vm._v("English")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n              " +
+                    _vm._s(_vm.data[3].section_en) +
+                    "\n              "
+                ),
+                _c("br")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card-footer border-darkng rounded" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "collapse", attrs: { id: "collapseshare" } },
+            [
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "facebook",
+                    url: "https://news.vuejs.org/issues/180",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/facebook.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "twitter",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/twitter.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "whatsapp",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en,
+                    description: this.data[0].en_explanation
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/whatsapp.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c(
+                "ShareNetwork",
+                {
+                  attrs: {
+                    network: "linkedin",
+                    url: "https://www.npmjs.com/package/vue-social-sharing",
+                    title: this.data[0].kural_en
+                  }
+                },
+                [
+                  _c("lottie-player", {
+                    staticStyle: { height: "20px" },
+                    attrs: {
+                      src:
+                        "http://localhost/vue-kurals/public/assets/lottie/linkedin.json",
+                      background: "transparent",
+                      speed: "1",
+                      autoplay: "",
+                      loop: ""
+                    }
+                  })
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("br")
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "btn bg-lime ignore",
+              attrs: {
+                type: "button",
+                "data-toggle": "collapse",
+                "data-target": "#collapseshare",
+                "aria-expanded": "false",
+                "aria-controls": "collapseshare"
+              }
+            },
+            [
+              _c("lottie-player", {
+                staticStyle: { height: "20px", width: "20px" },
+                attrs: {
+                  src:
+                    "http://localhost/vue-kurals/public/assets/lottie/share.json",
+                  background: "transparent",
+                  speed: "1",
+                  autoplay: "",
+                  loop: ""
+                }
+              })
+            ],
+            1
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br")
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("SHARE")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h3", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("Famous Explanations")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("SHARE")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -41671,7 +43159,7 @@ var render = function() {
       _c(
         "button",
         {
-          staticClass: "btn btn-info",
+          staticClass: "btn bg-lime text-white ignore",
           attrs: {
             type: "button",
             "data-toggle": "collapse",
@@ -41728,7 +43216,7 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn-sm btn-info col-md-2",
+            staticClass: "btn text-white btn-sm bg-lime ignore col-md-2",
             on: {
               click: function($event) {
                 return _vm.idSearch(_vm.searchid)
@@ -41779,7 +43267,7 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn-sm btn-info col-md-2",
+            staticClass: "btn text-white btn-sm bg-lime col-md-2 ignore",
             on: {
               click: function($event) {
                 return _vm.tnSearch(_vm.searchtn)
@@ -41830,7 +43318,7 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn-sm btn-info col-md-2",
+            staticClass: "btn text-white btn-sm bg-lime col-md-2 ignore",
             on: {
               click: function($event) {
                 return _vm.trSearch(_vm.searchtr)
@@ -41881,7 +43369,7 @@ var render = function() {
         _c(
           "button",
           {
-            staticClass: "btn btn-sm btn-info col-md-2",
+            staticClass: "btn text-white btn-sm bg-lime col-md-2 ignore",
             on: {
               click: function($event) {
                 return _vm.enSearch(_vm.searchen)
@@ -41905,7 +43393,7 @@ var render = function() {
         [
           _c(
             "div",
-            { staticClass: "card-header bg-dark text-white" },
+            { staticClass: "card-header bg-grad text-white ignore" },
             [
               _c("h2", { staticStyle: { "text-align": "center" } }, [
                 _vm._v("\n          Search for\n          "),
@@ -41924,7 +43412,7 @@ var render = function() {
           _vm._l(_vm.kurals, function(kural) {
             return _c(
               "div",
-              { key: kural.id, staticClass: "card-body border border-dark" },
+              { key: kural.id, staticClass: "card-body border-darkng rounded" },
               [
                 _c("h5", [
                   _c("ul", { staticClass: "list-group list-group-flush" }, [
@@ -41950,7 +43438,7 @@ var render = function() {
                         _vm._v(" "),
                         _c(
                           "span",
-                          { staticClass: "badge bg-primary text-white" },
+                          { staticClass: "badge bg-grad text-white ignore" },
                           [_vm._v("குறள்")]
                         ),
                         _vm._v(" "),
@@ -41968,7 +43456,7 @@ var render = function() {
                         _vm._v(" "),
                         _c(
                           "span",
-                          { staticClass: "badge bg-primary text-white" },
+                          { staticClass: "badge bg-grad text-white ignore" },
                           [_vm._v("Kural")]
                         ),
                         _vm._v(" "),
@@ -41986,7 +43474,7 @@ var render = function() {
                         _vm._v(" "),
                         _c(
                           "span",
-                          { staticClass: "badge bg-primary text-white" },
+                          { staticClass: "badge bg-grad text-white ignore" },
                           [_vm._v("Couplet")]
                         ),
                         _vm._v(" "),
@@ -42013,9 +43501,11 @@ var render = function() {
                             }
                           },
                           [
-                            _c("button", { staticClass: "btn btn-info" }, [
-                              _c("b", [_vm._v("VIEW DETAILS")])
-                            ])
+                            _c(
+                              "button",
+                              { staticClass: "btn text-white bg-lime ignore" },
+                              [_c("b", [_vm._v("VIEW DETAILS")])]
+                            )
                           ]
                         )
                       ],
@@ -42070,7 +43560,7 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "card-header bg-grad text-white",
+                staticClass: "card-header ignore bg-grad text-white",
                 attrs: {
                   "data-toggle": "collapse",
                   "data-target": "#accordian" + section.id,
@@ -42090,9 +43580,11 @@ var render = function() {
               [
                 _c("div", { staticClass: "card-body" }, [
                   _c("h4", [
-                    _c("span", { staticClass: "badge bg-grad text-white" }, [
-                      _vm._v("பால்")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge ignore bg-grad text-white" },
+                      [_vm._v("பால்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -42104,9 +43596,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-grad text-white" }, [
-                      _vm._v("Paal")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge ignore bg-grad text-white" },
+                      [_vm._v("Paal")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -42118,9 +43612,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-grad text-white" }, [
-                      _vm._v("Section")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge ignore bg-grad text-white" },
+                      [_vm._v("Section")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -42136,7 +43632,7 @@ var render = function() {
                       "li",
                       {
                         staticClass:
-                          "list-group-item border border-dark rounded"
+                          "list-group-item border-darkg ignore rounded lime"
                       },
                       [
                         _vm._v(
@@ -42151,7 +43647,7 @@ var render = function() {
                       "li",
                       {
                         staticClass:
-                          "list-group-item border border-dark rounded"
+                          "list-group-item border-darkg ignore rounded lime"
                       },
                       [
                         _vm._v(
@@ -42170,7 +43666,7 @@ var render = function() {
                       "li",
                       {
                         staticClass:
-                          "list-group-item border border-dark rounded"
+                          "list-group-item border-darkg ignore rounded lime"
                       },
                       [
                         _vm._v(
@@ -42186,7 +43682,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-lg btn-info",
+                        staticClass: "btn ignore text-white bg-lime",
                         on: {
                           click: function($event) {
                             return _vm.trigger(section.id)
@@ -42215,7 +43711,9 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h2", [_c("b", [_vm._v("SECTIONS - 3")])])
+    return _c("h2", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("SECTIONS - 3")])
+    ])
   }
 ]
 render._withStripped = true
@@ -42244,7 +43742,7 @@ var render = function() {
       "div",
       { staticClass: "col-md-12" },
       [
-        _c("h3", [
+        _c("h3", { staticClass: "lime ignore" }, [
           _c("b", [
             _vm._v("SECTION : " + _vm._s(_vm.$route.params.id) + " | CHAPTERS")
           ])
@@ -42255,7 +43753,7 @@ var render = function() {
             _c(
               "div",
               {
-                staticClass: "card-header bg-dark text-white",
+                staticClass: "card-header bg-grad text-white ignore",
                 attrs: {
                   "data-toggle": "collapse",
                   "data-target": "#accordian" + chapter.id,
@@ -42275,9 +43773,11 @@ var render = function() {
               [
                 _c("div", { staticClass: "card-body" }, [
                   _c("h4", [
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("அதிகாரம்")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("அதிகாரம்")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -42289,9 +43789,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Adhigaaram")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Adhigaaram")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -42303,9 +43805,11 @@ var render = function() {
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
-                    _c("span", { staticClass: "badge bg-primary text-white" }, [
-                      _vm._v("Chapter")
-                    ]),
+                    _c(
+                      "span",
+                      { staticClass: "badge bg-grad text-white ignore" },
+                      [_vm._v("Chapter")]
+                    ),
                     _vm._v(" "),
                     _c("br"),
                     _vm._v(" "),
@@ -42320,7 +43824,7 @@ var render = function() {
                     _c(
                       "button",
                       {
-                        staticClass: "btn btn-info btn-lg",
+                        staticClass: "btn bg-lime text-white ignore",
                         on: {
                           click: function($event) {
                             return _vm.trigger(chapter.id)
@@ -42349,10 +43853,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4& ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Login.vue?vue&type=template&id=50665d0a&":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/user/Login.vue?vue&type=template&id=50665d0a& ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -42364,719 +43868,331 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "row" }, [
-    _c("div", { staticClass: "col-md-12" }, [
-      _c("div", { staticClass: "card" }, [
-        _c("div", { staticClass: "card-header border border-dark" }, [
-          _c("h3", [_vm._v("Share")]),
+  return _c("div", { staticClass: "container-fluid text-center" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c(
+      "form",
+      [
+        _c("div", { staticClass: "form-group" }, [
+          _c("label", { staticClass: "lime ignore", attrs: { for: "email" } }, [
+            _vm._v("Email address")
+          ]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "collapse", attrs: { id: "collapseshare" } },
-            [
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "facebook",
-                    url: "https://news.vuejs.org/issues/180",
-                    title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation,
-                    quote: this.data[0].kural_tn
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/facebook.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "twitter",
-                    url: "https://www.npmjs.com/package/vue-social-sharing",
-                    title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation,
-                    quote: this.data[0].kural_tn
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/twitter.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "whatsapp",
-                    url: "https://www.npmjs.com/package/vue-social-sharing",
-                    title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/whatsapp.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "linkedin",
-                    url: "https://www.npmjs.com/package/vue-social-sharing",
-                    title: this.data[0].kural_en
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/linkedin.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br")
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-info",
-              attrs: {
-                type: "button",
-                "data-toggle": "collapse",
-                "data-target": "#collapseshare",
-                "aria-expanded": "false",
-                "aria-controls": "collapseshare"
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.email,
+                expression: "form.email"
               }
-            },
-            [
-              _c("lottie-player", {
-                staticStyle: { height: "20px", width: "20px" },
-                attrs: {
-                  src:
-                    "http://localhost/vue-kurals/public/assets/lottie/share.json",
-                  background: "transparent",
-                  speed: "3",
-                  autoplay: "",
-                  loop: ""
-                }
-              })
             ],
-            1
-          ),
+            staticClass: "form-control",
+            attrs: { type: "email", name: "email", placeholder: "Enter email" },
+            domProps: { value: _vm.form.email },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "email", $event.target.value)
+              }
+            }
+          }),
           _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm.data[0].kural_no <= 1
-            ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                _vm._v("\n          Prev\n        ")
+          _vm.errors.email
+            ? _c("small", { staticClass: "form-text text-muted" }, [
+                _vm._v(_vm._s(_vm.errors.email[0]))
               ])
             : _vm._e(),
           _vm._v(" "),
-          _vm.data[0].kural_no - 1 > 0
-            ? _c(
-                "button",
-                {
-                  staticClass: "btn btn-info",
-                  on: {
-                    click: function($event) {
-                      return _vm.prevkural(_vm.data[0].kural_no - 1)
-                    }
-                  }
-                },
-                [_vm._v("\n          Prev\n        ")]
-              )
-            : _vm._e(),
+          _c(
+            "label",
+            { staticClass: "lime ignore", attrs: { for: "password" } },
+            [_vm._v("Password")]
+          ),
           _vm._v(" "),
-          _vm.data[0].kural_no + 1 <= 1330
-            ? _c(
-                "button",
-                {
-                  staticClass: "btn btn-info",
-                  on: {
-                    click: function($event) {
-                      return _vm.nextkural(_vm.data[0].kural_no + 1)
-                    }
-                  }
-                },
-                [_vm._v("\n          Next\n        ")]
-              )
-            : _vm._e(),
+          _c("input", {
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.form.password,
+                expression: "form.password"
+              }
+            ],
+            staticClass: "form-control",
+            attrs: {
+              placeholder: "Password",
+              type: "password",
+              name: "password"
+            },
+            domProps: { value: _vm.form.password },
+            on: {
+              input: function($event) {
+                if ($event.target.composing) {
+                  return
+                }
+                _vm.$set(_vm.form, "password", $event.target.value)
+              }
+            }
+          }),
           _vm._v(" "),
-          _vm.data[0].kural_no == 1330
-            ? _c("button", { staticClass: "btn btn-info disabled" }, [
-                _vm._v("\n          Next\n        ")
+          _vm.errors.password
+            ? _c("small", { staticClass: "form-text text-muted" }, [
+                _vm._v(_vm._s(_vm.errors.password[0]))
               ])
             : _vm._e()
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body border border-dark" }, [
-          _c("h3", [
-            _c("b", [_vm._v("KURAL : " + _vm._s(_vm.data[0].kural_no))])
-          ]),
-          _vm._v(" "),
-          _c(
-            "audio",
-            { attrs: { id: "aud", controls: "", controlslist: "nodownload" } },
-            [
-              _c("source", {
-                attrs: { src: _vm.audiofile, type: "audio/mpeg" }
-              })
-            ]
-          ),
-          _vm._v(" "),
-          _c("h4", [
-            _c("ul", { staticClass: "list-group list-group-flush" }, [
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("குறள்")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[0].kural_tn) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br")
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Kural")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[0].kural_tr) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br")
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Couplet")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[0].kural_en) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br")
-              ]),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Explanation")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[0].en_explanation) +
-                    "\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "collapse", attrs: { id: "collapseExample" } },
-                [
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-fluid rounded ignore dashed-border",
-                    attrs: {
-                      src: "http://localhost/vue-kurals/public/assets/12.jpg"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-dark text-white" }, [
-                    _vm._v("Kalaignar")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(_vm.data[0].tamil_poet_3))]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-fluid rounded ignore dashed-border",
-                    attrs: {
-                      src: "http://localhost/vue-kurals/public/assets/13.jpg"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Mu.Varadharasanar")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(_vm.data[0].tamil_poet_1))]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("img", {
-                    staticClass: "img-fluid rounded ignore dashed-border",
-                    attrs: {
-                      src: "http://localhost/vue-kurals/public/assets/11.jpg"
-                    }
-                  }),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "badge bg-primary text-white" }, [
-                    _vm._v("Solomon Paapaiya")
-                  ]),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("p", [_vm._v(_vm._s(_vm.data[0].tamil_poet_2))]),
-                  _vm._v(" "),
-                  _c("br")
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "collapse",
-                    "data-target": "#collapseExample",
-                    "aria-expanded": "false",
-                    "aria-controls": "collapseExample"
-                  },
-                  on: { click: _vm.showMore }
-                },
-                [_c("b", [_vm._v(_vm._s(this.show))])]
-              ),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("h3", [
-                  _c("b", [_vm._v("CHAPTER : " + _vm._s(_vm.data[1].chap_no))])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Tamil")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[1].chap_tn) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Transliteration")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[1].chap_tr) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("English")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[1].chap_en) +
-                    "\n              "
-                ),
-                _c("br")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("h3", [
-                  _c("b", [
-                    _vm._v("CHAPTER GROUP : " + _vm._s(_vm.data[2].chap_grp_no))
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Tamil")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[2].chap_grp_tn) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Transliteration")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[2].chap_grp_tr) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("English")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[2].chap_grp_en) +
-                    "\n              "
-                ),
-                _c("br")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("li", { staticClass: "list-group-item" }, [
-                _c("h3", [
-                  _c("b", [
-                    _vm._v("SECTION : " + _vm._s(_vm.data[3].section_no))
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Tamil")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[3].section_tn) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("Transliteration")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[3].section_tr) +
-                    "\n              "
-                ),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("span", { staticClass: "badge bg-primary text-white" }, [
-                  _vm._v("English")
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(
-                  "\n              " +
-                    _vm._s(_vm.data[3].section_en) +
-                    "\n              "
-                ),
-                _c("br")
-              ])
-            ])
+        _c(
+          "button",
+          {
+            staticClass: "text-white btn bg-lime ignore",
+            attrs: { type: "submit" },
+            on: {
+              click: function($event) {
+                $event.preventDefault()
+                return _vm.loginUser($event)
+              }
+            }
+          },
+          [_vm._v("\n      Login\n    ")]
+        ),
+        _vm._v(" "),
+        _c("router-link", { attrs: { to: { name: "register" } } }, [
+          _c("button", { staticClass: "text-white btn bg-grad ignore" }, [
+            _vm._v("\n        Create an Account\n      ")
           ])
+        ])
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("br"),
+    _vm._v(" "),
+    _c("br")
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h2", { staticClass: "lime ignore" }, [
+      _c("b", [_vm._v("LOGIN")])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Register.vue?vue&type=template&id=bb82dcfe&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/pages/user/Register.vue?vue&type=template&id=bb82dcfe& ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container-fluid" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("form", [
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { staticClass: "lime ignore", attrs: { for: "name" } }, [
+          _vm._v("Name")
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-footer border border-dark" }, [
-          _c("h3", [_vm._v("Share")]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "collapse", attrs: { id: "collapseshare" } },
-            [
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "facebook",
-                    url: "https://news.vuejs.org/issues/180",
-                    title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation,
-                    quote: this.data[0].kural_tn
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/facebook.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "twitter",
-                    url: "https://www.npmjs.com/package/vue-social-sharing",
-                    title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation,
-                    quote: this.data[0].kural_tn
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/twitter.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "whatsapp",
-                    url: "https://www.npmjs.com/package/vue-social-sharing",
-                    title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/whatsapp.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c(
-                "ShareNetwork",
-                {
-                  attrs: {
-                    network: "linkedin",
-                    url: "https://www.npmjs.com/package/vue-social-sharing",
-                    title: this.data[0].kural_en
-                  }
-                },
-                [
-                  _c("lottie-player", {
-                    staticStyle: { height: "20px" },
-                    attrs: {
-                      src:
-                        "http://localhost/vue-kurals/public/assets/lottie/linkedin.json",
-                      background: "transparent",
-                      speed: "1",
-                      autoplay: "",
-                      loop: ""
-                    }
-                  })
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c("br")
-            ],
-            1
-          ),
-          _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.name,
+              expression: "form.name"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { placeholder: "Name", type: "text" },
+          domProps: { value: _vm.form.name },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "name", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _vm.errors.name
+          ? _c("span", { staticClass: "form-text text-muted" }, [
+              _vm._v(_vm._s(_vm.errors.name[0]))
+            ])
+          : _vm._e()
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c("label", { staticClass: "lime ignore", attrs: { for: "email" } }, [
+          _vm._v("Your e-mail")
+        ]),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.email,
+              expression: "form.email"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: { placeholder: "Email", type: "email" },
+          domProps: { value: _vm.form.email },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "email", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _vm.errors.email
+        ? _c("span", { staticClass: "form-text text-muted" }, [
+            _vm._v(_vm._s(_vm.errors.email[0]))
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c(
+          "label",
+          { staticClass: "lime ignore", attrs: { for: "password" } },
+          [_vm._v("Password")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.password,
+              expression: "form.password"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            placeholder: "Password",
+            type: "password",
+            name: "password"
+          },
+          domProps: { value: _vm.form.password },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "password", $event.target.value)
+            }
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _vm.errors.password
+        ? _c("span", { staticClass: "form-text text-muted" }, [
+            _vm._v(_vm._s(_vm.errors.password[0]))
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _c("div", { staticClass: "form-group" }, [
+        _c(
+          "label",
+          { staticClass: "lime ignore", attrs: { for: "confirm_password" } },
+          [_vm._v("Confirm Password")]
+        ),
+        _vm._v(" "),
+        _c("input", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.form.password_confirmation,
+              expression: "form.password_confirmation"
+            }
+          ],
+          staticClass: "form-control",
+          attrs: {
+            placeholder: "Confirm Password",
+            type: "password",
+            name: "password_confirmation"
+          },
+          domProps: { value: _vm.form.password_confirmation },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.$set(_vm.form, "password_confirmation", $event.target.value)
+            }
+          }
+        }),
+        _vm._v(" "),
+        _vm.errors.password_confirmation
+          ? _c("span", { staticClass: "form-text text-muted" }, [
+              _vm._v(_vm._s(_vm.errors.password_confirmation[0]))
+            ])
+          : _vm._e(),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("br")
+      ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "form-group" },
+        [
           _c(
             "button",
             {
-              staticClass: "btn btn-info",
-              attrs: {
-                type: "button",
-                "data-toggle": "collapse",
-                "data-target": "#collapseshare",
-                "aria-expanded": "false",
-                "aria-controls": "collapseshare"
+              staticClass: "btn bg-lime text-white ignore",
+              attrs: { type: "submit" },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.saveForm($event)
+                }
               }
             },
-            [
-              _c("lottie-player", {
-                staticStyle: { height: "20px", width: "20px" },
-                attrs: {
-                  src:
-                    "http://localhost/vue-kurals/public/assets/lottie/share.json",
-                  background: "transparent",
-                  speed: "1",
-                  autoplay: "",
-                  loop: ""
-                }
-              })
-            ],
-            1
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("br")
+            [_vm._v("\n        Create\n      ")]
+          ),
+          _vm._v(" "),
+          _c("router-link", { attrs: { to: { name: "login" } } }, [
+            _c("button", { staticClass: "text-white btn bg-grad ignore" }, [
+              _vm._v("\n          Already have Account\n        ")
+            ])
+          ])
+        ],
+        1
+      )
     ])
   ])
 }
@@ -43085,7 +44201,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("h3", [_c("b", [_vm._v("Famous Explanations")])])
+    return _c("div", { staticClass: "col-12" }, [
+      _c("h2", { staticClass: "lime ignore" }, [_c("b", [_vm._v("REGISTER")])]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c("br")
+    ])
   }
 ]
 render._withStripped = true
@@ -60645,6 +61767,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/pages/KuralDetail.vue":
+/*!*******************************************************!*\
+  !*** ./resources/js/components/pages/KuralDetail.vue ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _KuralDetail_vue_vue_type_template_id_68e9c37e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./KuralDetail.vue?vue&type=template&id=68e9c37e& */ "./resources/js/components/pages/KuralDetail.vue?vue&type=template&id=68e9c37e&");
+/* harmony import */ var _KuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./KuralDetail.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/KuralDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _KuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _KuralDetail_vue_vue_type_template_id_68e9c37e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _KuralDetail_vue_vue_type_template_id_68e9c37e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/pages/KuralDetail.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/KuralDetail.vue?vue&type=script&lang=js&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/pages/KuralDetail.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_KuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./KuralDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/KuralDetail.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_KuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/KuralDetail.vue?vue&type=template&id=68e9c37e&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/components/pages/KuralDetail.vue?vue&type=template&id=68e9c37e& ***!
+  \**************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_KuralDetail_vue_vue_type_template_id_68e9c37e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./KuralDetail.vue?vue&type=template&id=68e9c37e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/KuralDetail.vue?vue&type=template&id=68e9c37e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_KuralDetail_vue_vue_type_template_id_68e9c37e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_KuralDetail_vue_vue_type_template_id_68e9c37e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/components/pages/Search.vue":
 /*!**************************************************!*\
   !*** ./resources/js/components/pages/Search.vue ***!
@@ -60852,18 +62043,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/kuralDetail.vue":
-/*!*******************************************************!*\
-  !*** ./resources/js/components/pages/kuralDetail.vue ***!
-  \*******************************************************/
+/***/ "./resources/js/components/pages/user/Login.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/components/pages/user/Login.vue ***!
+  \******************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./kuralDetail.vue?vue&type=template&id=b751e8c4& */ "./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&");
-/* harmony import */ var _kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./kuralDetail.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Login_vue_vue_type_template_id_50665d0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Login.vue?vue&type=template&id=50665d0a& */ "./resources/js/components/pages/user/Login.vue?vue&type=template&id=50665d0a&");
+/* harmony import */ var _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Login.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/user/Login.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -60872,9 +62063,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Login_vue_vue_type_template_id_50665d0a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Login_vue_vue_type_template_id_50665d0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -60884,38 +62075,107 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/pages/kuralDetail.vue"
+component.options.__file = "resources/js/components/pages/user/Login.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&":
-/*!********************************************************************************!*\
-  !*** ./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************/
+/***/ "./resources/js/components/pages/user/Login.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/pages/user/Login.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./kuralDetail.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Login.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Login.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4& ***!
-  \**************************************************************************************/
+/***/ "./resources/js/components/pages/user/Login.vue?vue&type=template&id=50665d0a&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/components/pages/user/Login.vue?vue&type=template&id=50665d0a& ***!
+  \*************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./kuralDetail.vue?vue&type=template&id=b751e8c4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/kuralDetail.vue?vue&type=template&id=b751e8c4&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_50665d0a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Login.vue?vue&type=template&id=50665d0a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Login.vue?vue&type=template&id=50665d0a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_50665d0a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_kuralDetail_vue_vue_type_template_id_b751e8c4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_50665d0a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/user/Register.vue":
+/*!*********************************************************!*\
+  !*** ./resources/js/components/pages/user/Register.vue ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Register_vue_vue_type_template_id_bb82dcfe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Register.vue?vue&type=template&id=bb82dcfe& */ "./resources/js/components/pages/user/Register.vue?vue&type=template&id=bb82dcfe&");
+/* harmony import */ var _Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Register.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/user/Register.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Register_vue_vue_type_template_id_bb82dcfe___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Register_vue_vue_type_template_id_bb82dcfe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/pages/user/Register.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/user/Register.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/pages/user/Register.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Register.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Register.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/pages/user/Register.vue?vue&type=template&id=bb82dcfe&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/components/pages/user/Register.vue?vue&type=template&id=bb82dcfe& ***!
+  \****************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_template_id_bb82dcfe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Register.vue?vue&type=template&id=bb82dcfe& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/pages/user/Register.vue?vue&type=template&id=bb82dcfe&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_template_id_bb82dcfe___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Register_vue_vue_type_template_id_bb82dcfe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -60941,8 +62201,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_pages_ChapterKurals__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/pages/ChapterKurals */ "./resources/js/components/pages/ChapterKurals.vue");
 /* harmony import */ var _components_pages_SectionChapters__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/pages/SectionChapters */ "./resources/js/components/pages/SectionChapters.vue");
 /* harmony import */ var _components_pages_ChapterGroupChapters__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/pages/ChapterGroupChapters */ "./resources/js/components/pages/ChapterGroupChapters.vue");
-/* harmony import */ var _components_pages_kuralDetail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/pages/kuralDetail */ "./resources/js/components/pages/kuralDetail.vue");
+/* harmony import */ var _components_pages_KuralDetail__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/pages/KuralDetail */ "./resources/js/components/pages/KuralDetail.vue");
 /* harmony import */ var _components_pages_Search__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/pages/Search */ "./resources/js/components/pages/Search.vue");
+/* harmony import */ var _components_pages_user_Login__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/pages/user/Login */ "./resources/js/components/pages/user/Login.vue");
+/* harmony import */ var _components_pages_user_Register__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/pages/user/Register */ "./resources/js/components/pages/user/Register.vue");
+
+
 
 
 
@@ -60967,7 +62231,7 @@ var routes = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: ARL + 'kural/:id',
     name: 'kural-details',
-    component: _components_pages_kuralDetail__WEBPACK_IMPORTED_MODULE_10__["default"]
+    component: _components_pages_KuralDetail__WEBPACK_IMPORTED_MODULE_10__["default"]
   }, {
     path: ARL + 'home',
     name: 'home',
@@ -60999,7 +62263,24 @@ var routes = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   }, {
     path: ARL + 'search',
     name: 'search',
-    component: _components_pages_Search__WEBPACK_IMPORTED_MODULE_11__["default"]
+    component: _components_pages_Search__WEBPACK_IMPORTED_MODULE_11__["default"],
+    beforeEnter: function beforeEnter(to, form, next) {
+      axios.get('api/authenticated').then(function () {
+        next();
+      })["catch"](function () {
+        return next({
+          name: 'login'
+        });
+      });
+    }
+  }, {
+    path: ARL + 'login',
+    name: 'login',
+    component: _components_pages_user_Login__WEBPACK_IMPORTED_MODULE_12__["default"]
+  }, {
+    path: ARL + 'register',
+    name: 'register',
+    component: _components_pages_user_Register__WEBPACK_IMPORTED_MODULE_13__["default"]
   }]
 });
 /* harmony default export */ __webpack_exports__["default"] = (routes); // Format didn't work

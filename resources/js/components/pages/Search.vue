@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <button
         @click="searchMenu"
-        class="btn btn-info"
+        class="btn bg-lime text-white ignore"
         type="button"
         data-toggle="collapse"
         data-target="#collapseExample"
@@ -15,6 +15,7 @@
           {{ this.options }}
         </b>
       </button>
+      <!-- <button @click="logout" class="btn btn-danger text-white">Logout</button> -->
 
       <br />
       <br />
@@ -28,7 +29,7 @@
         />
         <button
           @click="idSearch(searchid)"
-          class="btn btn-sm btn-info col-md-2"
+          class="btn text-white btn-sm bg-lime ignore col-md-2"
         >
           Number
           <i class="fa fa-search"></i>
@@ -44,7 +45,7 @@
         />
         <button
           @click="tnSearch(searchtn)"
-          class="btn btn-sm btn-info col-md-2"
+          class="btn text-white btn-sm bg-lime col-md-2 ignore"
         >
           குறள்
           <i class="fa fa-search"></i>
@@ -60,7 +61,7 @@
         />
         <button
           @click="trSearch(searchtr)"
-          class="btn btn-sm btn-info col-md-2"
+          class="btn text-white btn-sm bg-lime col-md-2 ignore"
         >
           Kural
           <i class="fa fa-search"></i>
@@ -76,7 +77,7 @@
         />
         <button
           @click="enSearch(searchen)"
-          class="btn btn-sm btn-info col-md-2"
+          class="btn text-white btn-sm bg-lime col-md-2 ignore"
         >
           Couplet
           <i class="fa fa-search"></i>
@@ -86,7 +87,7 @@
       <br />
       <hr />
       <div class="card">
-        <div class="card-header bg-dark text-white">
+        <div class="card-header bg-grad text-white ignore">
           <h2 style="text-align: center">
             Search for
             <span class="badge" v-if="queries.length == 0">...</span>
@@ -94,7 +95,7 @@
           <Highlight :queries="queries">{{ this.queries }}</Highlight>
         </div>
         <div
-          class="card-body border border-dark"
+          class="card-body border-darkng rounded"
           v-for="kural in kurals"
           :key="kural.id"
         >
@@ -108,21 +109,21 @@
                 </b>
                 <br />
                 <br />
-                <span class="badge bg-primary text-white">குறள்</span>
+                <span class="badge bg-grad text-white ignore">குறள்</span>
                 <br />
                 <br />
 
                 <Highlight :queries="queries">{{ kural.tn }}</Highlight>
                 <br />
                 <br />
-                <span class="badge bg-primary text-white">Kural</span>
+                <span class="badge bg-grad text-white ignore">Kural</span>
                 <br />
                 <br />
 
                 <Highlight :queries="queries">{{ kural.tr }}</Highlight>
                 <br />
                 <br />
-                <span class="badge bg-primary text-white">Couplet</span>
+                <span class="badge bg-grad text-white ignore">Couplet</span>
                 <br />
                 <br />
 
@@ -133,7 +134,7 @@
                 <router-link
                   :to="{ name: 'kural-details', params: { id: kural.id } }"
                 >
-                  <button class="btn btn-info">
+                  <button class="btn text-white bg-lime ignore">
                     <b>VIEW DETAILS</b>
                   </button>
                 </router-link>
@@ -161,6 +162,11 @@ export default {
     };
   },
   methods: {
+    logout() {
+      axios.post("api/logout").then(() => {
+        this.$router.push({ name: "home" });
+      });
+    },
     searchMenu() {
       if (this.options === "Search Menu") {
         this.options = "Hide Menu";
