@@ -2843,6 +2843,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     console.log("Component mounted.");
@@ -3560,6 +3594,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -40863,7 +40898,7 @@ var render = function() {
               _c("br"),
               _vm._v(" "),
               _c("h2", [
-                _c("b", [_vm._v("THIRUKKURAL")]),
+                _c("b", { staticClass: "lime ignore" }, [_vm._v("TIRUKKURAL")]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
@@ -41102,7 +41137,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h2", { staticClass: "sticky1 lime ignore" }, [
-      _c("b", [_vm._v("THIRUKKURAL")])
+      _c("b", [_vm._v("TIRUKKURAL")])
     ])
   },
   function() {
@@ -41119,7 +41154,19 @@ var staticRenderFns = [
         _c(
           "div",
           { staticClass: "footer-copyright text-center text-white py-2" },
-          [_vm._v("\n        © 2020 Thirukkural. All Rights Reserved.\n      ")]
+          [
+            _vm._v("\n        © 2020 Tirukkural. Made by "),
+            _c("b", [
+              _c(
+                "a",
+                {
+                  staticStyle: { color: "white" },
+                  attrs: { href: "https://www.buymeacoffee.com/Elanchez" }
+                },
+                [_vm._v("Elanchez")]
+              )
+            ])
+          ]
         )
       ]
     )
@@ -41889,6 +41936,76 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header bg-grad text-white ignore" }, [
+            _c("h3", [_c("b", [_vm._v("Who Am I?")])])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "card-body text-left" }, [
+            _c("h4", { staticClass: "lime ignore" }, [
+              _c("ul", [
+                _c("li", [
+                  _vm._v("\n              I'm "),
+                  _c("b", [_vm._v("Valluvar")]),
+                  _vm._v(", the author of "),
+                  _c("b", [_vm._v("Tirukkural / Sacred Couplets.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("People also know me by few other names such as, "),
+                  _c("b", [
+                    _vm._v(
+                      "Mudharpaavalar, Deivappulavar, Maadhaanupangi, Naanmuganaar, Naayanaar, Poyyirpulavar, Dhevar, Perunaavalar, "
+                    )
+                  ]),
+                  _vm._v("etc.")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("I used to be a professional "),
+                  _c("b", [_vm._v("Weaver ")]),
+                  _vm._v("and I loved writing "),
+                  _c("b", [_vm._v("Philosophical Tamil Poems.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("I had a beautiful wife, and her name was "),
+                  _c("b", [_vm._v("Vasuki.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("I think I used to live during the "),
+                  _c("b", [_vm._v("Tholkapiar")]),
+                  _vm._v(" period, between "),
+                  _c("b", [_vm._v("(3rd - 7th) century.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "I don't remember my Birthplace exactly, but I believe I used to live in "
+                  ),
+                  _c("b", [_vm._v("Madurai")]),
+                  _vm._v(" and later in the town of "),
+                  _c("b", [_vm._v("Mayilapuram / Mylapore")]),
+                  _vm._v(".")
+                ]),
+                _vm._v(" "),
+                _c("br")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "card" }, [
+          _c("div", { staticClass: "card-header bg-grad text-white ignore" }, [
             _c("h3", [_c("b", [_vm._v("Fascinating Facts")])])
           ]),
           _vm._v(" "),
@@ -41896,8 +42013,61 @@ var staticRenderFns = [
             _c("h4", { staticClass: "lime ignore" }, [
               _c("ul", [
                 _c("li", [
+                  _vm._v("\n              The "),
+                  _c("b", [_vm._v("1330 couplets")]),
+                  _vm._v(" are written without a single "),
+                  _c("b", [_vm._v("Couplet (Kural)")]),
+                  _vm._v("\n              exceeding or falling shy of "),
+                  _c("b", [_vm._v("7 words.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
                   _vm._v(
-                    "\n              The 1330 couplets are written without a single Couplet (Kural)\n              exceeding or falling shy of 7 words.\n            "
+                    "\n              It is the only book in the world that has the highest number of\n              "
+                  ),
+                  _c("b", [_vm._v("translations")]),
+                  _vm._v(" after the "),
+                  _c("b", [_vm._v("King James Bible.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("\n              It begins in the name of "),
+                  _c("b", [_vm._v("God")]),
+                  _vm._v(" but still "),
+                  _c("b", [
+                    _vm._v(
+                      "speaks of no particular\n              religion or God."
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n              It had no takers or readers during the "
+                  ),
+                  _c("b", [_vm._v("Pandian Sangam")]),
+                  _vm._v(
+                    " age\n              because the other court poets considered the 2-lined couples out\n              of sync with the syntax and semantics of the prevailing Tamil\n              literature of the period.\n            "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("\n              It was "),
+                  _c("b", [_vm._v("Avvaiyar")]),
+                  _vm._v(
+                    ", one of the important female poets of the Tamil\n              canon and author of "
+                  ),
+                  _c("b", [_vm._v("Aathichudi")]),
+                  _vm._v(
+                    ", who expounded the greatness of\n              Tirukkural in the Pandian ruler’s court, and the rest, as we\n              see, is history.\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41905,7 +42075,15 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "\n              It is the only book in the world that has the highest number of\n              translations after the King James Bible.\n            "
+                    "\n              One of the tallest statues in the world, the Thiruvalluvar\n              statue located in the tip of "
+                  ),
+                  _c("b", [
+                    _vm._v(
+                      "India, Kanyakumari, is 133 feet\n              tall "
+                    )
+                  ]),
+                  _vm._v(
+                    "(which is the number of Adigarangal or chapters in the\n              Tirukurral).\n            "
                   )
                 ]),
                 _vm._v(" "),
@@ -41913,72 +42091,67 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "\n              It begins in the name of God but still speaks of no particular\n              religion or God.\n            "
+                    "\n              It virtually covers every virtue in human life – "
+                  ),
+                  _c("b", [
+                    _vm._v(
+                      "character,\n              love, wealth, life, governance, friendship"
+                    )
+                  ]),
+                  _vm._v(", etc.\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _c("b", [_vm._v("Tiruvalluva Maalai")]),
+                  _vm._v(
+                    " (literally ‘Garland of Valluvar’) is a\n              special book containing "
+                  ),
+                  _c("b", [_vm._v("55 verses")]),
+                  _vm._v(
+                    " each written by different\n              poets belonging to various centuries extolling Tirukkural and\n              its author.\n            "
                   )
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
                 _c("li", [
+                  _vm._v("\n              Tirukkural is also known as "),
+                  _c("b", [_vm._v("“Ulaga Podhumarai”")]),
+                  _vm._v(" (world common\n              Veda),"),
+                  _c("b", [_vm._v(" Mupaal")]),
+                  _vm._v(" (book of virtue, wealth and love )"),
+                  _c("b", [_vm._v(" Vayurai Vazhthu")]),
                   _vm._v(
-                    "\n              It had no takers or readers during the Pandian Sangam age\n              because the other court poets considered the 2-lined couples out\n              of sync with the syntax and semantics of the prevailing Tamil\n              literature of the period.\n            "
+                    "\n              (word Veda), and several more.\n            "
                   )
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
                 _c("li", [
+                  _c("b", [_vm._v("Valluvar Kottam")]),
+                  _vm._v(" is a popular place in "),
+                  _c("b", [_vm._v("Chennai")]),
                   _vm._v(
-                    "\n              It was Avvaiyar, one of the important female poets of the Tamil\n              canon and author of Aathichudi, who expounded the greatness of\n              Thirukkural in the Pandian ruler’s court, and the rest, as we\n              see, is history.\n            "
-                  )
+                    " where you can take\n              delight in reading all "
+                  ),
+                  _c("b", [_vm._v("1330 kurals sculptured in stones")]),
+                  _vm._v(".\n            ")
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
                 _c("li", [
-                  _vm._v(
-                    "\n              One of the tallest statues in the world, the Thiruvalluvar\n              statue located in the tip of India, Kanyakumari, is 133 feet\n              tall (which is the number of Adigarangal or chapters in the\n              Tirukurral)\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              It virtually covers every virtue in human life – character,\n              love, wealth, life, governance, friendship, etc.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              Tiruvalluva Maalai (literally ‘Garland of Valluvar’) is a\n              special book containing 55 verses each written by different\n              poets belonging to various centuries extolling Tirukkural and\n              its author.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              Thirukkural is also known as “Ulaga Podhumarai” (world common\n              Veda), Mupaal (book of virtue, wealth and love ) Vayurai Vazhthu\n              (word Veda), and several more.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              Valluvar Kottam is a popular place in Chennai where you can take\n              delight in reading all 1330 kurals sculptured in stones.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              The first letter of Thirukkural is அ; the last letter is ன், the\n              first and last alphabets of Tamil language\n            "
-                  )
+                  _vm._v("\n              The first letter of Tirukkural is "),
+                  _c("b", [_vm._v("அ")]),
+                  _vm._v(", the last letter is "),
+                  _c("b", [_vm._v("ன்")]),
+                  _vm._v(", the\n              "),
+                  _c("b", [
+                    _vm._v("First and Last Alphabets of Tamil language.")
+                  ])
                 ])
               ])
             ])
@@ -41995,76 +42168,118 @@ var staticRenderFns = [
               _c("ul", [
                 _c("li", [
                   _vm._v(
-                    "\n              Thirukkural literature belongs to the Sanga Tamil period (சங்க காலம்), written in Tamil (தமிழ்) language.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              This literature is part of the Pathinen Keezhkanaku (பதினென்கீழ்க்கனக்கு) set of books.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              Thirukkural is not the original/real name of this work, this literature is made of couplets style poems (குறள் வெண்பா).\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n             Based on this, and to give respectful prefix made the name Thirukkural [Thiru (திரு - respectful part in tamil language) + Kural (குறள் - couplet)].\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n              Researchers claim that work those are discovered (until now) are just a part of the much larger one, the discovered/restored work consists of 1330 couplets.\n            "
-                  )
-                ]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
-                _c("li", [
-                  _vm._v(
-                    "\n             Name of the Author of this work is not known either. "
+                    "\n              Tirukkural literature belongs to the "
                   ),
+                  _c("b", [_vm._v("Sanga Tamil period (சங்க காலம்)")]),
+                  _vm._v(", written in "),
+                  _c("b", [_vm._v("Tamil (தமிழ்) language")]),
+                  _vm._v(".\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("\n              This literature is part of the "),
+                  _c("b", [
+                    _vm._v("Pathinen Keezhkanaku (பதினென்கீழ்க்கனக்கு)")
+                  ]),
+                  _vm._v(" set of books.\n            ")
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n              Tirukkural is not the original/real name of this work, this literature is made of "
+                  ),
+                  _c("b", [_vm._v("couplets style poems (குறள் வெண்பா).")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(
+                    "\n             Based on this, and to give respectful prefix made the name "
+                  ),
+                  _c("b", [
+                    _vm._v(
+                      "Tirukkural [Tiru (திரு - respectful part in tamil language) + Kural (குறள் - couplet)]."
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _c("b", [_vm._v("Researchers claim")]),
+                  _vm._v(" that work those are discovered (until now) are "),
+                  _c("b", [_vm._v("just a part of the much larger one")]),
+                  _vm._v(", the "),
+                  _c("b", [_vm._v("discovered/restored")]),
+                  _vm._v(" work consists of "),
+                  _c("b", [_vm._v("1330 couplets.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _c("b", [_vm._v("Name of the Author")]),
+                  _vm._v(" of this work is "),
+                  _c("b", [_vm._v("not known")]),
+                  _vm._v(" either. "),
                   _c("br"),
                   _vm._v(
-                    "Based on the information found so far, its discovered a person who belonged to Valluva (வள்ளுவ மரபு) tradition could be the author.\n            "
-                  )
+                    "Based on the information found so far, its discovered a person who belonged to "
+                  ),
+                  _c("b", [_vm._v("Valluva (வள்ளுவ மரபு)")]),
+                  _vm._v(" tradition could be the author.\n            ")
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
                 _c("li", [
-                  _vm._v(
-                    "\n              That resulted in the name as Thiruvalluvar [Thiru (திரு) + Valluvar (வள்ளுவர்)].\n            "
-                  )
+                  _vm._v("\n              That resulted in the name as "),
+                  _c("b", [
+                    _vm._v("Tiruvalluvar [Tiru (திரு) + Valluvar (வள்ளுவர்)].")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
                 _c("li", [
-                  _vm._v(
-                    "\n             Thirukkural consist of three groups, Ethics (அறம்-Aram), Wealth (பொருள்-Porul) and Love (காமம்-Kaamam).\n             "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    " Each group has multiple sections (இயல்), each section has several chapters (அதிகாரம்). "
-                  ),
-                  _c("br"),
-                  _vm._v(
-                    "Every chapter has 10 couplets (குறள்), each couplet has two lines. First line of the couplet has 4 words and second with 3 words.\n            "
-                  )
+                  _vm._v("\n             Tirukkural consist of three groups, "),
+                  _c("b", [
+                    _vm._v(
+                      "Ethics (அறம்-Aram), Wealth (பொருள்-Porul) and Love (காமம்-Kaamam)."
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v(" Each group has multiple "),
+                  _c("b", [_vm._v("sections (இயல்)")]),
+                  _vm._v(", each section has several "),
+                  _c("b", [_vm._v("chapters (அதிகாரம்).")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(" "),
+                _c("li", [
+                  _vm._v("\n                 Each chapter has "),
+                  _c("b", [_vm._v("10 couplets (குறள்)")]),
+                  _vm._v(", each "),
+                  _c("b", [_vm._v("couplet has two lines.")])
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _c("li", [
+                  _c("b", [
+                    _vm._v(
+                      "First line of the couplet has 4 words and second with 3 words."
+                    )
+                  ])
                 ])
               ])
             ])
@@ -43191,7 +43406,7 @@ var render = function() {
               expression: "searchid"
             }
           ],
-          staticClass: "col-md-9",
+          staticClass: "col-md-9 ",
           attrs: { name: "search", placeholder: "Search by number " },
           domProps: { value: _vm.searchid },
           on: {

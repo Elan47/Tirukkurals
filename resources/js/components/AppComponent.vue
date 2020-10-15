@@ -17,7 +17,7 @@
             ></lottie-player>
           <br />
           <h2>
-            <b>THIRUKKURAL</b>
+            <b class="lime ignore">TIRUKKURAL</b>
             <br>
             <button @click="buy"  class="btn bg-lime ignore text-white"><b>Buy Me A Coffee!</b></button>
 
@@ -67,7 +67,7 @@
               autoplay
             ></lottie-player>
           <h2 class="sticky1 lime ignore">
-            <b>THIRUKKURAL</b>
+            <b>TIRUKKURAL</b>
           </h2>
           <button @click="buy"  class="btn bg-lime ignore text-white"><b>Buy Me A Coffee!</b></button>
 
@@ -153,7 +153,7 @@
       class="page-footer bg-grad d-none d-md-block d-lg-block font-small ignore"
     >
       <div class="footer-copyright text-center text-white py-2">
-        © 2020 Thirukkural. All Rights Reserved.
+        © 2020 Tirukkural. Made by <b><a style="color:white" href="https://www.buymeacoffee.com/Elanchez">Elanchez</a></b>
       </div>
       <!-- Copyright -->
     </footer>

@@ -21,7 +21,8 @@
       <br />
       <div class="collapse" id="collapseExample">
         <input
-          class="col-md-9"
+
+          class="col-md-9 "
           v-model="searchid"
           name="search"
           @keyup.enter="idSearch(searchid)"
