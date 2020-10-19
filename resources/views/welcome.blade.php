@@ -3,8 +3,8 @@
 
 <head>
 
-    <meta property="og:title" content="Thirukkural">
-    <meta property="og:site_name" content="Kural1330">
+    <meta property="og:title" content="Tirukkurals">
+    <meta property="og:site_name" content="Tirukkurals">
     <meta property="og:url" content="http://localhost/vue-kurals/public">
     <meta property="og:description" content="All About Thirukkurals">
     <meta property="og:type" content="website">
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{csrf_token()}}">
 
-    <title>Thirukkurals</title>
+    <title>Tirukkurals</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <!-- Styles -->
     <link rel="manifest" href="http://localhost/vue-kurals/manifest.webmanifest">

@@ -354,6 +354,7 @@
               url="https://www.npmjs.com/package/vue-social-sharing"
               :title="this.data[0].kural_en"
               :description="this.data[0].en_explanation"
+               :quote="this.data[0].kural_tn"
             >
               <lottie-player
                 src="http://localhost/vue-kurals/public/assets/lottie/whatsapp.json"

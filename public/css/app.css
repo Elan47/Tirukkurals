@@ -10922,7 +10922,7 @@ a.text-dark:focus {
 .sticky1 {
   position: -webkit-sticky;
   position: sticky;
-  top: 50px;
+  top: 30px;
 }
 
 .sticky2 {

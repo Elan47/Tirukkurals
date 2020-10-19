@@ -3,7 +3,7 @@
   <div>
     <!-- <nav class="navbar d-block d-md-none text-center navbar-expand-lg navbar-dark bg-dark"> -->
     <nav
-      class="navbar darkmode--activated ignore text-center navbar-expand-lg navbar-dark bg-grad"
+      class="navbar darkmode--activated ignore text-center navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-dark bg-grad"
     >
       <button
         @click.prevent="lottieplay"

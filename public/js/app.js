@@ -2175,6 +2175,48 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 var options = {
   top: "100px",
@@ -2879,7 +2921,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
-    console.log("Component mounted.");
+    console.log("Enjoy Reading and Learning Tirukkurals!");
   }
 });
 
@@ -3118,6 +3160,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -8718,7 +8761,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .darkmode-layer,\n.darkmode-toggle {\n  z-index: 500;\n} */\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* .darkmode-layer,\n.darkmode-toggle {\n  z-index: 500;\n} */\n", ""]);
 
 // exports
 
@@ -40897,15 +40940,11 @@ var render = function() {
               _vm._v(" "),
               _c("br"),
               _vm._v(" "),
-              _c("h2", [
-                _c("b", { staticClass: "lime ignore" }, [_vm._v("TIRUKKURAL")]),
-                _vm._v(" "),
-                _c("br"),
-                _vm._v(" "),
+              _c("h2", { staticClass: "lime ignore" }, [
                 _c(
                   "button",
                   {
-                    staticClass: "btn bg-lime ignore text-white",
+                    staticClass: "ignore btn bg-lime  text-white",
                     on: { click: _vm.buy }
                   },
                   [_c("b", [_vm._v("Buy Me A Coffee!")])]
@@ -40917,7 +40956,7 @@ var render = function() {
                 { attrs: { to: { name: "home" } } },
                 [
                   _c("lottie-player", {
-                    staticClass: "ignore sticky2",
+                    staticClass: "ignore ",
                     staticStyle: { height: "300px" },
                     attrs: {
                       id: "lottie1",
@@ -40931,7 +40970,7 @@ var render = function() {
                   }),
                   _vm._v(" "),
                   _c("lottie-player", {
-                    staticClass: "ignore sticky2",
+                    staticClass: "ignore ",
                     staticStyle: { height: "300px", display: "none" },
                     attrs: {
                       id: "lottie2",
@@ -40946,7 +40985,85 @@ var render = function() {
                   })
                 ],
                 1
-              )
+              ),
+              _vm._v(" "),
+              _c("h4", { staticClass: "lime ignore" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "b",
+                  [
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "sections" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("SECTIONS : 3")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "chapter-groups" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("CHAPTER GROUPS : 13")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "chapters" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("CHAPTERS : 133")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "kurals" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [_vm._v("KURALS : 1330")]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "router-link",
+                      {
+                        staticClass: "nav-item nav-link lime",
+                        attrs: {
+                          to: { name: "search" },
+                          "data-toggle": "collapse",
+                          "data-target": ".navbar-collapse.show"
+                        }
+                      },
+                      [
+                        _vm._v("\n                SEARCH\n                "),
+                        _c("i", { staticClass: "fa fa-search" })
+                      ]
+                    )
+                  ],
+                  1
+                )
+              ])
             ],
             1
           ),
@@ -40975,7 +41092,7 @@ var render = function() {
                 }
               }),
               _vm._v(" "),
-              _vm._m(0),
+              _vm._m(1),
               _vm._v(" "),
               _c(
                 "button",
@@ -41126,7 +41243,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(1)
+      _vm._m(2)
     ],
     1
   )
@@ -41136,8 +41253,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("h2", [_c("b", [_vm._v("TIRUKKURALS ")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("h2", { staticClass: "sticky1 lime ignore" }, [
-      _c("b", [_vm._v("TIRUKKURAL")])
+      _c("b", [_vm._v("TIRUKKURALS")])
     ])
   },
   function() {
@@ -41161,7 +41284,10 @@ var staticRenderFns = [
                 "a",
                 {
                   staticStyle: { color: "white" },
-                  attrs: { href: "https://www.buymeacoffee.com/Elanchez" }
+                  attrs: {
+                    target: "_blank",
+                    href: "https://www.buymeacoffee.com/Elanchez"
+                  }
                 },
                 [_vm._v("Elanchez")]
               )
@@ -41198,7 +41324,7 @@ var render = function() {
       "nav",
       {
         staticClass:
-          "navbar darkmode--activated ignore text-center navbar-expand-lg navbar-dark bg-grad"
+          "navbar darkmode--activated ignore text-center navbar-expand-md navbar-expand-lg navbar-expand-xl navbar-dark bg-grad"
       },
       [
         _c(
@@ -41936,7 +42062,7 @@ var staticRenderFns = [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "card" }, [
           _c("div", { staticClass: "card-header bg-grad text-white ignore" }, [
-            _c("h3", [_c("b", [_vm._v("Who Am I?")])])
+            _c("h3", [_c("b", [_vm._v("Who Am I ?")])])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body text-left" }, [
@@ -41945,8 +42071,8 @@ var staticRenderFns = [
                 _c("li", [
                   _vm._v("\n              I'm "),
                   _c("b", [_vm._v("Valluvar")]),
-                  _vm._v(", the author of "),
-                  _c("b", [_vm._v("Tirukkural / Sacred Couplets.")])
+                  _vm._v(", known as the author of "),
+                  _c("b", [_vm._v("Tirukkurals / Sacred Couplets.")])
                 ]),
                 _vm._v(" "),
                 _c("br"),
@@ -41980,7 +42106,7 @@ var staticRenderFns = [
                 _c("br"),
                 _vm._v(" "),
                 _c("li", [
-                  _vm._v("I think I used to live during the "),
+                  _vm._v("I used to live during the "),
                   _c("b", [_vm._v("Tholkapiar")]),
                   _vm._v(" period, between "),
                   _c("b", [_vm._v("(3rd - 7th) century.")])
@@ -41990,7 +42116,7 @@ var staticRenderFns = [
                 _vm._v(" "),
                 _c("li", [
                   _vm._v(
-                    "I don't remember my Birthplace exactly, but I believe I used to live in "
+                    "I can't remember my birthplace exactly, but I believe I used to live in "
                   ),
                   _c("b", [_vm._v("Madurai")]),
                   _vm._v(" and later in the town of "),
@@ -43237,7 +43363,8 @@ var render = function() {
                     network: "whatsapp",
                     url: "https://www.npmjs.com/package/vue-social-sharing",
                     title: this.data[0].kural_en,
-                    description: this.data[0].en_explanation
+                    description: this.data[0].en_explanation,
+                    quote: this.data[0].kural_tn
                   }
                 },
                 [

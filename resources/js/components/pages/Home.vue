@@ -3,13 +3,13 @@
     <div class="row">
          <div class="card">
         <div class="card-header bg-grad text-white ignore">
-          <h3><b>Who Am I?</b></h3>
+          <h3><b>Who Am I ?</b></h3>
         </div>
         <div class="card-body text-left">
           <h4 class="lime ignore">
               <ul>
               <li>
-                I'm <b>Valluvar</b>, the author of <b>Tirukkural / Sacred Couplets.</b> </li>
+                I'm <b>Valluvar</b>, known as the author of <b>Tirukkurals / Sacred Couplets.</b> </li>
                 <br>
 
                 <li>People also know me by few other names such as, <b>Mudharpaavalar, Deivappulavar, Maadhaanupangi, Naanmuganaar, Naayanaar, Poyyirpulavar, Dhevar, Perunaavalar, </b>etc.</li>
@@ -20,9 +20,9 @@
               <br>
               <li>I had a beautiful wife, and her name was <b>Vasuki.</b></li>
               <br>
-              <li>I think I used to live during the <b>Tholkapiar</b> period, between <b>(3rd - 7th) century.</b></li>
+              <li>I used to live during the <b>Tholkapiar</b> period, between <b>(3rd - 7th) century.</b></li>
               <br>
-              <li>I don't remember my Birthplace exactly, but I believe I used to live in <b>Madurai</b> and later in the town of <b>Mayilapuram / Mylapore</b>.</li>
+              <li>I can't remember my birthplace exactly, but I believe I used to live in <b>Madurai</b> and later in the town of <b>Mayilapuram / Mylapore</b>.</li>
               <br>
               </ul>
 
@@ -160,7 +160,7 @@
 <script>
 export default {
   created() {
-    console.log("Component mounted.");
+    console.log("Enjoy Reading and Learning Tirukkurals!");
   },
 };
 </script>

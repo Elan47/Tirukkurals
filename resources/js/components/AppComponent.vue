@@ -16,10 +16,9 @@
               autoplay
             ></lottie-player>
           <br />
-          <h2>
-            <b class="lime ignore">TIRUKKURAL</b>
-            <br>
-            <button @click="buy"  class="btn bg-lime ignore text-white"><b>Buy Me A Coffee!</b></button>
+          <h2 class="lime ignore">
+
+            <button @click="buy"  class="ignore btn bg-lime  text-white"><b>Buy Me A Coffee!</b></button>
 
 
           </h2>
@@ -28,7 +27,7 @@
             <lottie-player
             id="lottie1"
 
-              class="ignore sticky2"
+              class="ignore "
               src="http://localhost/vue-kurals/public/assets/lottie/valluvar.json"
               background="transparent"
               speed=".75"
@@ -40,7 +39,7 @@
             @click="afterbuy"
             id="lottie2"
 
-              class="ignore sticky2"
+              class="ignore "
               src="http://localhost/vue-kurals/public/assets/lottie/coffee.json"
               background="transparent"
               speed="1"
@@ -49,6 +48,49 @@
               autoplay
             ></lottie-player>
           </router-link>
+          <h4 class="lime ignore">
+             <h2><b >TIRUKKURALS </b></h2>
+
+            <b
+              ><router-link
+                :to="{ name: 'sections' }"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-item nav-link lime"
+                >SECTIONS : 3</router-link
+              >
+              <router-link
+                :to="{ name: 'chapter-groups' }"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-item nav-link lime"
+                >CHAPTER GROUPS : 13</router-link
+              >
+              <router-link
+                :to="{ name: 'chapters' }"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-item nav-link lime"
+                >CHAPTERS : 133</router-link
+              >
+              <router-link
+                :to="{ name: 'kurals' }"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-item nav-link lime"
+                >KURALS : 1330</router-link
+              >
+
+              <router-link
+                :to="{ name: 'search' }"
+                data-toggle="collapse"
+                data-target=".navbar-collapse.show"
+                class="nav-item nav-link lime"
+              >
+                SEARCH
+                <i class="fa fa-search"></i> </router-link
+            ></b>
+          </h4>
         </div>
         <!-- mobile view only -->
 
@@ -67,7 +109,7 @@
               autoplay
             ></lottie-player>
           <h2 class="sticky1 lime ignore">
-            <b>TIRUKKURAL</b>
+            <b>TIRUKKURALS</b>
           </h2>
           <button @click="buy"  class="btn bg-lime ignore text-white"><b>Buy Me A Coffee!</b></button>
 
@@ -153,7 +195,7 @@
       class="page-footer bg-grad d-none d-md-block d-lg-block font-small ignore"
     >
       <div class="footer-copyright text-center text-white py-2">
-        © 2020 Tirukkural. Made by <b><a style="color:white" href="https://www.buymeacoffee.com/Elanchez">Elanchez</a></b>
+        © 2020 Tirukkural. Made by <b><a style="color:white" target="_blank" href="https://www.buymeacoffee.com/Elanchez">Elanchez</a></b>
       </div>
       <!-- Copyright -->
     </footer>
